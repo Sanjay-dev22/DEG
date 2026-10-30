@@ -1,0 +1,6 @@
+# Keep shell scripts and container-mounted config on LF even when Windows git has core.autocrlf=true.
+*.sh      text eol=lf
+*.yaml    text eol=lf
+*.yml     text eol=lf
+*.rego    text eol=lf
+Caddyfile text eol=lf

@@ -11,14 +11,29 @@
 #   discovery service can deliver on_discover to a public address and real "Discover offers" works.
 # --seed (on `flow`) bypasses discovery by copying seller-app's own live offers into buyer-app's
 #   discovered_offers table. Use it only where no public address is possible (e.g. a locked-down sandbox).
+# Windows checkouts can turn this file into CRLF, which bash rejects. Strip it in place and re-run.
+grep -q $'\r' "$0" 2>/dev/null && { sed -i 's/\r$//' "$0"; exec bash "$0" "$@"; } #
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEVKIT="$ROOT/network/devkits/p2p-trading-ies-wave2"
 RUN="$ROOT/.run"; mkdir -p "$RUN"
+export MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL='*'   # Git Bash: don't rewrite /paths passed to docker
+case "$(uname -s)" in MINGW*|MSYS*|CYGWIN*) WINDOWS=1 ;; *) WINDOWS=0 ;; esac
 APPS=(seller:4002 buyer:4001 aggregator:4003 grid:4004)
 IMAGE=fidedocker/onix-adapter-deg:v2
 J=(-H 'content-type: application/json')
+
+# Keep the window open on failure when launched by double-click / "Open in terminal" on Windows.
+on_exit() {
+  local rc=$?
+  if (( rc != 0 )); then
+    printf '\033[1;31mrun-demo.sh failed (exit %s)%s\033[0m\n' "$rc" "${ERR_LINE:+ at line $ERR_LINE: $ERR_CMD}" >&2
+    if (( WINDOWS )) && [[ -t 0 ]]; then read -r -p "Press Enter to close..." _ || true; fi
+  fi
+}
+trap 'ERR_LINE=$LINENO; ERR_CMD=$BASH_COMMAND' ERR
+trap on_exit EXIT
 
 log() { printf '\033[1;36m==> %s\033[0m\n' "$*"; }
 die() { printf '\033[1;31m%s\033[0m\n' "$*" >&2; exit 1; }
@@ -41,7 +56,8 @@ pull_image() {
 # bg <name> <dir> <cmd...>: start detached, fully disconnected from our stdio, pid recorded.
 bg() {
   local name=$1 dir=$2; shift 2
-  (cd "$dir" && exec setsid nohup "$@" >"$RUN/$name.log" 2>&1 </dev/null) &
+  local sid=""; command -v setsid >/dev/null 2>&1 && sid=setsid   # Git Bash has no setsid
+  (cd "$dir" && exec $sid nohup "$@" >"$RUN/$name.log" 2>&1 </dev/null) &
   echo $! >"$RUN/$name.pid"
 }
 
@@ -61,7 +77,11 @@ start_tunnel() { # name, local-port -> prints public url
 }
 
 cmd_up() {
-  need docker; need node; need npm; need python3; need curl
+  need docker; need node; need npm; need curl
+  PY=""; for c in python3 python py; do command -v "$c" >/dev/null 2>&1 && "$c" --version >/dev/null 2>&1 && { PY=$c; break; }; done
+  [[ -n "$PY" ]] || die "Python 3 not found (tried python3, python, py)"
+  node -e 'const [a,b]=process.versions.node.split(".").map(Number);process.exit(a>22||(a==22&&b>=13)?0:1)' \
+    || die "Node $(node -v) is too old: need 22.13 or newer (the apps use node:sqlite)"
   docker info >/dev/null 2>&1 || die "docker daemon is not running"
   local tunnel=0; [[ "${1:-}" == "--tunnel" ]] && tunnel=1
 
@@ -70,7 +90,7 @@ cmd_up() {
 
   log "starting policy file server on :8099"
   if ! curl -sf -m 2 -o /dev/null http://localhost:8099/; then
-    bg policy "$ROOT/network/specification/policies" python3 -m http.server 8099
+    bg policy "$ROOT/network/specification/policies" "$PY" -m http.server 8099
   fi
 
   log "starting onix network (seller, buyer, aggregator, grid + ledgers + router)"
@@ -181,6 +201,12 @@ cmd_reset() { for a in "${APPS[@]}"; do curl -s -X POST "localhost:${a##*:}/api/
 cmd_down() {
   log "stopping tunnels, apps, policy server, containers"
   # each bg() job is its own session leader, so -PID signals the whole group (npm + node child)
+  if (( WINDOWS )); then   # no process groups in Git Bash: stop whatever listens on our ports
+    for port in 4001 4002 4003 4004 8099; do
+      pid=$(netstat -ano 2>/dev/null | tr -d '\r' | awk -v p=":$port" '$2 ~ p"$" && $4=="LISTENING" {print $5; exit}')
+      [[ -n "$pid" ]] && taskkill //F //T //PID "$pid" >/dev/null 2>&1 || true
+    done
+  fi
   for f in "$RUN"/*.pid; do
     [[ -f "$f" ]] || continue
     kill -- "-$(cat "$f")" 2>/dev/null || kill "$(cat "$f")" 2>/dev/null || true; rm -f "$f"

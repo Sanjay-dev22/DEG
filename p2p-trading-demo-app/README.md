@@ -95,6 +95,30 @@ Other commands: `./run-demo.sh reset` (wipe all four apps),
 are `docker logs onix-aggregatorapp` (and `onix-gridapp`, `onix-sellerapp`,
 `onix-buyerapp`).
 
+### Windows (Git Bash or WSL2)
+
+Run everything from **Git Bash** (or a WSL2 shell) with **Docker Desktop
+running**. Do not double-click the script; type the command in an open
+terminal so any error stays visible:
+
+```bash
+bash ./run-demo.sh up
+```
+
+- **Window closes instantly / `pipefail: invalid option name`:** the script
+  was checked out with Windows (CRLF) line endings. `bash ./run-demo.sh up`
+  repairs the file itself and carries on. If you run it as `./run-demo.sh`
+  and still get `bad interpreter` or `\r: command not found`, run this once:
+  ```bash
+  sed -i 's/\r$//' run-demo.sh
+  ```
+  A fresh clone is correct automatically (`.gitattributes` forces LF). To
+  fix an old clone: `git pull`, then `git add --renormalize . && git checkout -- .`
+- **See exactly what failed:** `bash -x ./run-demo.sh up 2>&1 | tail -40`.
+- Python may be installed as `python` or `py`; the script finds it.
+- If a step needs Docker, make sure the Docker Desktop whale icon says
+  "running" before you start.
+
 ### Real Discover needs a public address
 
 **Discover offers** is asynchronous: the shared discovery service sends its
