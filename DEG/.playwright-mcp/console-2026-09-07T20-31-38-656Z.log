@@ -1,0 +1,26 @@
+[     759ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://metric-home-alfred-happening.trycloudflare.com/favicon.ico:0
+[ 1264090ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188
+[ 1265489ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/offers:0
+[ 1265497ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/trades:0
+[ 1265507ms] Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[ 1266276ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188
+[ 1268476ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188
+[ 1270550ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/offers:0
+[ 1270558ms] Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[ 1270558ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/trades:0
+[ 1270718ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188
+[ 1272886ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188
+[ 1275057ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188
+[ 1275630ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/trades:0
+[ 1275631ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/offers:0
+[ 1275633ms] Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[ 1454850ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188
+[ 1455509ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/trades:0
+[ 1455509ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/offers:0
+[ 1455524ms] Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[ 1457022ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188
+[ 1459176ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188
+[ 1460489ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/trades:0
+[ 1460490ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://metric-home-alfred-happening.trycloudflare.com/api/offers:0
+[ 1460498ms] Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[ 1461337ms] [ERROR] WebSocket connection to 'wss://metric-home-alfred-happening.trycloudflare.com/ws' failed: Error during WebSocket handshake: Unexpected response code: 502 @ https://metric-home-alfred-happening.trycloudflare.com/:188

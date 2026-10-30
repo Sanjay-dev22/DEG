@@ -1,0 +1,177 @@
+- generic [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - generic [ref=f1e6]:
+      - generic [ref=f1e7]: GRID PULSE
+      - generic [ref=f1e8]: Beckn Protocol Inspector · P2P trade
+    - generic [ref=f1e9]:
+      - button "1Publish" [ref=f1e10] [cursor=pointer]
+      - button "2Discover" [ref=f1e11] [cursor=pointer]
+      - button "3Init" [ref=f1e12] [cursor=pointer]
+      - button "4Confirm" [ref=f1e13] [cursor=pointer]
+      - button "5Settle" [ref=f1e14] [cursor=pointer]
+      - button "6Rejected" [ref=f1e15] [cursor=pointer]
+    - button "Interactive mode" [ref=f1e16] [cursor=pointer]
+    - button "Legend" [ref=f1e19] [cursor=pointer]
+  - generic [ref=f1e20]:
+    - generic [ref=f1e21]:
+      - generic [ref=f1e22]:
+        - button "+" [ref=f1e23] [cursor=pointer]
+        - button "−" [ref=f1e24] [cursor=pointer]
+        - button "⊞" [ref=f1e25] [cursor=pointer]
+      - img [ref=f1e26]:
+        - generic [ref=f1e29]: bap_side (docker network)
+        - generic [ref=f1e30]: bpp_side (docker network)
+        - generic [ref=f1e38]:
+          - generic [ref=f1e41] [cursor=pointer]
+          - generic: BAP business logic
+          - generic: BuyerApp
+          - generic: sandbox-buyerapp:3001
+        - generic [ref=f1e42]:
+          - generic [ref=f1e45] [cursor=pointer]
+          - generic: Protocol adapter
+          - generic: onix-buyerapp
+          - generic: :8081
+        - generic [ref=f1e46]:
+          - generic [ref=f1e49] [cursor=pointer]
+          - generic: Session cache
+          - generic: redis
+          - generic: :6379
+        - generic [ref=f1e50]:
+          - generic [ref=f1e53] [cursor=pointer]
+          - generic: BPP business logic
+          - generic: SellerApp
+          - generic: sandbox-sellerapp:3002
+        - generic [ref=f1e54]:
+          - generic [ref=f1e57] [cursor=pointer]
+          - generic: Protocol adapter
+          - generic: onix-sellerapp
+          - generic: :8082
+        - generic [ref=f1e58]:
+          - generic [ref=f1e61] [cursor=pointer]
+          - generic: Session cache
+          - generic: redis
+          - generic: :6379
+        - generic [ref=f1e62]:
+          - generic [ref=f1e65] [cursor=pointer]
+          - generic: The only bridge
+          - generic: beckn-router
+          - generic: Caddy · :9000
+        - generic [ref=f1e66]:
+          - generic [ref=f1e69] [cursor=pointer]
+          - generic: Network infra
+          - generic: Catalog / Discovery
+          - generic: shared endpoint
+        - generic [ref=f1e70]:
+          - generic [ref=f1e73] [cursor=pointer]
+          - generic: Seller discom ledger adapter
+          - generic: onix-ledger-
+          - generic: sellerdiscom
+          - generic: :8083
+        - generic [ref=f1e74]:
+          - generic [ref=f1e77] [cursor=pointer]
+          - generic: TPDDL ledger TSP
+          - generic: SellerDiscom
+          - generic: Ledger
+          - generic: sandbox:3003
+        - generic [ref=f1e78]:
+          - generic [ref=f1e81] [cursor=pointer]
+          - generic: Buyer discom ledger adapter
+          - generic: onix-ledger-
+          - generic: buyerdiscom
+          - generic: :8084
+        - generic [ref=f1e82]:
+          - generic [ref=f1e85] [cursor=pointer]
+          - generic: BRPL ledger TSP
+          - generic: BuyerDiscom
+          - generic: Ledger
+          - generic: sandbox:3004
+        - generic [ref=f1e86]:
+          - generic [ref=f1e89] [cursor=pointer]
+          - generic: Not used this walkthrough
+          - generic: onix-buyerdiscom
+          - generic: :8085
+        - generic [ref=f1e90]:
+          - generic [ref=f1e93] [cursor=pointer]
+          - generic: Not used this walkthrough
+          - generic: onix-sellerdiscom
+          - generic: :8086
+        - generic [ref=f1e94]:
+          - generic [ref=f1e97] [cursor=pointer]
+          - generic: Real, external, hosted
+          - generic: IES Energy Ledger
+          - generic: ies-p2p-energy-ledger.beckn.io
+    - generic [ref=f1e98]:
+      - generic [ref=f1e99]:
+        - generic [ref=f1e100]: confirm → on_confirm — hop 1 / 11
+        - generic [ref=f1e101]:
+          - text: onix-buyerapp · bapTxnCaller
+          - generic [ref=f1e128]: 200 · ACK
+      - generic [ref=f1e102]:
+        - generic [ref=f1e129]:
+          - heading "What’s happening" [level=4] [ref=f1e130]
+          - generic [ref=f1e131]: The buyer says yes for real — and this message is the first to carry real payment machinery, naming the seller's actual bank account.
+        - generic [ref=f1e132]:
+          - heading "Address" [level=4] [ref=f1e133]
+          - generic [ref=f1e134]:
+            - term [ref=f1e135]: From
+            - definition [ref=f1e136]: BuyerApp
+            - term [ref=f1e137]: To
+            - definition [ref=f1e138]: onix-buyerapp
+            - term [ref=f1e139]: Path
+            - definition [ref=f1e140]: /bap/caller/
+            - term [ref=f1e141]: Action
+            - definition [ref=f1e142]: confirm
+          - generic [ref=f1e143]:
+            - generic [ref=f1e144]: POST
+            - generic [ref=f1e145]: http://localhost:8081/bap/caller/confirm
+        - generic [ref=f1e146]:
+          - heading "Processor steps that ran" [level=4] [ref=f1e147]
+          - list [ref=f1e148]:
+            - listitem [ref=f1e149]:
+              - generic [ref=f1e150]: contractpolicyenforcer
+              - generic [ref=f1e151]: buyer-side self-check, enforced
+            - listitem [ref=f1e152]:
+              - generic [ref=f1e153]: validateSchema
+              - generic [ref=f1e154]: Validates the payload's JSON structure against the official Beckn + DEG JSON-LD schemas.
+            - listitem [ref=f1e155]:
+              - generic [ref=f1e156]: checkPolicy
+              - generic [ref=f1e157]: Evaluates the network-wide OPA policy — the same rules apply to every message on this network.
+            - listitem [ref=f1e158]:
+              - generic [ref=f1e159]: addRoute
+              - generic [ref=f1e160]: Looks up the recipient's real endpoint via the DeDi registry — resolves exactly where this message goes next.
+            - listitem [ref=f1e161]:
+              - generic [ref=f1e162]: sign
+              - generic [ref=f1e163]: Signs the outgoing message with this participant's own private key so the receiver can verify it.
+        - generic [ref=f1e164]:
+          - heading "Real payload at this hop" [level=4] [ref=f1e165]
+          - generic [ref=f1e166]: "{ \"context\": { \"networkId\": \"indiaenergystack.in/test-ies-p2p-trading-network\", \"action\": \"confirm\", \"bapId\": \"buyerapp.example.com\", \"bppId\": \"sellerapp.example.com\", \"transactionId\": \"1268c204-675b-4adb-9321-b08231b147b2\", \"timestamp\": \"2026-04-25T10:10:00Z\" }, \"message\": { \"contract\": { \"status\": { \"code\": \"DRAFT\" }, \"id\": \"contract-p2p-001\", \"settlements\": [ { \"id\": \"settlement-p2p-001\", \"status\": \"PENDING\", \"settlementAttributes\": { \"payTo\": { \"accountHolderName\": \"Seller Platform Pvt Ltd\", \"bankName\": \"HDFC Bank\" }, \"paymentTrigger\": \"ON_FULFILLMENT\" } } ] } } }"
+        - generic [ref=f1e167]:
+          - heading "Worth knowing" [level=4] [ref=f1e168]
+          - generic [ref=f1e169]:
+            - generic [ref=f1e170]: The payment plumbing switching on
+            - generic [ref=f1e171]: "\"settlements\": [{ \"id\": \"settlement-p2p-001\", \"status\": \"PENDING\", \"settlementAttributes\": { \"payTo\": {\"accountHolderName\":\"Seller Platform Pvt Ltd\",\"bankName\":\"HDFC Bank\"}, \"paymentTrigger\": \"ON_FULFILLMENT\" } }]"
+            - generic [ref=f1e172]:
+              - text: "This is the first time real payee details appear — even though nothing has actually been paid yet. Read this literally: it's a fabricated test fixture (a fake bank account), not a real payment integration — see the Postman guide's honesty note on this exact field. Notice"
+              - code [ref=f1e173]: "paymentTrigger: \"ON_FULFILLMENT\""
+              - text: too — the money is designed to move only once delivery is confirmed, not the moment this message is sent.
+  - generic [ref=f1e104]:
+    - button "◀" [disabled] [ref=f1e105]
+    - button "▶" [ref=f1e106] [cursor=pointer]
+    - button "▶▶" [active] [ref=f1e107] [cursor=pointer]
+    - generic [ref=f1e108]:
+      - generic [ref=f1e109]: Speed
+      - slider [ref=f1e110] [cursor=pointer]: "1"
+      - generic [ref=f1e111]: 1×
+    - generic [ref=f1e112]:
+      - generic [ref=f1e117] [cursor=pointer]: "1"
+      - generic [ref=f1e118] [cursor=pointer]: "2"
+      - generic [ref=f1e119] [cursor=pointer]: "3"
+      - generic [ref=f1e120] [cursor=pointer]: "4"
+      - generic [ref=f1e121] [cursor=pointer]: "5"
+      - generic [ref=f1e122] [cursor=pointer]: "6"
+      - generic [ref=f1e123] [cursor=pointer]: "7"
+      - generic [ref=f1e124] [cursor=pointer]: "8"
+      - generic [ref=f1e125] [cursor=pointer]: "9"
+      - generic [ref=f1e126] [cursor=pointer]: "10"
+      - generic [ref=f1e127] [cursor=pointer]: "11"
+    - generic [ref=f1e115]: hop 1 / 11

@@ -1,0 +1,844 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - heading "🔌 Buyer Platform — buyerapp.example.com" [level=1] [ref=e3]
+    - generic [ref=e4]:
+      - generic [ref=e5]: ● live
+      - link "🌐 Network Dashboard" [ref=e6] [cursor=pointer]:
+        - /url: /network.html
+      - button "Reset demo" [ref=e7] [cursor=pointer]
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - heading "Discover offers" [level=2] [ref=e10]
+      - generic [ref=e11]:
+        - text: Fires a real
+        - code [ref=e12]: discover
+        - text: against the shared discovery service. Results (if any) arrive asynchronously below.
+      - button "🔍 Refresh offers" [ref=e13] [cursor=pointer]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: Min price ₹/kWh
+          - spinbutton "any" [ref=e17]
+        - generic [ref=e18]:
+          - generic [ref=e19]: Max price ₹/kWh
+          - spinbutton "any" [ref=e20]
+        - generic [ref=e21]:
+          - generic [ref=e22]: Min qty kWh
+          - spinbutton "any" [ref=e23]
+        - generic [ref=e24]:
+          - generic [ref=e25]: Max qty kWh
+          - spinbutton "any" [ref=e26]
+        - generic [ref=e27]:
+          - generic [ref=e28]: Sort by
+          - combobox [ref=e29]:
+            - option "Newest first" [selected]
+            - 'option "Price: low → high"'
+            - 'option "Price: high → low"'
+            - 'option "Quantity: high → low"'
+        - generic [ref=e30]:
+          - checkbox "Only buyable (ours)" [ref=e31]
+          - text: Only buyable (ours)
+        - button "Clear filters" [ref=e32] [cursor=pointer]
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: Demo Solar Offer — offer-demo-456c7958
+            - generic [ref=e38]: "32.7 kWh @ ₹13.4/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e39]: "stated availability: not present in this offer's own data"
+            - generic [ref=e40]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e41]:
+            - button "Copy ID" [ref=e42] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e43]: view only
+            - button "Show raw" [ref=e44] [cursor=pointer]
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-07-21-sudheer
+            - generic [ref=e49]: "30.5 kWh @ ₹12.5/kWh · seller: bpp.ies.gigawatt.network · last confirmed live 13h ago"
+            - generic [ref=e50]: "stated availability: 7/26/2026, 11:30:00 AM → 7/26/2026, 4:00:00 PM EXPIRED"
+            - generic [ref=e51]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e52]:
+            - button "Copy ID" [ref=e53] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e54]: view only
+            - button "Show raw" [ref=e55] [cursor=pointer]
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]: Demo Solar Offer — offer-demo-e9edd8b9
+            - generic [ref=e60]: "25 kWh @ ₹14/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e61]: "stated availability: not present in this offer's own data"
+            - generic [ref=e62]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e63]:
+            - button "Copy ID" [ref=e64] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e65]: view only
+            - button "Show raw" [ref=e66] [cursor=pointer]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-sandbox
+            - generic [ref=e71]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e72]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=e73]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e74]:
+            - button "Copy ID" [ref=e75] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e76]: view only
+            - button "Show raw" [ref=e77] [cursor=pointer]
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]: Demo Solar Offer — offer-demo-bf0e9a94
+            - generic [ref=e82]: "25 kWh @ ₹9.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e83]: "stated availability: not present in this offer's own data"
+            - generic [ref=e84]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e85]:
+            - button "Copy ID" [ref=e86] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e87]: view only
+            - button "Show raw" [ref=e88] [cursor=pointer]
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - generic [ref=e92]: Demo Solar Offer — offer-demo-1869640d
+            - generic [ref=e93]: "20 kWh @ ₹12/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e94]: "stated availability: not present in this offer's own data"
+            - generic [ref=e95]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e96]:
+            - button "Copy ID" [ref=e97] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e98]: view only
+            - button "Show raw" [ref=e99] [cursor=pointer]
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - generic [ref=e103]: Demo Solar Offer — offer-demo-985946c2
+            - generic [ref=e104]: "30 kWh @ ₹15/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e105]: "stated availability: not present in this offer's own data"
+            - generic [ref=e106]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e107]:
+            - button "Copy ID" [ref=e108] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e109]: view only
+            - button "Show raw" [ref=e110] [cursor=pointer]
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e114]: Demo Solar Offer — offer-demo-06ba7765
+            - generic [ref=e115]: "28 kWh @ ₹8.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e116]: "stated availability: not present in this offer's own data"
+            - generic [ref=e117]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e118]:
+            - button "Copy ID" [ref=e119] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e120]: view only
+            - button "Show raw" [ref=e121] [cursor=pointer]
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - generic [ref=e125]: Demo Solar Offer — offer-demo-5a55dafc
+            - generic [ref=e126]: "10 kWh @ ₹14/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e127]: "stated availability: not present in this offer's own data"
+            - generic [ref=e128]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e129]:
+            - button "Copy ID" [ref=e130] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e131]: view only
+            - button "Show raw" [ref=e132] [cursor=pointer]
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: Demo Solar Offer — offer-demo-ca734c1b
+            - generic [ref=e137]: "10 kWh @ ₹15/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e138]: "stated availability: not present in this offer's own data"
+            - generic [ref=e139]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e140]:
+            - button "Copy ID" [ref=e141] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e142]: view only
+            - button "Show raw" [ref=e143] [cursor=pointer]
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - generic [ref=e147]: Home rooftop PV — f3bbdc92-83c3-4806-8d61-429cd8156222
+            - generic [ref=e148]: "2.1 kWh @ ₹3/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e149]: "stated availability: 4/28/2026, 12:00:00 AM → 4/28/2026, 12:00:00 AM EXPIRED"
+            - generic [ref=e150]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e151]:
+            - button "Copy ID" [ref=e152] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e153]: view only
+            - button "Show raw" [ref=e154] [cursor=pointer]
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - generic [ref=e158]: Home rooftop PV — 0a171281-5014-4eb6-bcea-9b954bc0e549
+            - generic [ref=e159]: "30 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e160]: "stated availability: 9/16/2026, 10:00:00 AM → 9/16/2026, 4:00:00 PM EXPIRED"
+            - generic [ref=e161]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e162]:
+            - button "Copy ID" [ref=e163] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e164]: view only
+            - button "Show raw" [ref=e165] [cursor=pointer]
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - generic [ref=e169]: Demo Solar Offer — offer-demo-9a07256d
+            - generic [ref=e170]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e171]: "stated availability: not present in this offer's own data"
+            - generic [ref=e172]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e173]:
+            - button "Copy ID" [ref=e174] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e175]: view only
+            - button "Show raw" [ref=e176] [cursor=pointer]
+        - generic [ref=e178]:
+          - generic [ref=e179]:
+            - generic [ref=e180]: Demo Solar Offer — offer-demo-0f91515d
+            - generic [ref=e181]: "22 kWh @ ₹11/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e182]: "stated availability: not present in this offer's own data"
+            - generic [ref=e183]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e184]:
+            - button "Copy ID" [ref=e185] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e186]: view only
+            - button "Show raw" [ref=e187] [cursor=pointer]
+        - generic [ref=e189]:
+          - generic [ref=e190]:
+            - generic [ref=e191]: Demo Solar Offer — offer-demo-7a5feecb
+            - generic [ref=e192]: "15 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e193]: "stated availability: not present in this offer's own data"
+            - generic [ref=e194]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e195]:
+            - button "Copy ID" [ref=e196] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e197]: view only
+            - button "Show raw" [ref=e198] [cursor=pointer]
+        - generic [ref=e200]:
+          - generic [ref=e201]:
+            - generic [ref=e202]: Demo Solar Offer — offer-demo-d82ccc1f
+            - generic [ref=e203]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e204]: "stated availability: not present in this offer's own data"
+            - generic [ref=e205]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e206]:
+            - button "Copy ID" [ref=e207] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e208]: view only
+            - button "Show raw" [ref=e209] [cursor=pointer]
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - generic [ref=e213]: Demo Solar Offer — offer-demo-5a9e250b
+            - generic [ref=e214]: "12 kWh @ ₹13/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e215]: "stated availability: not present in this offer's own data"
+            - generic [ref=e216]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e217]:
+            - button "Copy ID" [ref=e218] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e219]: view only
+            - button "Show raw" [ref=e220] [cursor=pointer]
+        - generic [ref=e222]:
+          - generic [ref=e223]:
+            - generic [ref=e224]: Demo Solar Offer — offer-demo-f11ceb28
+            - generic [ref=e225]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e226]: "stated availability: not present in this offer's own data"
+            - generic [ref=e227]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e228]:
+            - button "Copy ID" [ref=e229] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e230]: view only
+            - button "Show raw" [ref=e231] [cursor=pointer]
+        - generic [ref=e233]:
+          - generic [ref=e234]:
+            - generic [ref=e235]: Demo Solar Offer — offer-demo-7c854532
+            - generic [ref=e236]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e237]: "stated availability: not present in this offer's own data"
+            - generic [ref=e238]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e239]:
+            - button "Copy ID" [ref=e240] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e241]: view only
+            - button "Show raw" [ref=e242] [cursor=pointer]
+        - generic [ref=e244]:
+          - generic [ref=e245]:
+            - generic [ref=e246]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-49
+            - generic [ref=e247]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e248]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=e249]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e250]:
+            - button "Copy ID" [ref=e251] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e252]: view only
+            - button "Show raw" [ref=e253] [cursor=pointer]
+        - generic [ref=e255]:
+          - generic [ref=e256]:
+            - generic [ref=e257]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-002-test17jul
+            - generic [ref=e258]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e259]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=e260]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e261]:
+            - button "Copy ID" [ref=e262] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e263]: view only
+            - button "Show raw" [ref=e264] [cursor=pointer]
+        - generic [ref=e266]:
+          - generic [ref=e267]:
+            - generic [ref=e268]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001ameet
+            - generic [ref=e269]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e270]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=e271]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e272]:
+            - button "Copy ID" [ref=e273] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e274]: view only
+            - button "Show raw" [ref=e275] [cursor=pointer]
+        - generic [ref=e277]:
+          - generic [ref=e278]:
+            - generic [ref=e279]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-test17jul
+            - generic [ref=e280]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e281]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=e282]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e283]:
+            - button "Copy ID" [ref=e284] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e285]: view only
+            - button "Show raw" [ref=e286] [cursor=pointer]
+        - generic [ref=e288]:
+          - generic [ref=e289]:
+            - generic [ref=e290]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-ameet-3sept
+            - generic [ref=e291]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e292]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=e293]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e294]:
+            - button "Copy ID" [ref=e295] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e296]: view only
+            - button "Show raw" [ref=e297] [cursor=pointer]
+        - generic [ref=e299]:
+          - generic [ref=e300]:
+            - generic [ref=e301]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-22jul-ameet
+            - generic [ref=e302]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e303]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=e304]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e305]:
+            - button "Copy ID" [ref=e306] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e307]: view only
+            - button "Show raw" [ref=e308] [cursor=pointer]
+        - generic [ref=e310]:
+          - generic [ref=e311]:
+            - generic [ref=e312]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001
+            - generic [ref=e313]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e314]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=e315]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e316]:
+            - button "Copy ID" [ref=e317] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e318]: view only
+            - button "Show raw" [ref=e319] [cursor=pointer]
+        - generic [ref=e321]:
+          - generic [ref=e322]:
+            - generic [ref=e323]: Demo Solar Offer — offer-demo-97c01092
+            - generic [ref=e324]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e325]: "stated availability: not present in this offer's own data"
+            - generic [ref=e326]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e327]:
+            - button "Copy ID" [ref=e328] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e329]: view only
+            - button "Show raw" [ref=e330] [cursor=pointer]
+        - generic [ref=e332]:
+          - generic [ref=e333]:
+            - generic [ref=e334]: Demo Solar Offer — offer-demo-61b0de70
+            - generic [ref=e335]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e336]: "stated availability: not present in this offer's own data"
+            - generic [ref=e337]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e338]:
+            - button "Copy ID" [ref=e339] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e340]: view only
+            - button "Show raw" [ref=e341] [cursor=pointer]
+        - generic [ref=e343]:
+          - generic [ref=e344]:
+            - generic [ref=e345]: Demo Solar Offer — offer-demo-193be0ef
+            - generic [ref=e346]: "8 kWh @ ₹20/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e347]: "stated availability: not present in this offer's own data"
+            - generic [ref=e348]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e349]:
+            - button "Copy ID" [ref=e350] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e351]: view only
+            - button "Show raw" [ref=e352] [cursor=pointer]
+        - generic [ref=e354]:
+          - generic [ref=e355]:
+            - generic [ref=e356]: Demo Solar Offer — offer-demo-a944ec04
+            - generic [ref=e357]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e358]: "stated availability: not present in this offer's own data"
+            - generic [ref=e359]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e360]:
+            - button "Copy ID" [ref=e361] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e362]: view only
+            - button "Show raw" [ref=e363] [cursor=pointer]
+        - generic [ref=e365]:
+          - generic [ref=e366]:
+            - generic [ref=e367]: Demo Solar Offer — offer-demo-a27b528c
+            - generic [ref=e368]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e369]: "stated availability: not present in this offer's own data"
+            - generic [ref=e370]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e371]:
+            - button "Copy ID" [ref=e372] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e373]: view only
+            - button "Show raw" [ref=e374] [cursor=pointer]
+        - generic [ref=e376]:
+          - generic [ref=e377]:
+            - generic [ref=e378]: Demo Solar Offer — offer-demo-c9d69113
+            - generic [ref=e379]: "20 kWh @ ₹12.6/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e380]: "stated availability: not present in this offer's own data"
+            - generic [ref=e381]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e382]:
+            - button "Copy ID" [ref=e383] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e384]: view only
+            - button "Show raw" [ref=e385] [cursor=pointer]
+        - generic [ref=e387]:
+          - generic [ref=e388]:
+            - generic [ref=e389]: Demo Solar Offer — offer-demo-58e454ee
+            - generic [ref=e390]: "30 kWh @ ₹10.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e391]: "stated availability: not present in this offer's own data"
+            - generic [ref=e392]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e393]:
+            - button "Copy ID" [ref=e394] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e395]: view only
+            - button "Show raw" [ref=e396] [cursor=pointer]
+        - generic [ref=e398]:
+          - generic [ref=e399]:
+            - generic [ref=e400]: Demo Solar Offer — offer-demo-24058079
+            - generic [ref=e401]: "10 kWh @ ₹11/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e402]: "stated availability: not present in this offer's own data"
+            - generic [ref=e403]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e404]:
+            - button "Copy ID" [ref=e405] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e406]: view only
+            - button "Show raw" [ref=e407] [cursor=pointer]
+        - generic [ref=e409]:
+          - generic [ref=e410]:
+            - generic [ref=e411]: Demo Solar Offer — offer-demo-63dbfbd4
+            - generic [ref=e412]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e413]: "stated availability: not present in this offer's own data"
+            - generic [ref=e414]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e415]:
+            - button "Copy ID" [ref=e416] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e417]: view only
+            - button "Show raw" [ref=e418] [cursor=pointer]
+        - generic [ref=e420]:
+          - generic [ref=e421]:
+            - generic [ref=e422]: Demo Solar Offer — offer-demo-ab9a618b
+            - generic [ref=e423]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e424]: "stated availability: not present in this offer's own data"
+            - generic [ref=e425]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e426]:
+            - button "Copy ID" [ref=e427] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e428]: view only
+            - button "Show raw" [ref=e429] [cursor=pointer]
+        - generic [ref=e431]:
+          - generic [ref=e432]:
+            - generic [ref=e433]: Demo Solar Offer — offer-demo-656ac890
+            - generic [ref=e434]: "17 kWh @ ₹14/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e435]: "stated availability: not present in this offer's own data"
+            - generic [ref=e436]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e437]:
+            - button "Copy ID" [ref=e438] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e439]: view only
+            - button "Show raw" [ref=e440] [cursor=pointer]
+        - generic [ref=e442]:
+          - generic [ref=e443]:
+            - generic [ref=e444]: Demo Solar Offer — offer-demo-b06a8ad6
+            - generic [ref=e445]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e446]: "stated availability: not present in this offer's own data"
+            - generic [ref=e447]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e448]:
+            - button "Copy ID" [ref=e449] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e450]: view only
+            - button "Show raw" [ref=e451] [cursor=pointer]
+        - generic [ref=e453]:
+          - generic [ref=e454]:
+            - generic [ref=e455]: Demo Solar Offer — offer-demo-69846363
+            - generic [ref=e456]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e457]: "stated availability: not present in this offer's own data"
+            - generic [ref=e458]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e459]:
+            - button "Copy ID" [ref=e460] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e461]: view only
+            - button "Show raw" [ref=e462] [cursor=pointer]
+        - generic [ref=e464]:
+          - generic [ref=e465]:
+            - generic [ref=e466]: Demo Solar Offer — offer-demo-a74211ba
+            - generic [ref=e467]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e468]: "stated availability: not present in this offer's own data"
+            - generic [ref=e469]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e470]:
+            - button "Copy ID" [ref=e471] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e472]: view only
+            - button "Show raw" [ref=e473] [cursor=pointer]
+        - generic [ref=e475]:
+          - generic [ref=e476]:
+            - generic [ref=e477]: Demo Solar Offer — offer-demo-9117b58f
+            - generic [ref=e478]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e479]: "stated availability: not present in this offer's own data"
+            - generic [ref=e480]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e481]:
+            - button "Copy ID" [ref=e482] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e483]: view only
+            - button "Show raw" [ref=e484] [cursor=pointer]
+        - generic [ref=e486]:
+          - generic [ref=e487]:
+            - generic [ref=e488]: Demo Solar Offer — offer-demo-3a5c4aae
+            - generic [ref=e489]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e490]: "stated availability: not present in this offer's own data"
+            - generic [ref=e491]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e492]:
+            - button "Copy ID" [ref=e493] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e494]: view only
+            - button "Show raw" [ref=e495] [cursor=pointer]
+        - generic [ref=e497]:
+          - generic [ref=e498]:
+            - generic [ref=e499]: Demo Solar Offer — offer-demo-c741adc8
+            - generic [ref=e500]: "25 kWh @ ₹9/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e501]: "stated availability: not present in this offer's own data"
+            - generic [ref=e502]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e503]:
+            - button "Copy ID" [ref=e504] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e505]: view only
+            - button "Show raw" [ref=e506] [cursor=pointer]
+        - generic [ref=e508]:
+          - generic [ref=e509]:
+            - generic [ref=e510]: Demo Solar Offer — offer-demo-f148d532
+            - generic [ref=e511]: "20 kWh @ ₹12.1/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e512]: "stated availability: not present in this offer's own data"
+            - generic [ref=e513]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e514]:
+            - button "Copy ID" [ref=e515] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e516]: view only
+            - button "Show raw" [ref=e517] [cursor=pointer]
+        - generic [ref=e519]:
+          - generic [ref=e520]:
+            - generic [ref=e521]: Demo Solar Offer — offer-demo-d4ccb1f6
+            - generic [ref=e522]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e523]: "stated availability: not present in this offer's own data"
+            - generic [ref=e524]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e525]:
+            - button "Copy ID" [ref=e526] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e527]: view only
+            - button "Show raw" [ref=e528] [cursor=pointer]
+        - generic [ref=e530]:
+          - generic [ref=e531]:
+            - generic [ref=e532]: Demo Solar Offer — offer-demo-8a5b1aa1
+            - generic [ref=e533]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e534]: "stated availability: not present in this offer's own data"
+            - generic [ref=e535]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e536]:
+            - button "Copy ID" [ref=e537] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e538]: view only
+            - button "Show raw" [ref=e539] [cursor=pointer]
+        - generic [ref=e541]:
+          - generic [ref=e542]:
+            - generic [ref=e543]: Demo Solar Offer — offer-demo-5e59b6ac
+            - generic [ref=e544]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e545]: "stated availability: not present in this offer's own data"
+            - generic [ref=e546]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e547]:
+            - button "Copy ID" [ref=e548] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e549]: view only
+            - button "Show raw" [ref=e550] [cursor=pointer]
+        - generic [ref=e552]:
+          - generic [ref=e553]:
+            - generic [ref=e554]: Demo Solar Offer — offer-demo-97d3302b
+            - generic [ref=e555]: "18 kWh @ ₹11.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e556]: "stated availability: not present in this offer's own data"
+            - generic [ref=e557]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e558]:
+            - button "Copy ID" [ref=e559] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e560]: view only
+            - button "Show raw" [ref=e561] [cursor=pointer]
+        - generic [ref=e563]:
+          - generic [ref=e564]:
+            - generic [ref=e565]: Demo Solar Offer — offer-demo-1af71f4a
+            - generic [ref=e566]: "60 kWh @ ₹12.1/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e567]: "stated availability: not present in this offer's own data"
+            - generic [ref=e568]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e569]:
+            - button "Copy ID" [ref=e570] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e571]: view only
+            - button "Show raw" [ref=e572] [cursor=pointer]
+        - generic [ref=e574]:
+          - generic [ref=e575]:
+            - generic [ref=e576]: Demo Solar Offer — offer-demo-b57e771b
+            - generic [ref=e577]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e578]: "stated availability: not present in this offer's own data"
+            - generic [ref=e579]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e580]:
+            - button "Copy ID" [ref=e581] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e582]: view only
+            - button "Show raw" [ref=e583] [cursor=pointer]
+        - generic [ref=e585]:
+          - generic [ref=e586]:
+            - generic [ref=e587]: Demo Solar Offer — offer-demo-3a9cd1d7
+            - generic [ref=e588]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e589]: "stated availability: not present in this offer's own data"
+            - generic [ref=e590]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e591]:
+            - button "Copy ID" [ref=e592] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e593]: view only
+            - button "Show raw" [ref=e594] [cursor=pointer]
+        - generic [ref=e596]:
+          - generic [ref=e597]:
+            - generic [ref=e598]: Demo Solar Offer — offer-demo-b560efb5
+            - generic [ref=e599]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e600]: "stated availability: not present in this offer's own data"
+            - generic [ref=e601]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e602]:
+            - button "Copy ID" [ref=e603] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e604]: view only
+            - button "Show raw" [ref=e605] [cursor=pointer]
+        - generic [ref=e607]:
+          - generic [ref=e608]:
+            - generic [ref=e609]: Demo Solar Offer — offer-demo-5cb252ad
+            - generic [ref=e610]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e611]: "stated availability: not present in this offer's own data"
+            - generic [ref=e612]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e613]:
+            - button "Copy ID" [ref=e614] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e615]: view only
+            - button "Show raw" [ref=e616] [cursor=pointer]
+        - generic [ref=e618]:
+          - generic [ref=e619]:
+            - generic [ref=e620]: Demo Solar Offer — offer-demo-89bdea01
+            - generic [ref=e621]: "18 kWh @ ₹13/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e622]: "stated availability: not present in this offer's own data"
+            - generic [ref=e623]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e624]:
+            - button "Copy ID" [ref=e625] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e626]: view only
+            - button "Show raw" [ref=e627] [cursor=pointer]
+        - generic [ref=e629]:
+          - generic [ref=e630]:
+            - generic [ref=e631]: Demo Solar Offer — offer-demo-cda102e1
+            - generic [ref=e632]: "22 kWh @ ₹11.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e633]: "stated availability: not present in this offer's own data"
+            - generic [ref=e634]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e635]:
+            - button "Copy ID" [ref=e636] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e637]: view only
+            - button "Show raw" [ref=e638] [cursor=pointer]
+        - generic [ref=e640]:
+          - generic [ref=e641]:
+            - generic [ref=e642]: Demo Solar Offer — offer-demo-14b6a3b8
+            - generic [ref=e643]: "15 kWh @ ₹19/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e644]: "stated availability: not present in this offer's own data"
+            - generic [ref=e645]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e646]:
+            - button "Copy ID" [ref=e647] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e648]: view only
+            - button "Show raw" [ref=e649] [cursor=pointer]
+        - generic [ref=e651]:
+          - generic [ref=e652]:
+            - generic [ref=e653]: Demo Solar Offer — offer-demo-c578527b
+            - generic [ref=e654]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e655]: "stated availability: not present in this offer's own data"
+            - generic [ref=e656]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e657]:
+            - button "Copy ID" [ref=e658] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e659]: view only
+            - button "Show raw" [ref=e660] [cursor=pointer]
+        - generic [ref=e662]:
+          - generic [ref=e663]:
+            - generic [ref=e664]: Demo Solar Offer — offer-demo-3e2227b2
+            - generic [ref=e665]: "25 kWh @ ₹9.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e666]: "stated availability: not present in this offer's own data"
+            - generic [ref=e667]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e668]:
+            - button "Copy ID" [ref=e669] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e670]: view only
+            - button "Show raw" [ref=e671] [cursor=pointer]
+        - generic [ref=e673]:
+          - generic [ref=e674]:
+            - generic [ref=e675]: Demo Solar Offer — offer-demo-6eab9445
+            - generic [ref=e676]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e677]: "stated availability: not present in this offer's own data"
+            - generic [ref=e678]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e679]:
+            - button "Copy ID" [ref=e680] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e681]: view only
+            - button "Show raw" [ref=e682] [cursor=pointer]
+        - generic [ref=e684]:
+          - generic [ref=e685]:
+            - generic [ref=e686]: Demo Solar Offer — offer-demo-dc18ef06
+            - generic [ref=e687]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e688]: "stated availability: not present in this offer's own data"
+            - generic [ref=e689]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e690]:
+            - button "Copy ID" [ref=e691] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e692]: view only
+            - button "Show raw" [ref=e693] [cursor=pointer]
+        - generic [ref=e695]:
+          - generic [ref=e696]:
+            - generic [ref=e697]: Demo Solar Offer — offer-demo-b1bc5539
+            - generic [ref=e698]: "20 kWh @ ₹12.1/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e699]: "stated availability: not present in this offer's own data"
+            - generic [ref=e700]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e701]:
+            - button "Copy ID" [ref=e702] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e703]: view only
+            - button "Show raw" [ref=e704] [cursor=pointer]
+        - generic [ref=e706]:
+          - generic [ref=e707]:
+            - generic [ref=e708]: Demo Solar Offer — offer-demo-d66fd0c9
+            - generic [ref=e709]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e710]: "stated availability: not present in this offer's own data"
+            - generic [ref=e711]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e712]:
+            - button "Copy ID" [ref=e713] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e714]: view only
+            - button "Show raw" [ref=e715] [cursor=pointer]
+        - generic [ref=e717]:
+          - generic [ref=e718]:
+            - generic [ref=e719]: Demo Solar Offer — offer-demo-f2a05b1f
+            - generic [ref=e720]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e721]: "stated availability: not present in this offer's own data"
+            - generic [ref=e722]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e723]:
+            - button "Copy ID" [ref=e724] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e725]: view only
+            - button "Show raw" [ref=e726] [cursor=pointer]
+        - generic [ref=e728]:
+          - generic [ref=e729]:
+            - generic [ref=e730]: Demo Solar Offer — offer-demo-27f60453
+            - generic [ref=e731]: "60 kWh @ ₹12.1/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e732]: "stated availability: not present in this offer's own data"
+            - generic [ref=e733]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e734]:
+            - button "Copy ID" [ref=e735] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e736]: view only
+            - button "Show raw" [ref=e737] [cursor=pointer]
+        - generic [ref=e739]:
+          - generic [ref=e740]:
+            - generic [ref=e741]: Demo Solar Offer — offer-demo-211dd9ce
+            - generic [ref=e742]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e743]: "stated availability: not present in this offer's own data"
+            - generic [ref=e744]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e745]:
+            - button "Copy ID" [ref=e746] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e747]: view only
+            - button "Show raw" [ref=e748] [cursor=pointer]
+        - generic [ref=e750]:
+          - generic [ref=e751]:
+            - generic [ref=e752]: Demo Solar Offer — offer-demo-b89b76f3
+            - generic [ref=e753]: "25 kWh @ ₹9.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e754]: "stated availability: not present in this offer's own data"
+            - generic [ref=e755]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e756]:
+            - button "Copy ID" [ref=e757] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e758]: view only
+            - button "Show raw" [ref=e759] [cursor=pointer]
+        - generic [ref=e761]:
+          - generic [ref=e762]:
+            - generic [ref=e763]: Demo Solar Offer — offer-demo-df80b517
+            - generic [ref=e764]: "82 kWh @ ₹19/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e765]: "stated availability: not present in this offer's own data"
+            - generic [ref=e766]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e767]:
+            - button "Copy ID" [ref=e768] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e769]: view only
+            - button "Show raw" [ref=e770] [cursor=pointer]
+        - generic [ref=e772]:
+          - generic [ref=e773]:
+            - generic [ref=e774]: Demo Solar Offer — offer-demo-a24cc2fe
+            - generic [ref=e775]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e776]: "stated availability: not present in this offer's own data"
+            - generic [ref=e777]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e778]:
+            - button "Copy ID" [ref=e779] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e780]: view only
+            - button "Show raw" [ref=e781] [cursor=pointer]
+        - generic [ref=e783]:
+          - generic [ref=e784]:
+            - generic [ref=e785]: Demo Solar Offer — offer-demo-a31e5330
+            - generic [ref=e786]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e787]: "stated availability: not present in this offer's own data"
+            - generic [ref=e788]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e789]:
+            - button "Copy ID" [ref=e790] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e791]: view only
+            - button "Show raw" [ref=e792] [cursor=pointer]
+        - generic [ref=e794]:
+          - generic [ref=e795]:
+            - generic [ref=e796]: Demo Solar Offer — offer-demo-333bba0b
+            - generic [ref=e797]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e798]: "stated availability: not present in this offer's own data"
+            - generic [ref=e799]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e800]:
+            - button "Copy ID" [ref=e801] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e802]: view only
+            - button "Show raw" [ref=e803] [cursor=pointer]
+        - generic [ref=e805]:
+          - generic [ref=e806]:
+            - generic [ref=e807]: Demo Solar Offer — offer-demo-d40f7142
+            - generic [ref=e808]: "38.1 kWh @ ₹19/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e809]: "stated availability: not present in this offer's own data"
+            - generic [ref=e810]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e811]:
+            - button "Copy ID" [ref=e812] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e813]: view only
+            - button "Show raw" [ref=e814] [cursor=pointer]
+        - generic [ref=e816]:
+          - generic [ref=e817]:
+            - generic [ref=e818]: Demo Solar Offer — offer-demo-c4fc6ecf
+            - generic [ref=e819]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e820]: "stated availability: not present in this offer's own data"
+            - generic [ref=e821]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e822]:
+            - button "Copy ID" [ref=e823] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e824]: view only
+            - button "Show raw" [ref=e825] [cursor=pointer]
+        - generic [ref=e827]:
+          - generic [ref=e828]:
+            - generic [ref=e829]: Demo Solar Offer — offer-demo-396ae161
+            - generic [ref=e830]: "22 kWh @ ₹11/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e831]: "stated availability: not present in this offer's own data"
+            - generic [ref=e832]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e833]:
+            - button "Copy ID" [ref=e834] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e835]: view only
+            - button "Show raw" [ref=e836] [cursor=pointer]
+        - generic [ref=e838]:
+          - generic [ref=e839]:
+            - generic [ref=e840]: Demo Solar Offer — offer-demo-5587f59f
+            - generic [ref=e841]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e842]: "stated availability: not present in this offer's own data"
+            - generic [ref=e843]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e844]:
+            - button "Copy ID" [ref=e845] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e846]: view only
+            - button "Show raw" [ref=e847] [cursor=pointer]
+        - generic [ref=e849]:
+          - generic [ref=e850]:
+            - generic [ref=e851]: Demo Solar Offer — offer-demo-d2fab41b
+            - generic [ref=e852]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e853]: "stated availability: not present in this offer's own data"
+            - generic [ref=e854]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e855]:
+            - button "Copy ID" [ref=e856] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e857]: view only
+            - button "Show raw" [ref=e858] [cursor=pointer]
+        - generic [ref=e860]:
+          - generic [ref=e861]:
+            - generic [ref=e862]: Demo Solar Offer — offer-demo-af26d3d7
+            - generic [ref=e863]: "21.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 13h ago"
+            - generic [ref=e864]: "stated availability: not present in this offer's own data"
+            - generic [ref=e865]: no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)
+          - generic [ref=e866]:
+            - button "Copy ID" [ref=e867] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=e868]: view only
+            - button "Show raw" [ref=e869] [cursor=pointer]
+    - generic [ref=e870]:
+      - heading "Buy directly / place a bid" [level=2] [ref=e871]
+      - generic [ref=e872]:
+        - text: Paste an Offer ID here — copy it from a card above with the
+        - strong [ref=e873]: Copy ID
+        - text: button, or from the "My published offers" list on the
+        - strong [ref=e874]: Seller Platform
+        - text: page (it looks like
+        - code [ref=e875]: offer-demo-xxxxxxxx
+        - text: "). The price field is a real negotiating bid: leave it at the seller's ask to buy outright, or lower it to test a real counter-offer — the seller can accept, counter back, or decline."
+      - generic [ref=e876]:
+        - generic [ref=e877]:
+          - generic [ref=e878]: Offer ID
+          - textbox "offer-demo-xxxxxxxx" [ref=e879]
+        - generic [ref=e880]:
+          - generic [ref=e881]: Quantity (kWh)
+          - spinbutton "—" [disabled] [ref=e882]
+        - generic [ref=e883]:
+          - generic [ref=e884]: Your bid (₹/kWh)
+          - spinbutton "—" [disabled] [ref=e885]
+        - generic [ref=e886]:
+          - generic [ref=e887]: Trade as
+          - combobox [ref=e888]:
+            - option "Allowed discom" [selected]
+            - option "Blocked discom (watch it get rejected)"
+        - button "Send bid" [disabled] [ref=e889] [cursor=pointer]
+    - generic [ref=e891]:
+      - heading "My trades" [level=2] [ref=e892]
+      - generic [ref=e893]:
+        - generic [ref=e895]:
+          - generic [ref=e896]:
+            - generic [ref=e897]: We bid ₹12/kWh for 20 kWh (seller's ask was ₹12.5/kWh) — offer-demo-af26d3d7
+            - generic [ref=e898]: as TEST_DISCOM_BUYER · paid ₹210.00
+          - generic [ref=e899]:
+            - generic [ref=e900]: Settled
+            - button "Show trace" [ref=e901] [cursor=pointer]
+        - generic [ref=e903]:
+          - generic [ref=e904]:
+            - generic [ref=e905]: We bid ₹10/kWh for 10 kWh (seller's ask was ₹12.5/kWh) — offer-demo-211dd9ce
+            - generic [ref=e906]: as TEST_DISCOM_BUYER · paid ₹104.00
+          - generic [ref=e907]:
+            - generic [ref=e908]: Settled
+            - button "Show trace" [ref=e909] [cursor=pointer]

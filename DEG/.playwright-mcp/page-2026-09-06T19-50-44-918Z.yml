@@ -1,0 +1,160 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e6]:
+      - generic [ref=e7]: GRID PULSE
+      - generic [ref=e8]: Beckn Protocol Inspector · P2P trade
+    - generic [ref=e9]:
+      - button "1Publish" [ref=e10] [cursor=pointer]
+      - button "2Discover" [ref=e11] [cursor=pointer]
+      - button "3Init" [ref=e12] [cursor=pointer]
+      - button "4Confirm" [ref=e13] [cursor=pointer]
+      - button "5Settle" [ref=e14] [cursor=pointer]
+      - button "6Rejected" [ref=e15] [cursor=pointer]
+    - button "Interactive mode" [ref=e16] [cursor=pointer]
+    - button "Legend" [ref=e19] [cursor=pointer]
+  - generic [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - button "+" [ref=e23] [cursor=pointer]
+        - button "−" [ref=e24] [cursor=pointer]
+        - button "⊞" [ref=e25] [cursor=pointer]
+      - img [ref=e26]:
+        - generic [ref=e29]: bap_side (docker network)
+        - generic [ref=e30]: bpp_side (docker network)
+        - generic [ref=e38]:
+          - generic [ref=e41] [cursor=pointer]
+          - generic: BAP business logic
+          - generic: BuyerApp
+          - generic: sandbox-buyerapp:3001
+        - generic [ref=e42]:
+          - generic [ref=e45] [cursor=pointer]
+          - generic: Protocol adapter
+          - generic: onix-buyerapp
+          - generic: :8081
+        - generic [ref=e46]:
+          - generic [ref=e49] [cursor=pointer]
+          - generic: Session cache
+          - generic: redis
+          - generic: :6379
+        - generic [ref=e50]:
+          - generic [ref=e53] [cursor=pointer]
+          - generic: BPP business logic
+          - generic: SellerApp
+          - generic: sandbox-sellerapp:3002
+        - generic [ref=e54]:
+          - generic [ref=e57] [cursor=pointer]
+          - generic: Protocol adapter
+          - generic: onix-sellerapp
+          - generic: :8082
+        - generic [ref=e58]:
+          - generic [ref=e61] [cursor=pointer]
+          - generic: Session cache
+          - generic: redis
+          - generic: :6379
+        - generic [ref=e62]:
+          - generic [ref=e65] [cursor=pointer]
+          - generic: The only bridge
+          - generic: beckn-router
+          - generic: Caddy · :9000
+        - generic [ref=e66]:
+          - generic [ref=e69] [cursor=pointer]
+          - generic: Network infra
+          - generic: Catalog / Discovery
+          - generic: shared endpoint
+        - generic [ref=e70]:
+          - generic [ref=e73] [cursor=pointer]
+          - generic: Seller discom ledger adapter
+          - generic: onix-ledger-
+          - generic: sellerdiscom
+          - generic: :8083
+        - generic [ref=e74]:
+          - generic [ref=e77] [cursor=pointer]
+          - generic: TPDDL ledger TSP
+          - generic: SellerDiscom
+          - generic: Ledger
+          - generic: sandbox:3003
+        - generic [ref=e78]:
+          - generic [ref=e81] [cursor=pointer]
+          - generic: Buyer discom ledger adapter
+          - generic: onix-ledger-
+          - generic: buyerdiscom
+          - generic: :8084
+        - generic [ref=e82]:
+          - generic [ref=e85] [cursor=pointer]
+          - generic: BRPL ledger TSP
+          - generic: BuyerDiscom
+          - generic: Ledger
+          - generic: sandbox:3004
+        - generic [ref=e86]:
+          - generic [ref=e89] [cursor=pointer]
+          - generic: Not used this walkthrough
+          - generic: onix-buyerdiscom
+          - generic: :8085
+        - generic [ref=e90]:
+          - generic [ref=e93] [cursor=pointer]
+          - generic: Not used this walkthrough
+          - generic: onix-sellerdiscom
+          - generic: :8086
+        - generic [ref=e94]:
+          - generic [ref=e97] [cursor=pointer]
+          - generic: Real, external, hosted
+          - generic: IES Energy Ledger
+          - generic: ies-p2p-energy-ledger.beckn.io
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100]: init (blocked) — hop 1 / 3
+        - generic [ref=e101]:
+          - text: onix-buyerapp · bapTxnCaller
+          - generic [ref=e169]: 200 · ACK
+      - generic [ref=e102]:
+        - generic [ref=e170]:
+          - heading "What’s happening" [level=4] [ref=e171]
+          - generic [ref=e172]: Same message shape as a normal init — except this buyer's electricity company isn't on the seller's approved list. Nothing looks wrong yet from the buyer's own side.
+        - generic [ref=e173]:
+          - heading "Address" [level=4] [ref=e174]
+          - generic [ref=e175]:
+            - term [ref=e176]: From
+            - definition [ref=e177]: BuyerApp
+            - term [ref=e178]: To
+            - definition [ref=e179]: onix-buyerapp
+            - term [ref=e180]: Path
+            - definition [ref=e181]: /bap/caller/
+            - term [ref=e182]: Action
+            - definition [ref=e183]: init
+          - generic [ref=e184]:
+            - generic [ref=e185]: POST
+            - generic [ref=e186]: http://localhost:8081/bap/caller/init
+        - generic [ref=e187]:
+          - heading "Processor steps that ran" [level=4] [ref=e188]
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - generic [ref=e191]: contractpolicyenforcer
+              - generic [ref=e192]: buyer-side self-check passes — the buyer doesn't know the seller-discom's specific allowlist yet
+            - listitem [ref=e193]:
+              - generic [ref=e194]: validateSchema
+              - generic [ref=e195]: Validates the payload's JSON structure against the official Beckn + DEG JSON-LD schemas.
+            - listitem [ref=e196]:
+              - generic [ref=e197]: checkPolicy
+              - generic [ref=e198]: Evaluates the network-wide OPA policy — the same rules apply to every message on this network.
+            - listitem [ref=e199]:
+              - generic [ref=e200]: addRoute
+              - generic [ref=e201]: Looks up the recipient's real endpoint via the DeDi registry — resolves exactly where this message goes next.
+            - listitem [ref=e202]:
+              - generic [ref=e203]: sign
+              - generic [ref=e204]: Signs the outgoing message with this participant's own private key so the receiver can verify it.
+        - generic [ref=e205]:
+          - heading "Real payload at this hop" [level=4] [ref=e206]
+          - generic [ref=e207]: "{ \"context\": { \"networkId\": \"indiaenergystack.in/test-ies-p2p-trading-network\", \"action\": \"init\", \"bapId\": \"buyerapp.example.com\", \"bppId\": \"sellerapp.example.com\", \"transactionId\": \"7f3d9c11-2a48-4a02-9d35-5cd2f60e2a71\", \"messageId\": \"0b7c4a89-63f2-4b1d-8a54-9e1d0c7b3f26\", \"timestamp\": \"2026-04-25T10:05:00Z\" }, \"message\": { \"contract\": { \"status\": { \"code\": \"DRAFT\" }, \"contractAttributes\": { \"@type\": \"DEGContract\", \"roles\": [ { \"role\": \"buyerPlatform\", \"participantId\": \"buyerapp.example.com\" }, { \"role\": \"sellerPlatform\", \"participantId\": \"sellerapp.example.com\" }, { \"role\": \"buyerDiscom\", \"participantId\": \"TEST_OUTSIDE_DISCOM\" }, { \"role\": \"sellerDiscom\", \"participantId\": \"TEST_DISCOM_SELLER\" } ] } } } }"
+  - generic [ref=e104]:
+    - button "◀" [disabled] [ref=e105]
+    - button "▶" [ref=e106] [cursor=pointer]
+    - button "▶▶" [active] [ref=e107] [cursor=pointer]
+    - generic [ref=e108]:
+      - generic [ref=e109]: Speed
+      - slider [ref=e110] [cursor=pointer]: "1"
+      - generic [ref=e111]: 1×
+    - generic [ref=e112]:
+      - generic [ref=e166] [cursor=pointer]: "1"
+      - generic [ref=e167] [cursor=pointer]: "2"
+      - generic [ref=e168] [cursor=pointer]: "3"
+    - generic [ref=e115]: hop 1 / 3

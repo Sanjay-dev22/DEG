@@ -1,0 +1,43 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f5e3]
+    - generic [ref=f5e4]:
+      - generic [ref=f5e5]:
+        - generic [ref=f5e6]: ₹0.00
+        - generic [ref=f5e7]: Earnings (settled)
+      - generic "The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover" [ref=f5e8]: "🌐 Network Dashboard: see Buyer Platform's /network.html"
+      - button "Reset demo" [ref=f5e9] [cursor=pointer]
+  - main [ref=f5e10]:
+    - generic [ref=f5e11]:
+      - heading "Publish a new offer ● live" [level=2] [ref=f5e12]:
+        - text: Publish a new offer
+        - generic [ref=f5e13]: ● live
+      - generic [ref=f5e14]:
+        - generic [ref=f5e15]:
+          - generic [ref=f5e16]: Quantity (kWh)
+          - spinbutton [ref=f5e17]: "20"
+        - generic [ref=f5e18]:
+          - generic [ref=f5e19]: Price (₹/kWh)
+          - spinbutton [ref=f5e20]: "12.5"
+        - button "Publish offer" [ref=f5e21] [cursor=pointer]
+    - generic [ref=f5e22]:
+      - heading "My published offers" [level=2] [ref=f5e23]
+      - generic [ref=f5e24]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=f5e67]:
+        - generic [ref=f5e68]:
+          - generic [ref=f5e69]: offer-demo-b006d8f4
+          - generic [ref=f5e70]: 0 / 20 kWh remaining @ ₹12.5/kWh Sold out
+        - button "Copy ID" [ref=f5e71] [cursor=pointer]
+    - generic [ref=f5e31]:
+      - heading "Incoming requests" [level=2] [ref=f5e32]
+      - generic [ref=f5e33]: No incoming requests yet.
+    - generic [ref=f5e49]:
+      - heading "Active & settled trades" [level=2] [ref=f5e50]
+      - generic [ref=f5e60]:
+        - generic [ref=f5e61]:
+          - generic [ref=f5e62]: 20 kWh @ ₹12.5/kWh
+          - generic [ref=f5e63]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER"
+        - generic [ref=f5e64]:
+          - generic [ref=f5e65]: Awaiting buyer confirm
+          - button "Show trace" [ref=f5e66] [cursor=pointer]
+  - generic: Bid accepted — on_init sent, waiting for buyer to confirm

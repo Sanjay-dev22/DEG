@@ -1,0 +1,3 @@
+[25090176ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ http://localhost:4002/api/offers:0
+[25090225ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4002/:169:5)

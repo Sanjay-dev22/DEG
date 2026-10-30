@@ -1,0 +1,71 @@
+- generic [active] [ref=f16e1]:
+  - banner [ref=f16e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f16e3]
+    - generic [ref=f16e4]:
+      - generic [ref=f16e5]:
+        - generic [ref=f16e6]: ₹0.00
+        - generic [ref=f16e7]: Earnings (settled)
+      - generic "The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover" [ref=f16e8]: "🌐 Network Dashboard: see Buyer Platform's /network.html"
+      - button "Reset demo" [ref=f16e9] [cursor=pointer]
+  - generic [ref=f16e10]:
+    - generic [ref=f16e11]: "Your role: an individual energy producer (prosumer)."
+    - generic [ref=f16e12]: "Your job: publish what you have to sell — once per offer, then wait. Anyone can discover and buy it: a direct buyer, or an aggregator pooling you together with other small sellers into a bigger block. You can't tell which happened just by looking at the incoming request — both arrive here the same way."
+  - main [ref=f16e13]:
+    - generic [ref=f16e14]:
+      - heading "Publish a new offer ● live" [level=2] [ref=f16e15]:
+        - text: Publish a new offer
+        - generic [ref=f16e16]: ● live
+      - generic [ref=f16e17]:
+        - generic [ref=f16e18]:
+          - generic [ref=f16e19]: Quantity (kWh)
+          - spinbutton [ref=f16e20]: "20"
+        - generic [ref=f16e21]:
+          - generic [ref=f16e22]: Price (₹/kWh)
+          - spinbutton [ref=f16e23]: "12.5"
+        - button "Publish offer" [ref=f16e24] [cursor=pointer]
+    - generic [ref=f16e25]:
+      - heading "My published offers" [level=2] [ref=f16e26]
+      - generic [ref=f16e27]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=f16e28]:
+        - generic [ref=f16e29]:
+          - generic [ref=f16e30]:
+            - generic [ref=f16e31]: offer-demo-b6e8e875
+            - generic [ref=f16e32]: 0 / 10 kWh remaining @ ₹11/kWh Sold out
+          - button "Copy ID" [ref=f16e33] [cursor=pointer]
+        - generic [ref=f16e34]:
+          - generic [ref=f16e35]:
+            - generic [ref=f16e36]: offer-demo-860aa701
+            - generic [ref=f16e37]: 0 / 10 kWh remaining @ ₹11/kWh Sold out
+          - button "Copy ID" [ref=f16e38] [cursor=pointer]
+    - generic [ref=f16e39]:
+      - heading "Incoming requests" [level=2] [ref=f16e40]
+      - generic [ref=f16e41]: No incoming requests yet.
+    - generic [ref=f16e43]:
+      - heading "Active & settled trades" [level=2] [ref=f16e44]
+      - generic [ref=f16e45]:
+        - generic [ref=f16e46]:
+          - generic [ref=f16e47]:
+            - generic [ref=f16e48]:
+              - generic [ref=f16e49]: 10 kWh @ ₹11/kWh
+              - generic [ref=f16e50]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER"
+            - generic [ref=f16e51]:
+              - generic [ref=f16e52]: Active
+              - button "Show trace" [ref=f16e53] [cursor=pointer]
+          - generic [ref=f16e54]:
+            - generic [ref=f16e55]: "Delivered (meter reading, kWh):"
+            - spinbutton [ref=f16e56]: "8.7"
+            - button "Report delivery & settle" [ref=f16e57] [cursor=pointer]
+            - generic [ref=f16e58]: This is the seller's real smart-meter reading after physical delivery — real delivered energy is almost never exactly what was requested (line losses, timing drift), and settlement always pays on this figure, not the original ask. Suggested value shown is one plausible reading; edit it to whatever the (simulated) meter actually reports.
+        - generic [ref=f16e59]:
+          - generic [ref=f16e60]:
+            - generic [ref=f16e61]:
+              - generic [ref=f16e62]: 10 kWh @ ₹11/kWh
+              - generic [ref=f16e63]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER"
+            - generic [ref=f16e64]:
+              - generic [ref=f16e65]: Active
+              - button "Show trace" [ref=f16e66] [cursor=pointer]
+          - generic [ref=f16e67]:
+            - generic [ref=f16e68]: "Delivered (meter reading, kWh):"
+            - spinbutton [ref=f16e69]: "9.9"
+            - button "Report delivery & settle" [ref=f16e70] [cursor=pointer]
+            - generic [ref=f16e71]: This is the seller's real smart-meter reading after physical delivery — real delivered energy is almost never exactly what was requested (line losses, timing drift), and settlement always pays on this figure, not the original ask. Suggested value shown is one plausible reading; edit it to whatever the (simulated) meter actually reports.

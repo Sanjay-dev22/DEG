@@ -1,0 +1,51 @@
+- generic [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f6e3]
+    - generic [ref=f6e4]:
+      - generic [ref=f6e5]:
+        - generic [ref=f6e6]: ₹0.00
+        - generic [ref=f6e7]: Earnings (settled)
+      - generic "The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover" [ref=f6e8]: "🌐 Network Dashboard: see Buyer Platform's /network.html"
+      - button "Reset demo" [ref=f6e9] [cursor=pointer]
+  - generic [ref=f6e10]:
+    - generic [ref=f6e11]: "Your role: an individual energy producer (prosumer)."
+    - generic [ref=f6e12]: "Your job: publish what you have to sell — once per offer, then wait. Anyone can discover and buy it: a direct buyer, or an aggregator pooling you together with other small sellers into a bigger block. You can't tell which happened just by looking at the incoming request — both arrive here the same way."
+  - main [ref=f6e13]:
+    - generic [ref=f6e14]:
+      - heading "Publish a new offer ● live" [level=2] [ref=f6e15]:
+        - text: Publish a new offer
+        - generic [ref=f6e16]: ● live
+      - generic [ref=f6e17]:
+        - generic [ref=f6e18]:
+          - generic [ref=f6e19]: Quantity (kWh)
+          - spinbutton [ref=f6e20]: "7"
+        - generic [ref=f6e21]:
+          - generic [ref=f6e22]: Price (₹/kWh)
+          - spinbutton [ref=f6e23]: "10.5"
+        - button "Publish offer" [active] [ref=f6e24] [cursor=pointer]
+    - generic [ref=f6e25]:
+      - heading "My published offers" [level=2] [ref=f6e26]
+      - generic [ref=f6e27]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=f6e28]:
+        - generic [ref=f6e55]:
+          - generic [ref=f6e56]:
+            - generic [ref=f6e57]: offer-demo-da1260b8
+            - generic [ref=f6e58]: 7 / 7 kWh remaining @ ₹10.5/kWh
+          - button "Copy ID" [ref=f6e59] [cursor=pointer]
+        - generic [ref=f6e60]:
+          - generic [ref=f6e61]:
+            - generic [ref=f6e62]: offer-demo-8ccd9b00
+            - generic [ref=f6e63]: 7 / 7 kWh remaining @ ₹12/kWh
+          - button "Copy ID" [ref=f6e64] [cursor=pointer]
+        - generic [ref=f6e65]:
+          - generic [ref=f6e66]:
+            - generic [ref=f6e67]: offer-demo-fae50831
+            - generic [ref=f6e68]: 7 / 7 kWh remaining @ ₹11/kWh
+          - button "Copy ID" [ref=f6e69] [cursor=pointer]
+    - generic [ref=f6e30]:
+      - heading "Incoming requests" [level=2] [ref=f6e31]
+      - generic [ref=f6e32]: No incoming requests yet.
+    - generic [ref=f6e34]:
+      - heading "Active & settled trades" [level=2] [ref=f6e35]
+      - generic [ref=f6e36]: No trades yet.
+  - generic: Published 7 kWh @ ₹10.5/kWh

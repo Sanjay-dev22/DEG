@@ -1,0 +1,41 @@
+- generic [ref=f6e2]:
+  - banner [ref=f6e3]:
+    - generic [ref=f6e4]:
+      - heading "TPDDL — Utility Dashboard" [level=1] [ref=f6e5]
+      - paragraph [ref=f6e6]: Publish a real flex need, watch GreenFlex's real proposal arrive, and decide each step yourself — accept, activate, and finally settle with the real per-meter readings.
+      - generic [ref=f6e7]: onix-bpp :8082 · webhook :4101
+    - button "Reset trades & needs" [ref=f6e9] [cursor=pointer]
+  - generic [ref=f6e10]:
+    - heading "Publish a flex need" [level=2] [ref=f6e11]
+    - generic [ref=f6e12]:
+      - generic [ref=f6e13]:
+        - generic [ref=f6e14]: Capacity requested (kW)
+        - spinbutton [ref=f6e15]: "100"
+      - generic [ref=f6e16]:
+        - generic [ref=f6e17]: Price (Rs/kWh)
+        - spinbutton [ref=f6e18]: "3.5"
+      - generic [ref=f6e19]:
+        - generic [ref=f6e20]: Shortfall penalty (Rs/kWh)
+        - spinbutton [ref=f6e21]: "1.5"
+    - button "Publish need" [ref=f6e23] [cursor=pointer]
+  - generic [ref=f6e24]:
+    - heading "Published needs" [level=2] [ref=f6e25]
+    - table [ref=f6e27]:
+      - rowgroup [ref=f6e28]:
+        - row [ref=f6e29]:
+          - columnheader "ID" [ref=f6e30]
+          - columnheader "Requested" [ref=f6e31]
+          - columnheader "Price" [ref=f6e32]
+          - columnheader "Penalty" [ref=f6e33]
+          - columnheader "Status" [ref=f6e34]
+        - row [ref=f6e35]:
+          - cell "flex-need-4c0ffd41" [ref=f6e36]
+          - cell "100 kW" [ref=f6e37]
+          - cell "Rs3.5" [ref=f6e38]
+          - cell "Rs1.5" [ref=f6e39]
+          - cell "PROPOSED" [ref=f6e40]
+  - generic [ref=f6e42]:
+    - heading "Deals — proposals, active contracts, settlements" [level=2] [ref=f6e43]
+    - generic [ref=f6e46]:
+      - generic [ref=f6e47]: 1db6a5c9 — need flex-need-4c0ffd41 — offered 97 kW
+      - button "Accept proposal" [ref=f6e49] [cursor=pointer]

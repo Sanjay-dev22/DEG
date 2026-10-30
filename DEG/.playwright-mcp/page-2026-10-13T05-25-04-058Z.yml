@@ -1,0 +1,50 @@
+- generic [active] [ref=f10e1]:
+  - banner [ref=f10e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f10e3]
+    - generic [ref=f10e4]:
+      - generic [ref=f10e5]:
+        - generic [ref=f10e6]: ₹0.00
+        - generic [ref=f10e7]: Earnings (settled)
+      - generic "The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover" [ref=f10e8]: "🌐 Network Dashboard: see Buyer Platform's /network.html"
+      - button "Reset demo" [ref=f10e9] [cursor=pointer]
+  - main [ref=f10e10]:
+    - generic [ref=f10e11]:
+      - heading "Publish a new offer ● live" [level=2] [ref=f10e12]:
+        - text: Publish a new offer
+        - generic [ref=f10e13]: ● live
+      - generic [ref=f10e14]:
+        - generic [ref=f10e15]:
+          - generic [ref=f10e16]: Quantity (kWh)
+          - spinbutton [ref=f10e17]: "20"
+        - generic [ref=f10e18]:
+          - generic [ref=f10e19]: Price (₹/kWh)
+          - spinbutton [ref=f10e20]: "12.5"
+        - button "Publish offer" [ref=f10e21] [cursor=pointer]
+    - generic [ref=f10e22]:
+      - heading "My published offers" [level=2] [ref=f10e23]
+      - generic [ref=f10e24]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=f10e26]:
+        - generic [ref=f10e27]:
+          - generic [ref=f10e28]: offer-demo-996d6de8
+          - generic [ref=f10e29]: 30 / 30 kWh remaining @ ₹12.5/kWh
+        - button "Copy ID" [ref=f10e30] [cursor=pointer]
+    - generic [ref=f10e31]:
+      - heading "Incoming requests" [level=2] [ref=f10e32]
+      - generic [ref=f10e34]:
+        - generic [ref=f10e35]:
+          - generic [ref=f10e36]:
+            - generic [ref=f10e37]: Buyer bids ₹12.5/kWh for 30 kWh
+            - generic [ref=f10e38]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER"
+          - generic [ref=f10e39]:
+            - generic [ref=f10e40]: Awaiting your decision
+            - button "Show trace" [ref=f10e41] [cursor=pointer]
+        - generic [ref=f10e42]:
+          - button "Accept bid" [ref=f10e43] [cursor=pointer]
+          - generic [ref=f10e44]: "or counter:"
+          - spinbutton "₹/kWh" [ref=f10e45]: "12.5"
+          - spinbutton "kWh" [ref=f10e46]: "30"
+          - button "Send counter-offer" [ref=f10e47] [cursor=pointer]
+          - button "Decline" [ref=f10e48] [cursor=pointer]
+    - generic [ref=f10e49]:
+      - heading "Active & settled trades" [level=2] [ref=f10e50]
+      - generic [ref=f10e51]: No trades yet.

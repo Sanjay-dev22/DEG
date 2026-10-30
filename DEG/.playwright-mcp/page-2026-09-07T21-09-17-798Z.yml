@@ -1,0 +1,259 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - heading "🔌 Buyer Platform — buyerapp.example.com" [level=1] [ref=f5e3]
+    - generic [ref=f5e4]:
+      - generic [ref=f5e5]: ● live
+      - button "Reset demo" [ref=f5e6] [cursor=pointer]
+  - main [ref=f5e7]:
+    - generic [ref=f5e8]:
+      - heading "Discover offers" [level=2] [ref=f5e9]
+      - generic [ref=f5e10]:
+        - text: Fires a real
+        - code [ref=f5e11]: discover
+        - text: against the shared discovery service. Results (if any) arrive asynchronously below.
+      - button "🔍 Refresh offers" [ref=f5e12] [cursor=pointer]
+      - generic [ref=f5e13]:
+        - generic [ref=f5e14]:
+          - generic [ref=f5e15]:
+            - generic [ref=f5e16]: Demo Solar Offer
+            - generic [ref=f5e17]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e18] [cursor=pointer]
+        - generic [ref=f5e19]:
+          - generic [ref=f5e20]:
+            - generic [ref=f5e21]: Morning Solar - 2 hourly slots from 10:00 IST
+            - generic [ref=f5e22]: "30.5 kWh @ ₹12.5/kWh · seller: bpp.ies.gigawatt.network"
+          - generic "A real different network participant's offer — this demo instance has no live routing endpoint for their platform, so it can be viewed but not bought here" [ref=f5e23]: view only
+        - generic [ref=f5e24]:
+          - generic [ref=f5e25]:
+            - generic [ref=f5e26]: Demo Solar Offer
+            - generic [ref=f5e27]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e28] [cursor=pointer]
+        - generic [ref=f5e29]:
+          - generic [ref=f5e30]:
+            - generic [ref=f5e31]: Demo Solar Offer
+            - generic [ref=f5e32]: "25 kWh @ ₹9/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e33] [cursor=pointer]
+        - generic [ref=f5e34]:
+          - generic [ref=f5e35]:
+            - generic [ref=f5e36]: Demo Solar Offer
+            - generic [ref=f5e37]: "20 kWh @ ₹12.1/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e38] [cursor=pointer]
+        - generic [ref=f5e39]:
+          - generic [ref=f5e40]:
+            - generic [ref=f5e41]: Morning Solar - 2 hourly slots from 10:00 IST
+            - generic [ref=f5e42]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e43] [cursor=pointer]
+        - generic [ref=f5e44]:
+          - generic [ref=f5e45]:
+            - generic [ref=f5e46]: Demo Solar Offer
+            - generic [ref=f5e47]: "25 kWh @ ₹9.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e48] [cursor=pointer]
+        - generic [ref=f5e49]:
+          - generic [ref=f5e50]:
+            - generic [ref=f5e51]: Demo Solar Offer
+            - generic [ref=f5e52]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e53] [cursor=pointer]
+        - generic [ref=f5e54]:
+          - generic [ref=f5e55]:
+            - generic [ref=f5e56]: Demo Solar Offer
+            - generic [ref=f5e57]: "28 kWh @ ₹8.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e58] [cursor=pointer]
+        - generic [ref=f5e59]:
+          - generic [ref=f5e60]:
+            - generic [ref=f5e61]: Demo Solar Offer
+            - generic [ref=f5e62]: "10 kWh @ ₹14/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e63] [cursor=pointer]
+        - generic [ref=f5e64]:
+          - generic [ref=f5e65]:
+            - generic [ref=f5e66]: Demo Solar Offer
+            - generic [ref=f5e67]: "60 kWh @ ₹12.1/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e68] [cursor=pointer]
+        - generic [ref=f5e69]:
+          - generic [ref=f5e70]:
+            - generic [ref=f5e71]: Demo Solar Offer
+            - generic [ref=f5e72]: "18 kWh @ ₹13/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e73] [cursor=pointer]
+        - generic [ref=f5e74]:
+          - generic [ref=f5e75]:
+            - generic [ref=f5e76]: Demo Solar Offer
+            - generic [ref=f5e77]: "22 kWh @ ₹11.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e78] [cursor=pointer]
+        - generic [ref=f5e79]:
+          - generic [ref=f5e80]:
+            - generic [ref=f5e81]: Demo Solar Offer
+            - generic [ref=f5e82]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e83] [cursor=pointer]
+        - generic [ref=f5e84]:
+          - generic [ref=f5e85]:
+            - generic [ref=f5e86]: Demo Solar Offer
+            - generic [ref=f5e87]: "12 kWh @ ₹13/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e88] [cursor=pointer]
+        - generic [ref=f5e89]:
+          - generic [ref=f5e90]:
+            - generic [ref=f5e91]: Demo Solar Offer
+            - generic [ref=f5e92]: "25 kWh @ ₹9.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e93] [cursor=pointer]
+        - generic [ref=f5e94]:
+          - generic [ref=f5e95]:
+            - generic [ref=f5e96]: Demo Solar Offer
+            - generic [ref=f5e97]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e98] [cursor=pointer]
+        - generic [ref=f5e99]:
+          - generic [ref=f5e100]:
+            - generic [ref=f5e101]: Demo Solar Offer
+            - generic [ref=f5e102]: "20 kWh @ ₹12.1/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e103] [cursor=pointer]
+        - generic [ref=f5e104]:
+          - generic [ref=f5e105]:
+            - generic [ref=f5e106]: Demo Solar Offer
+            - generic [ref=f5e107]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e108] [cursor=pointer]
+        - generic [ref=f5e109]:
+          - generic [ref=f5e110]:
+            - generic [ref=f5e111]: Demo Solar Offer
+            - generic [ref=f5e112]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e113] [cursor=pointer]
+        - generic [ref=f5e114]:
+          - generic [ref=f5e115]:
+            - generic [ref=f5e116]: Demo Solar Offer
+            - generic [ref=f5e117]: "60 kWh @ ₹12.1/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e118] [cursor=pointer]
+        - generic [ref=f5e119]:
+          - generic [ref=f5e120]:
+            - generic [ref=f5e121]: Demo Solar Offer
+            - generic [ref=f5e122]: "25 kWh @ ₹9.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e123] [cursor=pointer]
+        - generic [ref=f5e124]:
+          - generic [ref=f5e125]:
+            - generic [ref=f5e126]: Morning Solar - 2 hourly slots from 10:00 IST
+            - generic [ref=f5e127]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e128] [cursor=pointer]
+        - generic [ref=f5e129]:
+          - generic [ref=f5e130]:
+            - generic [ref=f5e131]: Morning Solar - 2 hourly slots from 10:00 IST
+            - generic [ref=f5e132]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e133] [cursor=pointer]
+        - generic [ref=f5e134]:
+          - generic [ref=f5e135]:
+            - generic [ref=f5e136]: Morning Solar - 2 hourly slots from 10:00 IST
+            - generic [ref=f5e137]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e138] [cursor=pointer]
+        - generic [ref=f5e139]:
+          - generic [ref=f5e140]:
+            - generic [ref=f5e141]: Morning Solar - 2 hourly slots from 10:00 IST
+            - generic [ref=f5e142]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e143] [cursor=pointer]
+        - generic [ref=f5e144]:
+          - generic [ref=f5e145]:
+            - generic [ref=f5e146]: Morning Solar - 2 hourly slots from 10:00 IST
+            - generic [ref=f5e147]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e148] [cursor=pointer]
+        - generic [ref=f5e149]:
+          - generic [ref=f5e150]:
+            - generic [ref=f5e151]: Morning Solar - 2 hourly slots from 10:00 IST
+            - generic [ref=f5e152]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e153] [cursor=pointer]
+        - generic [ref=f5e154]:
+          - generic [ref=f5e155]:
+            - generic [ref=f5e156]: Morning Solar - 2 hourly slots from 10:00 IST
+            - generic [ref=f5e157]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e158] [cursor=pointer]
+        - generic [ref=f5e159]:
+          - generic [ref=f5e160]:
+            - generic [ref=f5e161]: Demo Solar Offer
+            - generic [ref=f5e162]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e163] [cursor=pointer]
+        - generic [ref=f5e164]:
+          - generic [ref=f5e165]:
+            - generic [ref=f5e166]: Demo Solar Offer
+            - generic [ref=f5e167]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e168] [cursor=pointer]
+        - generic [ref=f5e169]:
+          - generic [ref=f5e170]:
+            - generic [ref=f5e171]: Demo Solar Offer
+            - generic [ref=f5e172]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e173] [cursor=pointer]
+        - generic [ref=f5e174]:
+          - generic [ref=f5e175]:
+            - generic [ref=f5e176]: Demo Solar Offer
+            - generic [ref=f5e177]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e178] [cursor=pointer]
+        - generic [ref=f5e179]:
+          - generic [ref=f5e180]:
+            - generic [ref=f5e181]: Demo Solar Offer
+            - generic [ref=f5e182]: "30 kWh @ ₹10.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e183] [cursor=pointer]
+        - generic [ref=f5e184]:
+          - generic [ref=f5e185]:
+            - generic [ref=f5e186]: Demo Solar Offer
+            - generic [ref=f5e187]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e188] [cursor=pointer]
+        - generic [ref=f5e189]:
+          - generic [ref=f5e190]:
+            - generic [ref=f5e191]: Demo Solar Offer
+            - generic [ref=f5e192]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e193] [cursor=pointer]
+        - generic [ref=f5e194]:
+          - generic [ref=f5e195]:
+            - generic [ref=f5e196]: Demo Solar Offer
+            - generic [ref=f5e197]: "17 kWh @ ₹14/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e198] [cursor=pointer]
+        - generic [ref=f5e199]:
+          - generic [ref=f5e200]:
+            - generic [ref=f5e201]: Demo Solar Offer
+            - generic [ref=f5e202]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e203] [cursor=pointer]
+        - generic [ref=f5e204]:
+          - generic [ref=f5e205]:
+            - generic [ref=f5e206]: Demo Solar Offer
+            - generic [ref=f5e207]: "22 kWh @ ₹11/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e208] [cursor=pointer]
+        - generic [ref=f5e209]:
+          - generic [ref=f5e210]:
+            - generic [ref=f5e211]: Demo Solar Offer
+            - generic [ref=f5e212]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com"
+          - button "Buy" [ref=f5e213] [cursor=pointer]
+    - generic [ref=f5e214]:
+      - heading "Buy directly" [level=2] [ref=f5e215]
+      - generic [ref=f5e216]:
+        - text: If the offer you want isn't listed above yet, paste its real Offer ID here — copy it from the "My published offers" list on the
+        - strong [ref=f5e217]: Seller Platform
+        - text: page (it looks like
+        - code [ref=f5e218]: offer-demo-xxxxxxxx
+        - text: ", not a made-up value). Same real"
+        - code [ref=f5e219]: init
+        - text: call either way.
+      - generic [ref=f5e220]:
+        - generic [ref=f5e221]:
+          - generic [ref=f5e222]: Offer ID
+          - textbox "offer-demo-xxxxxxxx" [ref=f5e223]
+        - generic [ref=f5e224]:
+          - generic [ref=f5e225]: Quantity (kWh)
+          - spinbutton "—" [disabled] [ref=f5e226]
+        - generic [ref=f5e227]:
+          - generic [ref=f5e228]: Price (₹/kWh)
+          - spinbutton "—" [disabled] [ref=f5e229]
+        - generic [ref=f5e230]:
+          - generic [ref=f5e231]: Trade as
+          - combobox [ref=f5e232]:
+            - option "Allowed discom" [selected]
+            - option "Blocked discom (watch it get rejected)"
+        - button "Buy" [disabled] [ref=f5e233] [cursor=pointer]
+    - generic [ref=f5e235]:
+      - heading "My trades" [level=2] [ref=f5e236]
+      - generic [ref=f5e237]:
+        - generic [ref=f5e238]:
+          - generic [ref=f5e239]:
+            - generic [ref=f5e240]: 2 kWh @ ₹14/kWh — offer-demo-656ac890
+            - generic [ref=f5e241]: as TEST_DISCOM_BUYER
+          - generic [ref=f5e242]: Pending
+        - generic [ref=f5e243]:
+          - generic [ref=f5e244]:
+            - generic [ref=f5e245]: 15000 kWh @ ₹12.9/kWh — offer-demo-d66fd0c9
+            - generic [ref=f5e246]: as TEST_DISCOM_BUYER · paid ₹192506.70
+          - generic [ref=f5e247]: Settled
+        - generic [ref=f5e248]:
+          - generic [ref=f5e249]:
+            - generic [ref=f5e250]: 15 kWh @ ₹12.9/kWh — offer-demo-d66fd0c9
+            - generic [ref=f5e251]: as TEST_DISCOM_BUYER · paid ₹175.44
+          - generic [ref=f5e252]: Settled

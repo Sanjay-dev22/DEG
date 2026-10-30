@@ -1,0 +1,70 @@
+- generic [active] [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f6e3]
+    - generic [ref=f6e4]:
+      - generic [ref=f6e5]:
+        - generic [ref=f6e6]: ₹231.30
+        - generic [ref=f6e7]: Earnings (settled)
+      - generic "The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover" [ref=f6e8]: "🌐 Network Dashboard: see Buyer Platform's /network.html"
+      - button "Reset demo" [ref=f6e9] [cursor=pointer]
+  - main [ref=f6e10]:
+    - generic [ref=f6e11]:
+      - heading "Publish a new offer ● live" [level=2] [ref=f6e12]:
+        - text: Publish a new offer
+        - generic [ref=f6e13]: ● live
+      - generic [ref=f6e14]:
+        - generic [ref=f6e15]:
+          - generic [ref=f6e16]: Quantity (kWh)
+          - spinbutton [ref=f6e17]: "20"
+        - generic [ref=f6e18]:
+          - generic [ref=f6e19]: Price (₹/kWh)
+          - spinbutton [ref=f6e20]: "12.5"
+        - button "Publish offer" [ref=f6e21] [cursor=pointer]
+    - generic [ref=f6e22]:
+      - heading "My published offers" [level=2] [ref=f6e23]
+      - generic [ref=f6e24]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=f6e74]:
+        - generic [ref=f6e75]:
+          - generic [ref=f6e76]: offer-demo-b006d8f4
+          - generic [ref=f6e77]: 0 / 20 kWh remaining @ ₹12.5/kWh Sold out
+        - button "Copy ID" [ref=f6e78] [cursor=pointer]
+    - generic [ref=f6e31]:
+      - heading "Incoming requests" [level=2] [ref=f6e32]
+      - generic [ref=f6e33]: No incoming requests yet.
+    - generic [ref=f6e35]:
+      - heading "Active & settled trades" [level=2] [ref=f6e36]
+      - generic [ref=f6e80]:
+        - generic [ref=f6e81]:
+          - generic [ref=f6e82]:
+            - generic [ref=f6e83]: 20 kWh @ ₹12.5/kWh — delivered 19.4 kWh
+            - generic [ref=f6e84]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER · settled ₹231.30"
+          - generic [ref=f6e85]:
+            - generic [ref=f6e86]: Settled
+            - button "Hide trace" [ref=f6e87] [cursor=pointer]
+        - generic [ref=f6e88]:
+          - generic [ref=f6e90] [cursor=pointer]:
+            - generic [ref=f6e91]: init
+            - generic [ref=f6e92]: received
+            - generic [ref=f6e93]: 10:16:49 AM
+            - generic [ref=f6e94]: "Buyer bid ₹12.5/kWh for 20 kWh (our ask: ₹12.5/kWh)"
+          - generic [ref=f6e96] [cursor=pointer]:
+            - generic [ref=f6e97]: on_init
+            - generic [ref=f6e98]: sent
+            - generic [ref=f6e99]: 10:17:34 AM
+            - generic [ref=f6e100]: Accepted as bid — on_init sent
+          - generic [ref=f6e102] [cursor=pointer]:
+            - generic [ref=f6e103]: confirm
+            - generic [ref=f6e104]: received
+            - generic [ref=f6e105]: 10:17:35 AM
+            - generic [ref=f6e106]: Buyer confirmed
+          - generic [ref=f6e108] [cursor=pointer]:
+            - generic [ref=f6e109]: on_confirm
+            - generic [ref=f6e110]: sent
+            - generic [ref=f6e111]: 10:17:44 AM
+            - generic [ref=f6e112]: Trade is now ACTIVE
+          - generic [ref=f6e114] [cursor=pointer]:
+            - generic [ref=f6e115]: on_status
+            - generic [ref=f6e116]: sent
+            - generic [ref=f6e117]: 10:18:02 AM
+            - generic [ref=f6e118]: Reported 19.4 kWh delivered — settled ₹231.30
+  - generic: Settled ₹231.30 (delivered 19.4 kWh)

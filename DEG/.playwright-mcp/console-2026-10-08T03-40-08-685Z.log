@@ -1,0 +1,12 @@
+[   10054ms] InvalidStateError: Failed to execute 'setSelectionRange' on 'HTMLInputElement': The input element's type ('number') does not support selection.
+    at loadNeeds (http://localhost:4102/app.js:117:30)
+[   15047ms] InvalidStateError: Failed to execute 'setSelectionRange' on 'HTMLInputElement': The input element's type ('number') does not support selection.
+    at loadNeeds (http://localhost:4102/app.js:117:30)
+[   20059ms] InvalidStateError: Failed to execute 'setSelectionRange' on 'HTMLInputElement': The input element's type ('number') does not support selection.
+    at loadNeeds (http://localhost:4102/app.js:117:30)
+[   25054ms] InvalidStateError: Failed to execute 'setSelectionRange' on 'HTMLInputElement': The input element's type ('number') does not support selection.
+    at loadNeeds (http://localhost:4102/app.js:117:30)
+[   30049ms] InvalidStateError: Failed to execute 'setSelectionRange' on 'HTMLInputElement': The input element's type ('number') does not support selection.
+    at loadNeeds (http://localhost:4102/app.js:117:30)
+[   35105ms] InvalidStateError: Failed to execute 'setSelectionRange' on 'HTMLInputElement': The input element's type ('number') does not support selection.
+    at loadNeeds (http://localhost:4102/app.js:117:30)

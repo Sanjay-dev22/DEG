@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Buyer Platform — P2P Trading Demo</title>
+<style>
+  :root {
+    --bg: #0b0f14; --panel: #121822; --panel2: #182233; --border: #263349;
+    --text: #e8edf5; --muted: #8fa1bd; --accent: #5aa9ff; --amber: #f5b942; --red: #ff6b6b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { padding: 18px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 18px; margin: 0; letter-spacing: 0.02em; }
+  header .role { color: var(--accent); font-weight: 600; }
+  main { max-width: 960px; margin: 0 auto; padding: 24px; display: grid; gap: 20px; }
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
+  .panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 14px; }
+  form { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; }
+  .field { display: flex; flex-direction: column; gap: 4px; }
+  .field label { font-size: 11px; color: var(--muted); }
+  .field input, .field select { background: var(--panel2); border: 1px solid var(--border); border-radius: 6px; color: var(--text); padding: 8px 10px; width: 150px; font-size: 14px; }
+  button { background: var(--accent); color: #04121f; border: none; border-radius: 6px; padding: 9px 16px; font-weight: 600; cursor: pointer; font-size: 13px; }
+  button:hover { filter: brightness(1.08); }
+  button.secondary { background: var(--panel2); color: var(--text); border: 1px solid var(--border); }
+  button.danger { background: var(--red); color: #2a0505; }
+  .list { display: flex; flex-direction: column; gap: 10px; }
+  .row { background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .row .meta { display: flex; flex-direction: column; gap: 2px; }
+  .row .meta .primary { font-weight: 600; }
+  .row .meta .secondary { font-size: 12px; color: var(--muted); }
+  .badge { font-size: 11px; padding: 3px 9px; border-radius: 999px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+  .badge.pending { background: rgba(245,185,66,0.15); color: var(--amber); }
+  .badge.confirming { background: rgba(90,169,255,0.15); color: var(--accent); }
+  .badge.active { background: rgba(90,169,255,0.25); color: var(--accent); }
+  .badge.settled { background: rgba(90,169,255,0.35); color: var(--accent); }
+  .badge.rejected { background: rgba(255,107,107,0.15); color: var(--red); }
+  .empty { color: var(--muted); font-size: 13px; padding: 8px 0; }
+  .hint { color: var(--muted); font-size: 12px; margin: -6px 0 8px; }
+  .toast { position: fixed; bottom: 20px; right: 20px; background: var(--panel2); border: 1px solid var(--accent); color: var(--text); padding: 10px 16px; border-radius: 8px; font-size: 13px; opacity: 0; transform: translateY(8px); transition: all 0.25s; pointer-events: none; max-width: 420px; }
+  .toast.err { border-color: var(--red); }
+  .toast.show { opacity: 1; transform: translateY(0); }
+  .conn { font-size: 11px; color: var(--muted); }
+  .conn.up::before { content: "● "; color: var(--accent); }
+  .conn.down::before { content: "● "; color: var(--red); }
+  .tag { font-size: 11px; color: var(--muted); font-style: italic; }
+  .field input[readonly] { opacity: 0.7; cursor: not-allowed; }
+  .resolve-status { font-size: 12px; min-height: 16px; width: 100%; }
+  .resolve-status.ok { color: var(--accent); }
+  .resolve-status.err { color: var(--red); }
+  .badge.deciding { background: rgba(245,185,66,0.15); color: var(--amber); }
+  .badge.declined { background: rgba(255,107,107,0.15); color: var(--red); }
+  .row-block { background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+  .row-block .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .decision-form { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; border-top: 1px dashed var(--border); padding-top: 10px; }
+  button.ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); padding: 6px 10px; font-size: 12px; }
+  .timeline { display: none; flex-direction: column; gap: 6px; border-top: 1px dashed var(--border); padding-top: 10px; margin-top: 2px; }
+  .timeline.show { display: flex; }
+  .tl-hop { font-size: 12px; }
+  .tl-hop .tl-head { display: flex; gap: 8px; align-items: baseline; cursor: pointer; }
+  .tl-hop .tl-action { font-weight: 600; font-family: monospace; }
+  .tl-hop .tl-dir { font-size: 10px; padding: 1px 6px; border-radius: 999px; text-transform: uppercase; }
+  .tl-hop .tl-dir.sent { background: rgba(90,169,255,0.15); color: var(--accent); }
+  .tl-hop .tl-dir.received { background: rgba(47,224,198,0.15); color: #2fe0c6; }
+  .tl-hop .tl-dir.local { background: rgba(245,185,66,0.15); color: var(--amber); }
+  .tl-hop .tl-time { color: var(--muted); font-size: 11px; }
+  .tl-hop .tl-summary { color: var(--muted); }
+  .tl-hop pre { display: none; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 8px; margin: 6px 0 0; font-size: 11px; max-height: 240px; overflow: auto; }
+  .tl-hop pre.show { display: block; }
+  .filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed var(--border); }
+  .filters .field input, .filters .field select { width: 110px; }
+  .filters label.chk { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+  .role-banner { background: rgba(90,169,255,0.08); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; font-size: 13px; line-height: 1.6; color: var(--muted); max-width: 960px; margin: 16px auto 0; }
+  .role-banner b { color: var(--text); }
+  .role-banner-line { margin: 0 0 8px; }
+  .role-banner-line:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🔌 <span class="role">Buyer Platform</span> — buyerapp.example.com</h1>
+  <div style="display:flex;align-items:center;gap:12px">
+    <span class="conn down" id="conn">connecting…</span>
+    <a href="/network.html" style="color:var(--muted);font-size:13px;text-decoration:none">🌐 Network Dashboard</a>
+    <button class="secondary" id="resetBtn" title="Wipe this platform's own offers and trades">Reset demo</button>
+  </div>
+</header>
+<div class="role-banner">
+  <div class="role-banner-line"><b>Your role:</b> the buyer.</div>
+  <div class="role-banner-line"><b>Your job:</b> discover offers and buy what you want. You never know, and never need to know, whether what you bought was one individual seller's own small offer or an aggregator's pooled block of several sellers — they look and behave identically to you. Once you buy, your only remaining interaction is with whoever published it (the seller, or the aggregator wearing the seller's identity) through Accept → Confirm → Delivery → Settlement, exactly the same either way.</div>
+</div>
+<main>
+  <div class="panel">
+    <h2>Discover offers</h2>
+    <div class="hint">Fires a real <code>discover</code> against the shared discovery service. Results (if any) arrive asynchronously below.</div>
+    <button class="secondary" id="discoverBtn">🔍 Refresh offers</button>
+    <div class="filters" id="filters" style="margin-top:14px">
+      <div class="field"><label>Min price ₹/kWh</label><input type="number" step="0.1" id="fMinPrice" placeholder="any"></div>
+      <div class="field"><label>Max price ₹/kWh</label><input type="number" step="0.1" id="fMaxPrice" placeholder="any"></div>
+      <div class="field"><label>Min qty kWh</label><input type="number" step="0.1" id="fMinQty" placeholder="any"></div>
+      <div class="field"><label>Max qty kWh</label><input type="number" step="0.1" id="fMaxQty" placeholder="any"></div>
+      <div class="field">
+        <label>Sort by</label>
+        <select id="fSort">
+          <option value="recent">Newest first</option>
+          <option value="price_asc">Price: low → high</option>
+          <option value="price_desc">Price: high → low</option>
+          <option value="qty_desc">Quantity: high → low</option>
+        </select>
+      </div>
+      <label class="chk"><input type="checkbox" id="fOnlyBuyable"> Only buyable (ours)</label>
+      <button type="button" class="secondary" id="fClear">Clear filters</button>
+    </div>
+    <div class="list" id="offers"><div class="empty">No offers discovered yet.</div></div>
+  </div>
+
+  <div class="panel" id="buyPanel">
+    <h2>Buy directly / place a bid</h2>
+    <div class="hint">Paste an Offer ID here — copy it from a card above with the <strong>Copy ID</strong> button, or from the "My published offers" list on the <strong>Seller Platform</strong> page (it looks like <code>offer-demo-xxxxxxxx</code>). The price field is a real negotiating bid: leave it at the seller's ask to buy outright, or lower it to test a real counter-offer — the seller can accept, counter back, or decline.</div>
+    <form id="buyForm">
+      <div class="field"><label>Offer ID</label><input type="text" name="offerId" id="offerIdInput" placeholder="offer-demo-xxxxxxxx" required autocomplete="off"></div>
+      <div class="field"><label>Quantity (kWh)</label><input type="number" step="0.1" name="quantityKwh" id="qtyInput" value="" placeholder="—" required disabled></div>
+      <div class="field"><label>Your bid (₹/kWh)</label><input type="number" step="0.1" name="bidPricePerKwh" id="priceInput" value="" placeholder="—" disabled></div>
+      <div class="field">
+        <label>Trade as</label>
+        <select name="buyerDiscomId">
+          <option value="allowed">Allowed discom</option>
+          <option value="blocked">Blocked discom (watch it get rejected)</option>
+        </select>
+      </div>
+      <button type="submit" id="buyDirectlyBtn" disabled>Send bid</button>
+      <div class="resolve-status" id="resolveStatus"></div>
+    </form>
+  </div>
+
+  <div class="panel">
+    <h2>My trades</h2>
+    <div class="list" id="trades"><div class="empty">No trades yet.</div></div>
+  </div>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+let toastTimer;
+function toast(msg, isErr) {
+  const el = $("#toast");
+  el.textContent = msg;
+  el.className = "toast show" + (isErr ? " err" : "");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove("show"), 3200);
+}
+
+function badge(status) {
+  const map = { PENDING: ["pending", "Pending"], AWAITING_MY_DECISION: ["deciding", "Seller countered"], CONFIRMING: ["confirming", "Confirming"], ACTIVE: ["active", "Active"], SETTLED: ["settled", "Settled"], REJECTED: ["rejected", "Rejected"], DECLINED: ["declined", "Declined"] };
+  const [cls, label] = map[status] || ["pending", status];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+// ---------- Protocol/decision timeline — every real Beckn hop, expandable ----------
+const openTimelines = new Set();
+function toggleTimeline(txn) {
+  if (openTimelines.has(txn)) { openTimelines.delete(txn); } else { openTimelines.add(txn); }
+  refreshAll(true);
+}
+async function renderTimelineHtml(txn) {
+  if (!openTimelines.has(txn)) return "";
+  const events = await fetch(`/api/trade/${txn}/timeline`).then((r) => r.json()).catch(() => []);
+  if (!events.length) return `<div class="timeline show"><div class="empty">No events logged yet.</div></div>`;
+  const hops = events.map((e) => `
+    <div class="tl-hop">
+      <div class="tl-head" onclick="this.nextElementSibling.classList.toggle('show')">
+        <span class="tl-action">${e.action}</span>
+        <span class="tl-dir ${e.direction}">${e.direction}</span>
+        <span class="tl-time">${new Date(e.at).toLocaleTimeString()}</span>
+        <span class="tl-summary">${e.summary || ""}</span>
+      </div>
+      <pre>${e.payload ? escapeHtml(JSON.stringify(e.payload, null, 2)) : "(no payload)"}</pre>
+    </div>`).join("");
+  return `<div class="timeline show">${hops}</div>`;
+}
+function escapeHtml(s) { return s.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])); }
+
+// ---------- Raw offer data, expandable — same pattern as the trade timeline
+// above. The backend already sends the full raw_json it stored (nothing was
+// ever withheld server-side); this just gives the dashboard a way to
+// actually look at it, since /api/offers alone never rendered it before. ----------
+const openRawOffers = new Set();
+function toggleRawOffer(id) {
+  if (openRawOffers.has(id)) { openRawOffers.delete(id); } else { openRawOffers.add(id); }
+  renderOffers(applyFilters(lastOfferRows));
+}
+
+// Pulls out whatever real timing info an offer's own raw payload actually
+// carries (its stated validity window, wherever that field lives in
+// whatever shape this particular offer turned out to be) — distinct from
+// discovered_at, which only ever means "the last time OUR OWN discover call
+// saw this still present," not when it was first published or how long it
+// was ever meant to be valid for.
+function parseOfferMeta(rawJsonStr) {
+  let raw;
+  try { raw = JSON.parse(rawJsonStr); } catch (_) { return { type: null, validity: null, expired: false, intervalStart: null }; }
+  const type = raw?.offerAttributes?.["@type"] || null;
+  const v = raw?.validity || raw?.offerAttributes?.validityWindow;
+  const validity = v ? { start: v.startDate || v["schema:startTime"], end: v.endDate || v["schema:endTime"] } : null;
+  const expired = validity?.end ? new Date(validity.end).getTime() < Date.now() : false;
+  // commitmentAttributes.intervalPeriod.start is the closest thing to a real
+  // "when" on an offer — but it is NOT a standardized publish timestamp.
+  // Verified directly (2026-09-18): our own seller-app literally sets this to
+  // now() at the moment /api/publish runs, so for OUR OWN offers it is the
+  // true publish time. For the real gigawatt offer, this same field instead
+  // sits an hour INSIDE that offer's own stated validity window — clearly
+  // marking one delivery/settlement slot's start, not when they published.
+  // Different real publishers use the field differently; only render it as
+  // "published" for offers we know are ours, otherwise label it honestly.
+  const intervalStart = raw?.offerAttributes?.commitmentAttributes?.intervalPeriod?.start || null;
+  return { type, validity, expired, intervalStart, raw };
+}
+
+// Whether a discovered offer is genuinely ours can NOT be determined by
+// comparing seller_id to "sellerapp.example.com" — that's the devkit's
+// own generic example participant ID from its tutorial fixtures, and
+// plenty of real, different testers on the shared network never bothered
+// to rename it either. The only reliable test is live membership in our
+// own Seller Platform's real catalog right now — myOfferIds below,
+// refreshed alongside everything else.
+let myOfferIds = new Set();
+
+// Avoid a full DOM replace on every 5s poll when nothing actually
+// changed — the old code re-rendered the entire list every tick
+// regardless, which flickers and (worse) can invalidate a button right
+// under the pointer mid-click. Skipping the no-op re-render fixes both.
+let lastOffersJson = "";
+let lastTradesJson = "";
+
+function timeAgo(iso) {
+  if (!iso) return "unknown time";
+  const ms = Date.now() - new Date(iso).getTime();
+  const s = Math.round(ms / 1000);
+  if (s < 5) return "just now";
+  if (s < 60) return `${s}s ago`;
+  const m = Math.round(s / 60);
+  if (m < 60) return `${m}m ago`;
+  const h = Math.round(m / 60);
+  if (h < 24) return `${h}h ago`;
+  return new Date(iso).toLocaleString();
+}
+
+let lastOfferRows = [];
+
+async function refreshAll(force) {
+  const [offers, trades, myOffers] = await Promise.all([
+    fetch("/api/offers").then((r) => r.json()),
+    fetch("/api/trades").then((r) => r.json()),
+    fetch("/api/my-offers").then((r) => r.json()).catch(() => ({ offerIds: [] })),
+  ]);
+  myOfferIds = new Set(myOffers.offerIds || []);
+  lastOfferRows = offers;
+  const offersJson = JSON.stringify(offers) + JSON.stringify([...myOfferIds]);
+  if (force || offersJson !== lastOffersJson) { lastOffersJson = offersJson; renderOffers(applyFilters(offers)); }
+  const tradesJson = JSON.stringify(trades) + [...openTimelines].join(",");
+  if (force || tradesJson !== lastTradesJson) { lastTradesJson = tradesJson; await renderTrades(trades); }
+}
+
+// ---------- Client-side filter/sort of already-discovered offers — no
+// backend change needed, these are just the rows /api/offers already
+// returns, narrowed and reordered for what the buyer actually wants to see. ----------
+function applyFilters(list) {
+  const minPrice = parseFloat($("#fMinPrice").value);
+  const maxPrice = parseFloat($("#fMaxPrice").value);
+  const minQty = parseFloat($("#fMinQty").value);
+  const maxQty = parseFloat($("#fMaxQty").value);
+  const onlyBuyable = $("#fOnlyBuyable").checked;
+  const sort = $("#fSort").value;
+  let out = list.filter((o) => {
+    if (!isNaN(minPrice) && (o.price_per_kwh == null || o.price_per_kwh < minPrice)) return false;
+    if (!isNaN(maxPrice) && (o.price_per_kwh == null || o.price_per_kwh > maxPrice)) return false;
+    if (!isNaN(minQty) && (o.available_qty == null || o.available_qty < minQty)) return false;
+    if (!isNaN(maxQty) && (o.available_qty == null || o.available_qty > maxQty)) return false;
+    if (onlyBuyable && !myOfferIds.has(o.offer_id)) return false;
+    return true;
+  });
+  if (sort === "price_asc") out = out.slice().sort((a, b) => (a.price_per_kwh ?? Infinity) - (b.price_per_kwh ?? Infinity));
+  else if (sort === "price_desc") out = out.slice().sort((a, b) => (b.price_per_kwh ?? -Infinity) - (a.price_per_kwh ?? -Infinity));
+  else if (sort === "qty_desc") out = out.slice().sort((a, b) => (b.available_qty ?? -Infinity) - (a.available_qty ?? -Infinity));
+  return out;
+}
+// Script tag is at the end of <body>, so the filter controls above already
+// exist in the DOM — no need to wait for DOMContentLoaded.
+document.querySelectorAll(".filters input, .filters select").forEach((el) => {
+  el.addEventListener(el.tagName === "SELECT" || el.type === "checkbox" ? "change" : "input", () => renderOffers(applyFilters(lastOfferRows)));
+});
+$("#fClear").addEventListener("click", () => {
+  document.querySelectorAll(".filters input").forEach((el) => (el.type === "checkbox" ? (el.checked = false) : (el.value = "")));
+  $("#fSort").value = "recent";
+  renderOffers(applyFilters(lastOfferRows));
+});
+
+function renderOffers(list) {
+  const el = $("#offers");
+  if (!list.length) {
+    el.innerHTML = lastOfferRows.length
+      ? '<div class="empty">No offers match the current filters.</div>'
+      : '<div class="empty">No offers discovered yet.</div>';
+    return;
+  }
+  el.innerHTML = list.map((o) => {
+    const isOwn = myOfferIds.has(o.offer_id);
+    const meta = parseOfferMeta(o.raw_json);
+    // The offer's descriptor name is always the same generic string
+    // ("Demo Solar Offer") every seller publishes — showing only that
+    // literally hides the one thing you need to actually act on this
+    // offer (its ID), so the ID is always shown too, with its own copy
+    // button, regardless of whether a name is also present.
+    let action;
+    if (isOwn) {
+      action = `<button onclick="buyFromCard('${o.offer_id}')">Buy at ask</button>
+         <button class="secondary" onclick="bidOnCard('${o.offer_id}')">Place a bid</button>`;
+    } else {
+      // Still view-only: resolveOffer()/api/buy only ever route init to our
+      // own seller, on purpose (server.js) — negotiating with a genuinely
+      // different real participant would mean signing and sending a real
+      // message to their live system, untested and not something to wire up
+      // silently. Capturing their real endpoint (below) is a separate,
+      // reversible step from actually being allowed to trade with it.
+      action = `<span class="tag" title="This app only ever routes a real init to our own Seller Platform, on purpose">view only</span>`;
+    }
+    const endpointLine = !isOwn
+      ? (o.bpp_uri
+          ? `<div class="secondary">real routing endpoint on file: <span style="font-family:monospace">${escapeHtml(o.bpp_uri)}</span> (not wired to send to)</div>`
+          : `<div class="secondary" style="color:var(--muted)">no routing endpoint was captured for this publisher (this catalog response's bppUri was empty)</div>`)
+      : "";
+    const validityLine = meta.validity
+      ? `<div class="secondary">stated availability: ${meta.validity.start ? new Date(meta.validity.start).toLocaleString() : "?"} → ${meta.validity.end ? new Date(meta.validity.end).toLocaleString() : "?"}${meta.expired ? ' <span class="tag" style="color:var(--amber)">EXPIRED</span>' : ""}</div>`
+      : `<div class="secondary" style="color:var(--muted)">stated availability: not present in this offer's own data</div>`;
+    // Only claim this is a real "published" time for offers we KNOW are
+    // ours (our own code sets it to now() at publish) — for a foreign
+    // offer, the same field turned out (verified against the real
+    // gigawatt example) to mark a delivery-slot start instead, so it gets
+    // an honest, uncommitted label rather than a false "published" claim.
+    const bornLine = !meta.intervalStart
+      ? `<div class="secondary" style="color:var(--muted)">no timing field in this offer's own data to date it by</div>`
+      : isOwn
+        ? `<div class="secondary">published: ${new Date(meta.intervalStart).toLocaleString()}</div>`
+        : `<div class="secondary">commitment interval starts: ${new Date(meta.intervalStart).toLocaleString()} <span style="color:var(--muted)">(this publisher's own use of this field is unconfirmed — may not be their true publish moment)</span></div>`;
+    const rawOpen = openRawOffers.has(o.offer_id);
+    const rawPanel = rawOpen
+      ? `<div class="timeline show"><div class="tl-hop"><pre class="show">${escapeHtml(JSON.stringify(meta.raw ?? {}, null, 2))}</pre></div></div>`
+      : "";
+    return `
+    <div class="row-block">
+      <div class="top">
+        <div class="meta">
+          <div class="primary">${o.name ? o.name + " — " : ""}<span style="font-family:monospace">${o.offer_id}</span>${isOwn ? ' <span class="tag" style="color:var(--accent)">ours, live now</span>' : ""}${meta.type && meta.type !== "EnergyTradeOffer" ? ` <span class="tag">@type: ${meta.type}</span>` : ""}</div>
+          <div class="secondary">${o.available_qty ?? "?"} kWh @ ₹${o.price_per_kwh ?? "?"}/kWh · seller: ${o.seller_id} · last confirmed live ${timeAgo(o.discovered_at)}</div>
+          ${bornLine}
+          ${validityLine}
+          ${endpointLine}
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="secondary" onclick="copyOfferId('${o.offer_id}', this)">Copy ID</button>
+          ${action}
+          <button class="ghost" onclick="toggleRawOffer('${o.offer_id}')">${rawOpen ? "Hide" : "Show"} raw</button>
+        </div>
+      </div>
+      ${rawPanel}
+    </div>`;
+  }).join("");
+}
+
+function copyOfferId(id, btn) {
+  const done = () => { const t = btn.textContent; btn.textContent = "Copied!"; setTimeout(() => (btn.textContent = t), 1200); };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(id).then(done).catch(() => toast("Couldn't copy — offer ID: " + id));
+  } else {
+    toast("Copy not available in this browser — offer ID: " + id);
+  }
+}
+
+// Fills the manual bid form with this card's offer ID and scrolls to it —
+// this is the actual negotiation entry point (editable quantity + price);
+// the card itself is a display, not a second parallel "buy" implementation.
+function bidOnCard(offerId) {
+  offerIdInput.value = offerId;
+  resolveOfferId();
+  $("#buyPanel").scrollIntoView({ behavior: "smooth", block: "start" });
+  offerIdInput.focus();
+}
+
+async function renderTrades(list) {
+  const el = $("#trades");
+  if (!list.length) { el.innerHTML = '<div class="empty">No trades yet.</div>'; return; }
+  const blocks = await Promise.all(list.map(async (t) => {
+    const bidLine = t.askingPricePerKwh != null && t.askingPricePerKwh !== t.pricePerKwh
+      ? ` <span style="color:var(--muted)">(seller's ask was ₹${t.askingPricePerKwh}/kWh)</span>`
+      : "";
+    const counterLine = t.status === "AWAITING_MY_DECISION"
+      ? `<div class="secondary" style="color:var(--amber)">Seller countered: ₹${t.sellerPricePerKwh}/kWh for ${t.sellerQty} kWh</div>` : "";
+    const declineLine = t.status === "DECLINED" && t.declineReason ? `<div class="secondary">Reason: ${t.declineReason}</div>` : "";
+    const decisionForm = t.status === "AWAITING_MY_DECISION" ? `
+      <div class="decision-form">
+        <button onclick="acceptCounter('${t.transactionId}')">Accept counter — confirm</button>
+        <button class="danger" onclick="declineCounter('${t.transactionId}')">Decline counter</button>
+      </div>` : "";
+    const timelineHtml = await renderTimelineHtml(t.transactionId);
+    return `
+    <div class="row-block" data-txn="${t.transactionId}">
+      <div class="top">
+        <div class="meta">
+          <div class="primary">We bid ₹${t.pricePerKwh}/kWh for ${t.requestedQty} kWh${bidLine} — ${t.offerId}</div>
+          <div class="secondary">as ${t.buyerDiscom}${t.settlementAmount ? ` · paid ₹${t.settlementAmount.toFixed(2)}` : ""}${t.errorMessage ? ` · ${t.errorMessage}` : ""}</div>
+          ${counterLine}${declineLine}
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          ${badge(t.status)}
+          <button class="ghost" onclick="toggleTimeline('${t.transactionId}')">${openTimelines.has(t.transactionId) ? "Hide" : "Show"} trace</button>
+        </div>
+      </div>
+      ${decisionForm}
+      ${timelineHtml}
+    </div>`;
+  }));
+  el.innerHTML = blocks.join("");
+}
+
+async function acceptCounter(txn) {
+  const res = await fetch(`/api/trade/${txn}/accept-counter`, { method: "POST" });
+  const body = await res.json();
+  if (!res.ok) { toast("Accept failed: " + (body.error || res.status), true); return; }
+  toast("Counter accepted — confirm sent");
+  refreshAll();
+}
+async function declineCounter(txn) {
+  const reason = prompt("Optional reason for declining (shown to the seller):", "") || undefined;
+  const res = await fetch(`/api/trade/${txn}/decline-counter`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ reason }) });
+  const body = await res.json();
+  if (!res.ok) { toast("Decline failed: " + (body.error || res.status), true); return; }
+  toast("Declined — seller notified");
+  refreshAll();
+}
+
+async function buy(offerId, quantityKwh, bidPricePerKwh, buyerDiscomId) {
+  const res = await fetch("/api/buy", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ offerId, quantityKwh, bidPricePerKwh, buyerDiscomId }) });
+  const body = await res.json();
+  if (body.rejected) { toast("Rejected: " + (body.trade.errorMessage || "policy violation"), true); refreshAll(); return; }
+  if (!res.ok) { toast((body.error || "Buy failed: " + res.status), true); return; }
+  toast("Bid sent — waiting for seller");
+  refreshAll();
+}
+
+// "Buy at ask" takes the whole current offer at the seller's current live
+// price — deliberately re-resolved here rather than trusting the
+// discovered_offers row's cached price/qty (which can be stale: the
+// discover cache only ever reflects what the network returned at some
+// past discover, not necessarily what's actually still on offer right
+// now). No bid override is sent, so the server's own live ask decides
+// the price — never a number carried from the client.
+async function buyFromCard(offerId) {
+  const r = await fetch(`/api/resolve-offer/${encodeURIComponent(offerId)}`).then((res) => res.json());
+  if (!r.found || !r.buyable) { toast("Can't buy this offer right now: " + (r.reason || "not currently live"), true); refreshAll(); return; }
+  buy(offerId, r.availableQty, undefined, "allowed");
+}
+
+// ---------- "Buy directly" (paste an Offer ID): live-resolve it against
+// the real Seller Platform before letting Buy be pressed at all. Quantity
+// is always capped to what's actually available; the bid price is
+// prefilled from the seller's real ask but is a free, editable field — a
+// real negotiating bid, never taken on faith beyond that server-side cap. ----------
+const offerIdInput = $("#offerIdInput");
+const qtyInput = $("#qtyInput");
+const priceInput = $("#priceInput");
+const buyDirectlyBtn = $("#buyDirectlyBtn");
+const resolveStatusEl = $("#resolveStatus");
+let currentResolution = null;
+let resolveDebounce;
+
+function setResolveStatus(msg, isErr) {
+  resolveStatusEl.textContent = msg;
+  resolveStatusEl.className = "resolve-status" + (isErr ? " err" : msg ? " ok" : "");
+}
+
+async function resolveOfferId() {
+  const offerId = offerIdInput.value.trim();
+  currentResolution = null;
+  buyDirectlyBtn.disabled = true;
+  qtyInput.disabled = true;
+  priceInput.disabled = true;
+  priceInput.value = "";
+  qtyInput.value = "";
+  if (!offerId) { setResolveStatus(""); return; }
+  setResolveStatus("checking…");
+  const res = await fetch(`/api/resolve-offer/${encodeURIComponent(offerId)}`);
+  const r = await res.json();
+  // The field may have changed while this request was in flight — ignore
+  // a stale response rather than overwrite what the user is now typing.
+  if (offerIdInput.value.trim() !== offerId) return;
+  currentResolution = r;
+  if (!r.found) { setResolveStatus("✗ " + r.reason, true); return; }
+  if (!r.buyable) { setResolveStatus("✗ " + r.reason, true); return; }
+  // Prefills with the seller's real ask — editable from here, since this
+  // is now a genuine bid, not a locked display of the seller's price. The
+  // server independently re-validates everything except the bid price
+  // itself (the buyer is always free to bid whatever it wants; only the
+  // quantity is capped server-side).
+  priceInput.value = r.pricePerKwh;
+  priceInput.disabled = false;
+  qtyInput.value = r.availableQty;
+  qtyInput.max = r.availableQty;
+  qtyInput.disabled = false;
+  buyDirectlyBtn.disabled = false;
+  setResolveStatus(`✓ Real offer from ${r.sellerId} — asking ₹${r.pricePerKwh}/kWh, ${r.availableQty} kWh available. Edit the bid price to negotiate.`);
+}
+
+offerIdInput.addEventListener("input", () => { clearTimeout(resolveDebounce); resolveDebounce = setTimeout(resolveOfferId, 350); });
+
+$("#buyForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (!currentResolution || !currentResolution.buyable) { setResolveStatus("Resolve a real, buyable offer ID first.", true); return; }
+  const fd = new FormData(e.target);
+  const quantityKwh = Number(fd.get("quantityKwh"));
+  const bidPricePerKwh = Number(fd.get("bidPricePerKwh"));
+  if (!quantityKwh || quantityKwh <= 0) { setResolveStatus("Enter a positive quantity.", true); return; }
+  if (quantityKwh > currentResolution.availableQty) {
+    setResolveStatus(`Only ${currentResolution.availableQty} kWh is available — lower the quantity.`, true);
+    return;
+  }
+  if (!bidPricePerKwh || bidPricePerKwh <= 0) { setResolveStatus("Enter a positive bid price.", true); return; }
+  buy(currentResolution.offerId, quantityKwh, bidPricePerKwh, fd.get("buyerDiscomId"));
+});
+
+$("#discoverBtn").addEventListener("click", async () => {
+  const res = await fetch("/api/discover", { method: "POST" });
+  const body = await res.json();
+  if (!res.ok) {
+    var why = (body.detail && (body.detail.message?.error?.message || JSON.stringify(body.detail))) || body.raw || res.status;
+    toast("Discover failed: " + why, true);
+    console.error("discover failed — full detail:", body);
+    return;
+  }
+  toast("discover sent — results (if any) will appear shortly");
+});
+
+$("#resetBtn").addEventListener("click", async () => {
+  if (!confirm("Wipe every discovered offer and trade on this Buyer Platform? This can't be undone. (The Seller Platform's own data is separate — reset it there too if you want a fully clean pair.)")) return;
+  const res = await fetch("/api/reset", { method: "POST" });
+  const body = await res.json();
+  if (!res.ok) { toast("Reset failed: " + (body.error || res.status), true); return; }
+  toast("Buyer Platform reset — starting fresh");
+  refreshAll();
+});
+
+function connectWs() {
+  // Match the page's own protocol: a page loaded over https:// (e.g.
+  // through a tunnel) will never let an insecure ws:// connection open —
+  // the browser blocks it silently as mixed content. wss:// on https,
+  // ws:// on plain http; either way this always matches how the page
+  // itself was loaded.
+  const wsProtocol = location.protocol === "https:" ? "wss:" : "ws:";
+  const ws = new WebSocket(`${wsProtocol}//${location.host}/ws`);
+  ws.onopen = () => { $("#conn").textContent = "live"; $("#conn").className = "conn up"; };
+  ws.onclose = () => { $("#conn").textContent = "disconnected"; $("#conn").className = "conn down"; setTimeout(connectWs, 2000); };
+  ws.onmessage = (ev) => {
+    const { type, data } = JSON.parse(ev.data);
+    if (type === "offers_updated") toast(`${data.count} offer(s) discovered`);
+    if (type === "buy_sent") toast("Bid sent");
+    if (type === "rejected") toast("Rejected: " + (data.errorMessage || "policy violation"), true);
+    if (type === "seller_countered") toast(`Seller countered: ₹${data.sellerPricePerKwh}/kWh for ${data.sellerQty} kWh`);
+    if (type === "confirming") toast("Confirm sent");
+    if (type === "active") toast("Trade confirmed — now ACTIVE");
+    if (type === "settled") toast(`Settled — paid ₹${data.settlementAmount.toFixed(2)}`);
+    if (type === "declined") toast(data.declineReason ? `Declined: ${data.declineReason}` : "Seller declined", true);
+    if (type === "reset") toast("Reset from elsewhere — refreshing");
+    refreshAll();
+  };
+}
+
+connectWs();
+refreshAll();
+setInterval(refreshAll, 5000);
+</script>
+</body>
+</html>

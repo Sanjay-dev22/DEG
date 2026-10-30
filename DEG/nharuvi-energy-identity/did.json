@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:www.nharuvi.com",
+  "verificationMethod": [
+    {
+      "id": "did:web:www.nharuvi.com#key-0",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:www.nharuvi.com",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "P-256",
+        "x": "bEHu01xOGx9vxtCcaF3-JnowedwCy2c-3QHMJuKV1rM",
+        "y": "KodONTX3_SJXt_BXtjBvD2pHZatC3prp56g18n4rVTA"
+      }
+    }
+  ],
+  "authentication": [
+    "did:web:www.nharuvi.com#key-0"
+  ],
+  "assertionMethod": [
+    "did:web:www.nharuvi.com#key-0"
+  ]
+}

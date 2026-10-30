@@ -1,0 +1,31 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f2e3]
+    - generic [ref=f2e4]:
+      - generic [ref=f2e5]:
+        - generic [ref=f2e6]: ₹0.00
+        - generic [ref=f2e7]: Earnings (settled)
+      - button "Reset demo" [ref=f2e8] [cursor=pointer]
+  - main [ref=f2e9]:
+    - generic [ref=f2e10]:
+      - heading "Publish a new offer ● connecting…" [level=2] [ref=f2e11]:
+        - text: Publish a new offer
+        - generic [ref=f2e12]: ● connecting…
+      - generic [ref=f2e13]:
+        - generic [ref=f2e14]:
+          - generic [ref=f2e15]: Quantity (kWh)
+          - spinbutton [ref=f2e16]: "20"
+        - generic [ref=f2e17]:
+          - generic [ref=f2e18]: Price (₹/kWh)
+          - spinbutton [ref=f2e19]: "12.5"
+        - button "Publish offer" [ref=f2e20] [cursor=pointer]
+    - generic [ref=f2e21]:
+      - heading "My published offers" [level=2] [ref=f2e22]
+      - generic [ref=f2e23]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=f2e24]: Nothing published yet.
+    - generic [ref=f2e26]:
+      - heading "Incoming requests" [level=2] [ref=f2e27]
+      - generic [ref=f2e28]: No incoming requests yet.
+    - generic [ref=f2e30]:
+      - heading "Active & settled trades" [level=2] [ref=f2e31]
+      - generic [ref=f2e32]: No trades yet.

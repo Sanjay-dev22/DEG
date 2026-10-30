@@ -1,0 +1,55 @@
+- generic [active] [ref=f8e1]:
+  - banner [ref=f8e2]:
+    - heading "Aggregator Platform — pools small sellers into one block" [level=1] [ref=f8e3]
+    - generic [ref=f8e4]: ● live
+  - main [ref=f8e5]:
+    - generic [ref=f8e6]:
+      - generic [ref=f8e7]: "Your role: the aggregator — a middleman between many small sellers and one bulk buyer."
+      - generic [ref=f8e8]: "Your job: discover small sellers' offers, pool several into one bigger block, publish that block (from then on it behaves exactly like a normal seller offer to the rest of the network), and once it's bought and settled, split the real proceeds back to the small sellers you pooled."
+      - generic [ref=f8e9]: "Who talks to whom: small sellers only ever interact with seller-app's own dashboard (they publish once, then wait — they never see you or the bulk buyer directly). The bulk buyer only ever interacts with buyer-app's dashboard, discovering and buying your published block like any other offer — they never see the individual pooled sellers."
+      - generic [ref=f8e10]: You are the only one who sees both sides and does the pooling/splitting math.
+    - generic [ref=f8e11]:
+      - heading "1 · Discover real offers to pool" [level=2] [ref=f8e12]
+      - paragraph [ref=f8e13]: Asks buyer-app to run a real discover, then lists what it actually found on the shared network. Not a simulation.
+      - button "Discover offers" [ref=f8e14] [cursor=pointer]
+      - generic [ref=f8e15]: No undiscovered-or-unpooled offers right now. Click Discover, or everything found is already in the pool below.
+    - generic [ref=f8e17]:
+      - heading "2 · Bulk-buyer requirements (from Grid/DISCOM)" [level=2] [ref=f8e18]
+      - paragraph [ref=f8e19]: "Demand-first matching: a requirement is posted by the Grid/DISCOM dashboard (quantity + a price ceiling). \"Recommend\" runs a cheapest-first match against currently discovered offers — it never proposes anything above the ceiling, and clearly flags a shortfall instead of hiding one."
+      - generic [ref=f8e22]:
+        - generic [ref=f8e23]:
+          - generic [ref=f8e24]: req-847a9a30
+          - generic [ref=f8e25]: 20 kWh requested · ceiling ₹13/kWh
+        - generic [ref=f8e26]:
+          - generic [ref=f8e27]: PENDING
+          - button "Recommend pool" [ref=f8e28] [cursor=pointer]
+    - generic [ref=f8e29]:
+      - heading "3 · Current pool (not yet published)" [level=2] [ref=f8e30]
+      - generic [ref=f8e31]:
+        - generic [ref=f8e32]:
+          - generic [ref=f8e33]: "0"
+          - generic [ref=f8e34]: kWh pooled
+        - generic [ref=f8e35]:
+          - generic [ref=f8e36]: ₹0
+          - generic [ref=f8e37]: blended price/kWh
+        - generic [ref=f8e38]:
+          - generic [ref=f8e39]: "0"
+          - generic [ref=f8e40]: sellers pooled
+      - generic [ref=f8e41]: No sellers pooled yet — pool at least 2 above before publishing.
+      - generic [ref=f8e43]:
+        - generic [ref=f8e44]:
+          - generic [ref=f8e45]: Aggregator margin (₹/kWh)
+          - spinbutton [ref=f8e46]: "0.30"
+        - button "Publish pooled block" [disabled] [ref=f8e47]
+    - generic [ref=f8e48]:
+      - heading "4 · Published blocks, delivery & disaggregation" [level=2] [ref=f8e49]
+      - paragraph [ref=f8e50]: Once the bulk buyer (buyer-app) buys it, this block's lifecycle (accept, confirm, delivery, settlement) is this app's own — not seller-app's, and the small pooled sellers are never involved again. Report delivery here once the trade is Active; the real settlement amount then appears, split back to each pooled seller at THEIR OWN original price, with the aggregator's margin shown explicitly.
+      - generic [ref=f8e51]: No blocks published yet.
+    - generic [ref=f8e53]:
+      - heading "What this demo simplifies (on purpose)" [level=2] [ref=f8e54]
+      - list [ref=f8e55]:
+        - listitem [ref=f8e56]: Reuses sellerapp.example.com's already-registered signing identity (same keys as onix-sellerapp) for onix-aggregatorapp rather than registering a brand-new, distinct network participant — that step needs real DeDi registration + namespace-owner approval, out of scope for this demo. Routing is genuinely separate (own container, own catalog, own lifecycle); only the underlying signing identity is shared.
+        - listitem [ref=f8e57]: Incoming requirements are matched with a simple cheapest-first greedy fill up to the requested quantity (capped by the price ceiling), not a true constrained optimization.
+        - listitem [ref=f8e58]: Pools once, at publish time — no re-aggregation as individual sellers' availability changes mid-window.
+        - listitem [ref=f8e59]: Disaggregates the block's one real delivered-quantity reading proportionally across members (no per-member smart meter in this demo) — a real deployment would use each member's own real meter reading, per the 'virtual meter' reconciliation approach the real IES implementation guide describes.
+        - listitem [ref=f8e60]: Grid/DISCOM (grid-app) only posts a requirement — the real discover/buy/confirm for the resulting block is still executed by buyer-app. Giving Grid/DISCOM its own onix identity to buy directly is a clean later phase, not built here.

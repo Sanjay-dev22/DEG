@@ -1,0 +1,44 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - heading "🌐 Network Dashboard — indiaenergystack.in/test-ies-p2p-trading-network" [level=1] [ref=f2e3]
+    - generic [ref=f2e4]:
+      - generic [ref=f2e5]: ● live
+      - link "← Buyer Platform" [ref=f2e6] [cursor=pointer]:
+        - /url: /
+  - main [ref=f2e7]:
+    - generic [ref=f2e8]:
+      - heading "Live offer pool — every participant" [level=2] [ref=f2e9]
+      - generic [ref=f2e10]: Every offer currently discoverable on the shared network, from every real tester — not just this demo's own two apps. Refreshed automatically.
+      - generic [ref=f2e11]:
+        - generic [ref=f2e12]:
+          - generic [ref=f2e13]: —
+          - generic [ref=f2e14]: Total offers
+        - generic [ref=f2e15]:
+          - generic [ref=f2e16]: —
+          - generic [ref=f2e17]: Ours
+        - generic [ref=f2e18]:
+          - generic [ref=f2e19]: —
+          - generic [ref=f2e20]: Other sellers seen
+      - generic [ref=f2e21]: Loading…
+    - generic [ref=f2e23]:
+      - heading "Our trades — verified on the real external ledger" [level=2] [ref=f2e24]
+      - generic [ref=f2e25]:
+        - text: Queried live and signed (Ed25519) straight from
+        - code [ref=f2e26]: the DEG Ledger
+        - text: — a separate real service, independent of this app's own local database. Each row below carries a real
+        - code [ref=f2e27]: rowDigest
+        - text: "hash computed by the ledger itself: proof this exact trade is genuinely recorded outside our two apps, not just claimed to be."
+      - generic [ref=f2e28]:
+        - text: "Note: the ledger only ever returns records"
+        - emphasis [ref=f2e29]: our own platform
+        - text: is a party to — there's no query that returns every other participant's private trades too. That's the ledger's real privacy boundary working as intended (unlike
+        - code [ref=f2e30]: discover
+        - text: "'s public catalog above, a settlement ledger is never meant to be browsable by third parties in a real deployment)."
+      - generic [ref=f2e31]:
+        - generic [ref=f2e32]:
+          - generic [ref=f2e33]: —
+          - generic [ref=f2e34]: Ledger-verified trades
+        - generic [ref=f2e35]:
+          - generic [ref=f2e36]: —
+          - generic [ref=f2e37]: As of
+      - generic [ref=f2e38]: Loading…

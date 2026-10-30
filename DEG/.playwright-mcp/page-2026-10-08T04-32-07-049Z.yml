@@ -1,0 +1,19 @@
+- generic [ref=f5e2]:
+  - banner [ref=f5e3]:
+    - generic [ref=f5e4]:
+      - heading "GreenFlex — Aggregator Dashboard" [level=1] [ref=f5e5]
+      - paragraph [ref=f5e6]: Discover TPDDL's real published needs, choose a pool size, and send a real statistically-derived offer — then confirm and watch the real settlement arrive.
+      - generic [ref=f5e7]: onix-bap :8081 · webhook :4102
+    - button "Reset offers" [ref=f5e9] [cursor=pointer]
+  - generic [ref=f5e10]:
+    - heading "My subscribers — live fleet status" [level=2] [ref=f5e11]
+    - generic [ref=f5e13]:
+      - text: No subscribers yet — run
+      - code [ref=f5e14]: node seed-subscribers.js
+      - text: .
+  - generic [ref=f5e15]:
+    - heading "Discover open needs (from TPDDL, port 4101)" [level=2] [ref=f5e16]
+    - generic [ref=f5e17]: No open needs right now.
+  - generic [ref=f5e19]:
+    - heading "My offers" [level=2] [ref=f5e20]
+    - generic [ref=f5e21]: No offers sent yet.

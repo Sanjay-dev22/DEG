@@ -1,0 +1,7 @@
+[     211ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4002/favicon.ico:0
+[ 6556714ms] [ERROR] WebSocket connection to 'ws://localhost:4002/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4002/:193
+[ 6557423ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4002/api/offers:0
+[ 6557424ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4002/api/trades:0
+[ 6557454ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4002/:105:5)
+[ 6557433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4002/api/earnings:0

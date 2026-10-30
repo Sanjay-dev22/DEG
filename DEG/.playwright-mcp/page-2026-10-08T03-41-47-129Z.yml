@@ -1,0 +1,45 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - heading "TPDDL — Utility Dashboard" [level=1] [ref=f1e4]
+    - paragraph [ref=f1e5]: Publish a real flex need, watch GreenFlex's real proposal arrive, and decide each step yourself — accept, activate, and finally settle with the real per-meter readings.
+    - generic [ref=f1e6]: onix-bpp :8082 · webhook :4101
+    - button "Reset trades & needs" [ref=f1e8] [cursor=pointer]
+  - generic [ref=f1e9]:
+    - heading "Publish a flex need" [level=2] [ref=f1e10]
+    - generic [ref=f1e11]:
+      - generic [ref=f1e12]:
+        - generic [ref=f1e13]: Capacity requested (kW)
+        - spinbutton [ref=f1e14]: "80"
+      - generic [ref=f1e15]:
+        - generic [ref=f1e16]: Price (Rs/kWh)
+        - spinbutton [ref=f1e17]: "3.5"
+      - generic [ref=f1e18]:
+        - generic [ref=f1e19]: Shortfall penalty (Rs/kWh)
+        - spinbutton [ref=f1e20]: "1.5"
+    - button "Publish need" [ref=f1e22] [cursor=pointer]
+  - generic [ref=f1e23]:
+    - heading "Published needs" [level=2] [ref=f1e24]
+    - table [ref=f1e93]:
+      - rowgroup [ref=f1e94]:
+        - row [ref=f1e95]:
+          - columnheader "ID" [ref=f1e96]
+          - columnheader "Requested" [ref=f1e97]
+          - columnheader "Price" [ref=f1e98]
+          - columnheader "Penalty" [ref=f1e99]
+          - columnheader "Status" [ref=f1e100]
+        - row [ref=f1e101]:
+          - cell "flex-need-78def4f9" [ref=f1e102]
+          - cell "80 kW" [ref=f1e103]
+          - cell "Rs3.5" [ref=f1e104]
+          - cell "Rs1.5" [ref=f1e105]
+          - cell "PROPOSED" [ref=f1e106]
+  - generic [ref=f1e27]:
+    - heading "Deals — proposals, active contracts, settlements" [level=2] [ref=f1e28]
+    - generic [ref=f1e108]:
+      - generic [ref=f1e109]:
+        - generic [ref=f1e110]: ebda2d44 — need flex-need-78def4f9 — offered 36.52 kW
+        - button "Confirm & activate" [ref=f1e112] [cursor=pointer]
+      - generic [ref=f1e113]:
+        - generic [ref=f1e114] [cursor=pointer]: init
+        - generic [ref=f1e115] [cursor=pointer]: on_init
+        - generic [ref=f1e116] [cursor=pointer]: confirm

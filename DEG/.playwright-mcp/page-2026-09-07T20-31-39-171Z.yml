@@ -1,0 +1,44 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - heading "🔌 Buyer Platform — buyerapp.example.com" [level=1] [ref=f3e3]
+    - generic [ref=f3e4]:
+      - generic [ref=f3e5]: ● connecting…
+      - button "Reset demo" [ref=f3e6] [cursor=pointer]
+  - main [ref=f3e7]:
+    - generic [ref=f3e8]:
+      - heading "Discover offers" [level=2] [ref=f3e9]
+      - generic [ref=f3e10]:
+        - text: Fires a real
+        - code [ref=f3e11]: discover
+        - text: against the shared discovery service. Results (if any) arrive asynchronously below.
+      - button "🔍 Refresh offers" [ref=f3e12] [cursor=pointer]
+      - generic [ref=f3e13]: No offers discovered yet.
+    - generic [ref=f3e15]:
+      - heading "Buy directly" [level=2] [ref=f3e16]
+      - generic [ref=f3e17]:
+        - text: If the offer you want isn't listed above yet, paste its real Offer ID here — copy it from the "My published offers" list on the
+        - strong [ref=f3e18]: Seller Platform
+        - text: page (it looks like
+        - code [ref=f3e19]: offer-demo-xxxxxxxx
+        - text: ", not a made-up value). Same real"
+        - code [ref=f3e20]: init
+        - text: call either way.
+      - generic [ref=f3e21]:
+        - generic [ref=f3e22]:
+          - generic [ref=f3e23]: Offer ID
+          - textbox "offer-demo-xxxxxxxx" [ref=f3e24]
+        - generic [ref=f3e25]:
+          - generic [ref=f3e26]: Quantity (kWh)
+          - spinbutton [ref=f3e27]: "15"
+        - generic [ref=f3e28]:
+          - generic [ref=f3e29]: Price (₹/kWh)
+          - spinbutton [ref=f3e30]: "12.5"
+        - generic [ref=f3e31]:
+          - generic [ref=f3e32]: Trade as
+          - combobox [ref=f3e33]:
+            - option "Allowed discom" [selected]
+            - option "Blocked discom (watch it get rejected)"
+        - button "Buy" [ref=f3e34] [cursor=pointer]
+    - generic [ref=f3e35]:
+      - heading "My trades" [level=2] [ref=f3e36]
+      - generic [ref=f3e37]: No trades yet.

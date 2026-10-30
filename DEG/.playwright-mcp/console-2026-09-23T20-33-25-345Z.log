@@ -1,0 +1,93 @@
+[     524ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.powermin.gov.in/en/content/electric-vehicle:0
+[    1550ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.powermin.gov.in/_next/data/gp7i3h32k7B-r6kvTUwMz/en/content/electric-vehicle.json:0
+[    1583ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://translation-plugin.bhashini.co.in/redirection/language?domain=https%3A%2F%2Fwww.powermin.gov.in%2Fen%2Fcontent%2Felectric-vehicle:0
+[    3757ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.powermin.gov.in/en/content/guidelines-and-standards-electric-vehicle-charging-infrastructure:0
+[    4028ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.powermin.gov.in/_next/data/gp7i3h32k7B-r6kvTUwMz/en/content/guidelines-and-standards-electric-vehicle-charging-infrastructure.json:0
+[    4219ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://translation-plugin.bhashini.co.in/redirection/language?domain=https%3A%2F%2Fwww.powermin.gov.in%2Fen%2Fcontent%2Fguidelines-and-standards-electric-vehicle-charging-infrastructure:0
+[   56844ms] [ERROR] Refused to apply style from 'https://beeindia.gov.in/' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled. @ https://beeindia.gov.in/:0
+[   57265ms] TypeError: $(...).counterUp is not a function
+    at https://beeindia.gov.in/assets/js/main.js:115:37
+    at https://beeindia.gov.in/assets/js/main.js:135:3
+[   57499ms] [WARNING] jQuery.Deferred exception: $(...).slick is not a function TypeError: $(...).slick is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4035:30)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at t (https://beeindia.gov.in/assets/js/jquery.min.js:2:27330) undefined @ https://beeindia.gov.in/assets/js/jquery.min.js:1
+[   57499ms] [WARNING] jQuery.Deferred exception: $(...).bootstrapNews is not a function TypeError: $(...).bootstrapNews is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4049:23)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at t (https://beeindia.gov.in/assets/js/jquery.min.js:2:27330) undefined @ https://beeindia.gov.in/assets/js/jquery.min.js:1
+[   57501ms] [WARNING] jQuery.Deferred exception: $(...).AcmeTicker is not a function TypeError: $(...).AcmeTicker is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4063:32)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at t (https://beeindia.gov.in/assets/js/jquery.min.js:2:27330) undefined @ https://beeindia.gov.in/assets/js/jquery.min.js:1
+[   57532ms] TypeError: $(...).slick is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4035:30)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at t (https://beeindia.gov.in/assets/js/jquery.min.js:2:27330)
+[   57533ms] TypeError: $(...).bootstrapNews is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4049:23)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at t (https://beeindia.gov.in/assets/js/jquery.min.js:2:27330)
+[   57533ms] TypeError: $(...).AcmeTicker is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4063:32)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at t (https://beeindia.gov.in/assets/js/jquery.min.js:2:27330)
+[   58716ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://i.ytimg.com/vi_webp/wAW9av9qeD0/sddefault.webp:0
+[   58979ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[   59258ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[   59354ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[   59390ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[   60791ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.powermin.gov.in/en/content/charging-infrastructure-electric-vehicles-ev-%E2%80%93-revised-consolidated-guidelines-standards-reg:0
+[   61268ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.powermin.gov.in/_next/data/gp7i3h32k7B-r6kvTUwMz/en/content/charging-infrastructure-electric-vehicles-ev-%E2%80%93-revised-consolidated-guidelines-standards-reg.json:0
+[   61496ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://translation-plugin.bhashini.co.in/redirection/language?domain=https%3A%2F%2Fwww.powermin.gov.in%2Fen%2Fcontent%2Fcharging-infrastructure-electric-vehicles-ev-%25E2%2580%2593-revised-consolidated-guidelines-standards-reg:0
+[   65518ms] [ERROR] Refused to apply style from 'https://beeindia.gov.in/' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled. @ https://beeindia.gov.in/:0
+[   65829ms] TypeError: $(...).counterUp is not a function
+    at https://beeindia.gov.in/assets/js/main.js:115:37
+    at https://beeindia.gov.in/assets/js/main.js:135:3
+[   65973ms] [WARNING] jQuery.Deferred exception: $(...).slick is not a function TypeError: $(...).slick is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4035:30)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at https://beeindia.gov.in/assets/js/jquery.min.js:2:27330 undefined @ https://beeindia.gov.in/assets/js/jquery.min.js:1
+[   65974ms] [WARNING] jQuery.Deferred exception: $(...).bootstrapNews is not a function TypeError: $(...).bootstrapNews is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4049:23)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at https://beeindia.gov.in/assets/js/jquery.min.js:2:27330 undefined @ https://beeindia.gov.in/assets/js/jquery.min.js:1
+[   65975ms] [WARNING] jQuery.Deferred exception: $(...).AcmeTicker is not a function TypeError: $(...).AcmeTicker is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4063:32)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at https://beeindia.gov.in/assets/js/jquery.min.js:2:27330 undefined @ https://beeindia.gov.in/assets/js/jquery.min.js:1
+[   66003ms] TypeError: $(...).slick is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4035:30)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at https://beeindia.gov.in/assets/js/jquery.min.js:2:27330
+[   66003ms] TypeError: $(...).bootstrapNews is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4049:23)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at https://beeindia.gov.in/assets/js/jquery.min.js:2:27330
+[   66003ms] TypeError: $(...).AcmeTicker is not a function
+    at HTMLDocument.<anonymous> (https://beeindia.gov.in/:4063:32)
+    at e (https://beeindia.gov.in/assets/js/jquery.min.js:2:27028)
+    at https://beeindia.gov.in/assets/js/jquery.min.js:2:27330
+[   66624ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://i.ytimg.com/vi_webp/wAW9av9qeD0/sddefault.webp:0
+[   67243ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[   67428ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[   67434ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[   67439ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[  124372ms] [ERROR] The Content-Security-Policy directive name 'default-src*' contains one or more invalid characters. Only ASCII alphanumeric characters or dashes '-' are allowed in directive names. @ https://rerc.rajasthan.gov.in/:0
+[  124372ms] [ERROR] The Content-Security-Policy directive name ''unsafe-inline'' contains one or more invalid characters. Only ASCII alphanumeric characters or dashes '-' are allowed in directive names. @ https://rerc.rajasthan.gov.in/:0
+[  124788ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://rerc.rajasthan.gov.in/Scripts/jquery-3.4.1.js:0
+[  124874ms] [ERROR] Refused to execute script from 'https://rerc.rajasthan.gov.in/Scripts/jquery-3.4.1.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://rerc.rajasthan.gov.in/:0
+[  124908ms] Invalid or unexpected token
+[  128317ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://rerc.rajasthan.gov.in/en/regulations:0
+[  128317ms] [ERROR] The Content-Security-Policy directive name 'default-src*' contains one or more invalid characters. Only ASCII alphanumeric characters or dashes '-' are allowed in directive names. @ https://rerc.rajasthan.gov.in/en/regulations:0
+[  128317ms] [ERROR] The Content-Security-Policy directive name ''unsafe-inline'' contains one or more invalid characters. Only ASCII alphanumeric characters or dashes '-' are allowed in directive names. @ https://rerc.rajasthan.gov.in/en/regulations:0
+[  145242ms] [ERROR] Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR @ https://energy.prayaspune.org/index.php?option=com_ajax&format=raw&plugin=RunSchedulerLazy&group=system:0
+[  145242ms] TypeError: Failed to fetch
+    at HTMLDocument.initScheduler (https://energy.prayaspune.org/media/plg_system_schedulerunner/js/run-schedule.min.js?229d3b:4:410)
+[  151639ms] [ERROR] The Content-Security-Policy directive name 'default-src*' contains one or more invalid characters. Only ASCII alphanumeric characters or dashes '-' are allowed in directive names. @ https://rerc.rajasthan.gov.in/rerc-user-files/regulations:0
+[  151639ms] [ERROR] The Content-Security-Policy directive name ''unsafe-inline'' contains one or more invalid characters. Only ASCII alphanumeric characters or dashes '-' are allowed in directive names. @ https://rerc.rajasthan.gov.in/rerc-user-files/regulations:0
+[  151743ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://rerc.rajasthan.gov.in/bundles/modernizr:0
+[  151743ms] [ERROR] Refused to execute script from 'https://rerc.rajasthan.gov.in/bundles/modernizr' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://rerc.rajasthan.gov.in/rerc-user-files/regulations:0
+[  151982ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://rerc.rajasthan.gov.in/Scripts/jquery-3.4.1.js:0
+[  152039ms] [ERROR] Refused to execute script from 'https://rerc.rajasthan.gov.in/Scripts/jquery-3.4.1.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://rerc.rajasthan.gov.in/rerc-user-files/regulations:0
+[  152041ms] Invalid or unexpected token

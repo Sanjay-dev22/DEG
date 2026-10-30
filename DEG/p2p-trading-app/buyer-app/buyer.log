@@ -1,0 +1,17 @@
+
+> p2p-trading-buyer-app@1.0.0 start
+> node server.js
+
+(node:21216) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Buyer Platform listening on http://localhost:4001
+  → talking to onix-buyerapp at http://localhost:8081
+  → webhook target for onix: http://host.docker.internal:4001/api/bap-webhook
+[webhook] on_discover — txn=d7f11a90-9ed7-4a34-9e9f-e84e30233fab
+[webhook] on_init — txn=6a6c691e-7370-4707-9573-81c8d0cfcd96
+[webhook] on_confirm — txn=6a6c691e-7370-4707-9573-81c8d0cfcd96
+[webhook] on_status — txn=6a6c691e-7370-4707-9573-81c8d0cfcd96
+[webhook] on_discover — txn=b7e367f0-8e92-482c-824e-10557ff78b9b
+[webhook] on_init — txn=ec63916d-a94c-43d3-8b95-8e3a1cb1d756
+[webhook] on_confirm — txn=ec63916d-a94c-43d3-8b95-8e3a1cb1d756
+[webhook] on_status — txn=ec63916d-a94c-43d3-8b95-8e3a1cb1d756

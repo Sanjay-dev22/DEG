@@ -1,0 +1,234 @@
+[   28509ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   30102ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   30103ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   30107ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   30107ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[   30107ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[   30517ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   32534ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   34549ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   35099ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   35099ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   35100ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   36564ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   38579ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   40101ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   40101ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   40101ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   40101ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[   40101ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[   40586ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   42594ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   44603ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   45103ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   45103ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   45104ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   46616ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   48634ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   50094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   50094ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   50095ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   50095ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[   50095ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[   50639ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   52656ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   54682ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   55092ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   55092ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   55093ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   56692ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   58697ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   60102ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   60102ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   60103ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   60103ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[   60103ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[   60704ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   62736ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   64760ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   65093ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   65093ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   65094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   66786ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   68816ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   70093ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   70094ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   70094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   70095ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[   70095ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[   70842ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   72865ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   74893ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   75099ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   75099ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   75100ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   76931ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   78980ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   80093ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   80093ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   80094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   80094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[   80094ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[   81023ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   83065ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   85089ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   85089ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   85090ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   85101ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   87139ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   89199ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   90093ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   90093ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   90094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   90094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[   90094ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[   91276ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   93338ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   95103ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[   95103ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[   95104ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[   95489ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   97603ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[   99765ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  100097ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  100098ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  100098ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  100098ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[  100099ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[  101901ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  103991ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  105094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  105094ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  105095ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  106307ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  108664ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  110100ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  110100ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  110100ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  110101ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[  110101ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[  111050ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  113325ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  115097ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  115097ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  115098ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  115938ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  119168ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  120104ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  120104ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  120105ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  120105ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[  120105ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[  122022ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  125095ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  125096ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  125096ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  126426ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  130100ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  130101ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  130101ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  130102ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[  130102ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[  130779ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  133605ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  135100ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  135100ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  135101ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  137933ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  140096ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  140097ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  140097ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  140097ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[  140097ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[  143517ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  145101ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  145102ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  145102ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  150090ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  150090ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  150091ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  150091ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[  150091ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[  150212ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  154183ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  155095ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  155095ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  155096ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  159145ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  160093ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  160093ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  160094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  160094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[  160094ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[  162319ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  165112ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  165112ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  165113ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  167485ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  170093ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  170093ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  170094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  170094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[  170094ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[  171949ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  175098ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  175098ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  175099ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  178143ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  180093ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  180093ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  180094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0
+[  180094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/network/ledger-trades:0
+[  180094ms] [ERROR] ledger refresh failed: TypeError: Failed to fetch
+    at refreshLedger (http://localhost:4001/network.html:241:27) @ http://localhost:4001/network.html:244
+[  183413ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/network.html:249
+[  185094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  185094ms] [ERROR] offers refresh failed: TypeError: Failed to fetch
+    at refreshOffers (http://localhost:4001/network.html:230:7) @ http://localhost:4001/network.html:235
+[  185094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/my-offers:0

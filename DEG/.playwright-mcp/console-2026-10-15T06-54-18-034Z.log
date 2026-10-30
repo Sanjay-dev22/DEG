@@ -1,0 +1,10 @@
+[ 6655052ms] [ERROR] WebSocket connection to 'ws://localhost:4003/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4003/:361
+[ 6655065ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4003/api/requirements:0
+[ 6655072ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4003/api/blocks:0
+[ 6655098ms] TypeError: Failed to fetch
+    at api (http://localhost:4003/:128:21)
+    at loadRequirements (http://localhost:4003/:181:22)
+[ 6655099ms] TypeError: Failed to fetch
+    at api (http://localhost:4003/:128:21)
+    at loadBlocks (http://localhost:4003/:258:24)
+[ 6657068ms] [ERROR] WebSocket connection to 'ws://localhost:4003/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4003/:361

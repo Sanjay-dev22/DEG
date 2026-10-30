@@ -1,0 +1,45 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - heading "TPDDL — Utility Dashboard" [level=1] [ref=e4]
+    - paragraph [ref=e5]: Publish a real flex need, watch GreenFlex's real proposal arrive, and decide each step yourself — accept, activate, and finally settle with the real per-meter readings.
+    - generic [ref=e6]: onix-bpp :8082 · webhook :4101
+    - button "Reset trades & needs" [ref=e8] [cursor=pointer]
+  - generic [ref=e9]:
+    - heading "Publish a flex need" [level=2] [ref=e10]
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Capacity requested (kW)
+        - spinbutton [ref=e14]: "120"
+      - generic [ref=e15]:
+        - generic [ref=e16]: Price (Rs/kWh)
+        - spinbutton [ref=e17]: "3.8"
+      - generic [ref=e18]:
+        - generic [ref=e19]: Shortfall penalty (Rs/kWh)
+        - spinbutton [ref=e20]: "1.2"
+    - button "Publish need" [ref=e22] [cursor=pointer]
+  - generic [ref=e23]:
+    - heading "Published needs" [level=2] [ref=e24]
+    - table [ref=e111]:
+      - rowgroup [ref=e112]:
+        - row [ref=e113]:
+          - columnheader "ID" [ref=e114]
+          - columnheader "Requested" [ref=e115]
+          - columnheader "Price" [ref=e116]
+          - columnheader "Penalty" [ref=e117]
+          - columnheader "Status" [ref=e118]
+        - row [ref=e119]:
+          - cell "flex-need-73864972" [ref=e120]
+          - cell "120 kW" [ref=e121]
+          - cell "Rs3.8" [ref=e122]
+          - cell "Rs1.2" [ref=e123]
+          - cell "PROPOSED" [ref=e124]
+  - generic [ref=e27]:
+    - heading "Deals — proposals, active contracts, settlements" [level=2] [ref=e28]
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]: d5b218de — need flex-need-73864972 — offered 62.74 kW
+        - button "Confirm & activate" [ref=e130] [cursor=pointer]
+      - generic [ref=e131]:
+        - generic [ref=e132] [cursor=pointer]: init
+        - generic [ref=e133] [cursor=pointer]: on_init
+        - generic [ref=e134] [cursor=pointer]: confirm

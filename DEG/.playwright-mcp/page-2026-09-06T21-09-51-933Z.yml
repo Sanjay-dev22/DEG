@@ -1,0 +1,29 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f4e3]
+    - generic [ref=f4e4]:
+      - generic [ref=f4e5]: ₹175.00
+      - generic [ref=f4e6]: Earnings (settled)
+  - main [ref=f4e7]:
+    - generic [ref=f4e8]:
+      - heading "Publish a new offer ● live" [level=2] [ref=f4e9]:
+        - text: Publish a new offer
+        - generic [ref=f4e10]: ● live
+      - generic [ref=f4e11]:
+        - generic [ref=f4e12]:
+          - generic [ref=f4e13]: Quantity (kWh)
+          - spinbutton [ref=f4e14]: "20"
+        - generic [ref=f4e15]:
+          - generic [ref=f4e16]: Price (₹/kWh)
+          - spinbutton [ref=f4e17]: "12.5"
+        - button "Publish offer" [ref=f4e18] [cursor=pointer]
+    - generic [ref=f4e19]:
+      - heading "Incoming requests" [level=2] [ref=f4e20]
+      - generic [ref=f4e21]: No incoming requests yet.
+    - generic [ref=f4e23]:
+      - heading "Active & settled trades" [level=2] [ref=f4e24]
+      - generic [ref=f4e26]:
+        - generic [ref=f4e27]:
+          - generic [ref=f4e28]: 15 kWh @ ₹12.5/kWh — delivered 14 kWh
+          - generic [ref=f4e29]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER · settled ₹175.00"
+        - generic [ref=f4e30]: Settled

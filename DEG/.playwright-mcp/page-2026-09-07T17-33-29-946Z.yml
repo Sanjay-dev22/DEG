@@ -1,0 +1,64 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=e3]
+    - generic [ref=e4]:
+      - generic [ref=e5]: ₹84.00
+      - generic [ref=e6]: Earnings (settled)
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - heading "Publish a new offer ● live" [level=2] [ref=e9]:
+        - text: Publish a new offer
+        - generic [ref=e10]: ● live
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]: Quantity (kWh)
+          - spinbutton [ref=e14]: "20"
+        - generic [ref=e15]:
+          - generic [ref=e16]: Price (₹/kWh)
+          - spinbutton [ref=e17]: "12.5"
+        - button "Publish offer" [ref=e18] [cursor=pointer]
+    - generic [ref=e19]:
+      - heading "My published offers" [level=2] [ref=e20]
+      - generic [ref=e21]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]: offer-demo-a31e5330
+            - generic [ref=e26]: 16 kWh @ ₹10/kWh
+          - button "Copy ID" [ref=e27] [cursor=pointer]
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: offer-demo-69846363
+            - generic [ref=e31]: 16 kWh @ ₹10/kWh
+          - button "Copy ID" [ref=e32] [cursor=pointer]
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: offer-demo-b06a8ad6
+            - generic [ref=e36]: 16 kWh @ ₹10/kWh
+          - button "Copy ID" [ref=e37] [cursor=pointer]
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]: offer-demo-a944ec04
+            - generic [ref=e41]: 16 kWh @ ₹10/kWh
+          - button "Copy ID" [ref=e42] [cursor=pointer]
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: offer-demo-d82ccc1f
+            - generic [ref=e46]: 16 kWh @ ₹10/kWh
+          - button "Copy ID" [ref=e47] [cursor=pointer]
+    - generic [ref=e48]:
+      - heading "Incoming requests" [level=2] [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]: 15 kWh @ ₹12.5/kWh
+          - generic [ref=e54]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER"
+        - generic [ref=e55]:
+          - generic [ref=e56]: Pending
+          - button "Accept" [ref=e57] [cursor=pointer]
+    - generic [ref=e58]:
+      - heading "Active & settled trades" [level=2] [ref=e59]
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - generic [ref=e63]: 9 kWh @ ₹10/kWh — delivered 8.4 kWh
+          - generic [ref=e64]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER · settled ₹84.00"
+        - generic [ref=e65]: Settled

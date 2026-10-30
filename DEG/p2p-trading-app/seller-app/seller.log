@@ -1,0 +1,6 @@
+(node:33320) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Seller Platform listening on http://localhost:4002
+  → talking to onix-sellerapp at http://localhost:18082
+  → webhook target for onix: http://host.docker.internal:4002/api/webhook
+publish rejected by onix: 400 {"message":{"status":"NACK","messageId":"07e939f1-f355-45c0-986e-bd90106709fc","error":{"code":"Bad Request","message":"BAD Request: settlement policy violations: PRICE_PER_KWH 0.01 is outside the published band 6-15 INR/kWh (below minimum)"}}}

@@ -1,0 +1,5 @@
+[ 2532047ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4004/api/trades:0
+[ 2532079ms] TypeError: Failed to fetch
+    at api (http://localhost:4004/:91:21)
+    at loadTrades (http://localhost:4004/:147:24)
+    at refresh (http://localhost:4004/:175:9)

@@ -1,0 +1,120 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e6]:
+      - generic [ref=e7]: GRID PULSE
+      - generic [ref=e8]: Beckn Protocol Inspector · P2P trade
+    - generic [ref=e9]:
+      - button "1Publish" [ref=e10] [cursor=pointer]
+      - button "2Discover" [ref=e11] [cursor=pointer]
+      - button "3Init" [ref=e12] [cursor=pointer]
+      - button "4Confirm" [ref=e13] [cursor=pointer]
+      - button "5Settle" [ref=e14] [cursor=pointer]
+      - button "6Rejected" [active] [ref=e15] [cursor=pointer]
+    - button "Interactive mode" [ref=e16] [cursor=pointer]
+    - button "Legend" [ref=e19] [cursor=pointer]
+  - generic [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - button "+" [ref=e23] [cursor=pointer]
+        - button "−" [ref=e24] [cursor=pointer]
+        - button "⊞" [ref=e25] [cursor=pointer]
+      - img [ref=e26]:
+        - generic [ref=e29]: bap_side (docker network)
+        - generic [ref=e30]: bpp_side (docker network)
+        - generic [ref=e38]:
+          - generic [ref=e41] [cursor=pointer]
+          - generic: BAP business logic
+          - generic: BuyerApp
+          - generic: sandbox-buyerapp:3001
+        - generic [ref=e42]:
+          - generic [ref=e45] [cursor=pointer]
+          - generic: Protocol adapter
+          - generic: onix-buyerapp
+          - generic: :8081
+        - generic [ref=e46]:
+          - generic [ref=e49] [cursor=pointer]
+          - generic: Session cache
+          - generic: redis
+          - generic: :6379
+        - generic [ref=e50]:
+          - generic [ref=e53] [cursor=pointer]
+          - generic: BPP business logic
+          - generic: SellerApp
+          - generic: sandbox-sellerapp:3002
+        - generic [ref=e54]:
+          - generic [ref=e57] [cursor=pointer]
+          - generic: Protocol adapter
+          - generic: onix-sellerapp
+          - generic: :8082
+        - generic [ref=e58]:
+          - generic [ref=e61] [cursor=pointer]
+          - generic: Session cache
+          - generic: redis
+          - generic: :6379
+        - generic [ref=e62]:
+          - generic [ref=e65] [cursor=pointer]
+          - generic: The only bridge
+          - generic: beckn-router
+          - generic: Caddy · :9000
+        - generic [ref=e66]:
+          - generic [ref=e69] [cursor=pointer]
+          - generic: Network infra
+          - generic: Catalog / Discovery
+          - generic: shared endpoint
+        - generic [ref=e70]:
+          - generic [ref=e73] [cursor=pointer]
+          - generic: Seller discom ledger adapter
+          - generic: onix-ledger-
+          - generic: sellerdiscom
+          - generic: :8083
+        - generic [ref=e74]:
+          - generic [ref=e77] [cursor=pointer]
+          - generic: TPDDL ledger TSP
+          - generic: SellerDiscom
+          - generic: Ledger
+          - generic: sandbox:3003
+        - generic [ref=e78]:
+          - generic [ref=e81] [cursor=pointer]
+          - generic: Buyer discom ledger adapter
+          - generic: onix-ledger-
+          - generic: buyerdiscom
+          - generic: :8084
+        - generic [ref=e82]:
+          - generic [ref=e85] [cursor=pointer]
+          - generic: BRPL ledger TSP
+          - generic: BuyerDiscom
+          - generic: Ledger
+          - generic: sandbox:3004
+        - generic [ref=e86]:
+          - generic [ref=e89] [cursor=pointer]
+          - generic: Not used this walkthrough
+          - generic: onix-buyerdiscom
+          - generic: :8085
+        - generic [ref=e90]:
+          - generic [ref=e93] [cursor=pointer]
+          - generic: Not used this walkthrough
+          - generic: onix-sellerdiscom
+          - generic: :8086
+        - generic [ref=e94]:
+          - generic [ref=e97] [cursor=pointer]
+          - generic: Real, external, hosted
+          - generic: IES Energy Ledger
+          - generic: ies-p2p-energy-ledger.beckn.io
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - generic [ref=e100]: INIT (BLOCKED)
+        - generic [ref=e101]: Same flow, a discom outside the allowlist — watch the exact step that rejects it.
+      - generic [ref=e102]: 3 real hops in this flow. Press ▶▶ Step to walk through it yourself, or Play to run the whole demo, start to finish.
+  - generic [ref=e104]:
+    - button "◀" [disabled] [ref=e105]
+    - button "▶" [ref=e218] [cursor=pointer]
+    - button "▶▶" [ref=e107] [cursor=pointer]
+    - generic [ref=e108]:
+      - generic [ref=e109]: Speed
+      - slider [ref=e110] [cursor=pointer]: "1"
+      - generic [ref=e111]: 1×
+    - generic [ref=e112]:
+      - generic [ref=e684] [cursor=pointer]: "1"
+      - generic [ref=e685] [cursor=pointer]: "2"
+      - generic [ref=e686] [cursor=pointer]: "3"
+    - generic [ref=e115]: ready · 0 / 3

@@ -1,0 +1,16 @@
+EPOCH 1 | boundary_line=1 | timestamp=2026-08-25T18:21:57.980Z | trigger=manual | summary_chars=29191
+EPOCH 2 | boundary_line=2887 | timestamp=2026-08-31T21:07:37.946Z | trigger=auto | summary_chars=37793
+EPOCH 3 | boundary_line=6068 | timestamp=2026-09-04T19:30:02.604Z | trigger=manual | summary_chars=30748
+EPOCH 4 | boundary_line=8310 | timestamp=2026-09-06T19:47:43.489Z | trigger=auto | summary_chars=32525
+EPOCH 5 | boundary_line=12184 | timestamp=2026-09-07T21:03:36.910Z | trigger=auto | summary_chars=38580
+EPOCH 6 | boundary_line=15868 | timestamp=2026-09-15T06:45:47.802Z | trigger=manual | summary_chars=25463
+EPOCH 7 | boundary_line=19799 | timestamp=2026-09-17T18:21:38.571Z | trigger=auto | summary_chars=0
+EPOCH 8 | boundary_line=23661 | timestamp=2026-09-27T11:27:54.477Z | trigger=manual | summary_chars=39514
+EPOCH 9 | boundary_line=26801 | timestamp=2026-10-06T08:13:20.307Z | trigger=manual | summary_chars=28264
+EPOCH 10 | boundary_line=30363 | timestamp=2026-10-07T20:04:41.463Z | trigger=auto | summary_chars=0
+EPOCH 11 | boundary_line=34507 | timestamp=2026-10-09T03:49:51.268Z | trigger=manual | summary_chars=27372
+EPOCH 12 | boundary_line=35165 | timestamp=2026-10-12T04:46:09.916Z | trigger=auto | summary_chars=26478
+EPOCH 13 | boundary_line=37351 | timestamp=2026-10-13T07:32:31.931Z | trigger=auto | summary_chars=30923
+EPOCH 14 | boundary_line=38132 | timestamp=2026-10-14T05:58:18.807Z | trigger=auto | summary_chars=26139
+EPOCH 15 | boundary_line=42139 | timestamp=2026-10-15T04:34:35.288Z | trigger=manual | summary_chars=18246
+EPOCH 16 | boundary_line=46040 | timestamp=2026-10-15T07:52:24.078Z | trigger=auto | summary_chars=22527

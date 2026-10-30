@@ -1,0 +1,103 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - heading "🔌 Buyer Platform — buyerapp.example.com" [level=1] [ref=f4e3]
+    - generic [ref=f4e4]:
+      - generic [ref=f4e5]: ● live
+      - link "🌐 Network Dashboard" [ref=f4e6] [cursor=pointer]:
+        - /url: /network.html
+      - button "Reset demo" [ref=f4e7] [cursor=pointer]
+  - main [ref=f4e8]:
+    - generic [ref=f4e9]:
+      - heading "Discover offers" [level=2] [ref=f4e10]
+      - generic [ref=f4e11]:
+        - text: Fires a real
+        - code [ref=f4e12]: discover
+        - text: against the shared discovery service. Results (if any) arrive asynchronously below.
+      - button "🔍 Refresh offers" [ref=f4e13] [cursor=pointer]
+      - generic [ref=f4e14]:
+        - generic [ref=f4e15]:
+          - generic [ref=f4e16]: Min price ₹/kWh
+          - spinbutton "any" [ref=f4e17]
+        - generic [ref=f4e18]:
+          - generic [ref=f4e19]: Max price ₹/kWh
+          - spinbutton "any" [ref=f4e20]
+        - generic [ref=f4e21]:
+          - generic [ref=f4e22]: Min qty kWh
+          - spinbutton "any" [ref=f4e23]
+        - generic [ref=f4e24]:
+          - generic [ref=f4e25]: Max qty kWh
+          - spinbutton "any" [ref=f4e26]
+        - generic [ref=f4e27]:
+          - generic [ref=f4e28]: Sort by
+          - combobox [ref=f4e29]:
+            - option "Newest first" [selected]
+            - 'option "Price: low → high"'
+            - 'option "Price: high → low"'
+            - 'option "Quantity: high → low"'
+        - generic [ref=f4e30]:
+          - checkbox "Only buyable (ours)" [ref=f4e31]
+          - text: Only buyable (ours)
+        - button "Clear filters" [ref=f4e32] [cursor=pointer]
+      - generic [ref=f4e33]: No offers discovered yet.
+    - generic [ref=f4e35]:
+      - heading "Buy directly / place a bid" [level=2] [ref=f4e36]
+      - generic [ref=f4e37]:
+        - text: Paste an Offer ID here — copy it from a card above with the
+        - strong [ref=f4e38]: Copy ID
+        - text: button, or from the "My published offers" list on the
+        - strong [ref=f4e39]: Seller Platform
+        - text: page (it looks like
+        - code [ref=f4e40]: offer-demo-xxxxxxxx
+        - text: "). The price field is a real negotiating bid: leave it at the seller's ask to buy outright, or lower it to test a real counter-offer — the seller can accept, counter back, or decline."
+      - generic [ref=f4e41]:
+        - generic [ref=f4e42]:
+          - generic [ref=f4e43]: Offer ID
+          - textbox "offer-demo-xxxxxxxx" [ref=f4e44]
+        - generic [ref=f4e45]:
+          - generic [ref=f4e46]: Quantity (kWh)
+          - spinbutton "—" [disabled] [ref=f4e47]
+        - generic [ref=f4e48]:
+          - generic [ref=f4e49]: Your bid (₹/kWh)
+          - spinbutton "—" [disabled] [ref=f4e50]
+        - generic [ref=f4e51]:
+          - generic [ref=f4e52]: Trade as
+          - combobox [ref=f4e53]:
+            - option "Allowed discom" [selected]
+            - option "Blocked discom (watch it get rejected)"
+        - button "Send bid" [disabled] [ref=f4e54] [cursor=pointer]
+    - generic [ref=f4e56]:
+      - heading "My trades" [level=2] [ref=f4e57]
+      - generic [ref=f4e68]:
+        - generic [ref=f4e69]:
+          - generic [ref=f4e70]:
+            - generic [ref=f4e71]: We bid ₹12.5/kWh for 30 kWh — offer-demo-eb4316d2
+            - generic [ref=f4e72]: as TEST_DISCOM_BUYER · paid ₹250.00
+          - generic [ref=f4e73]:
+            - generic [ref=f4e74]: Settled
+            - button "Hide trace" [ref=f4e75] [cursor=pointer]
+        - generic [ref=f4e76]:
+          - generic [ref=f4e78] [cursor=pointer]:
+            - generic [ref=f4e79]: init
+            - generic [ref=f4e80]: sent
+            - generic [ref=f4e81]: 10:52:10 AM
+            - generic [ref=f4e82]: Bid ₹12.5/kWh for 30 kWh
+          - generic [ref=f4e84] [cursor=pointer]:
+            - generic [ref=f4e85]: on_init
+            - generic [ref=f4e86]: received
+            - generic [ref=f4e87]: 10:52:19 AM
+            - generic [ref=f4e88]: Seller accepted our bid as-is
+          - generic [ref=f4e90] [cursor=pointer]:
+            - generic [ref=f4e91]: confirm
+            - generic [ref=f4e92]: sent
+            - generic [ref=f4e93]: 10:52:19 AM
+            - generic [ref=f4e94]: Confirmed
+          - generic [ref=f4e96] [cursor=pointer]:
+            - generic [ref=f4e97]: on_confirm
+            - generic [ref=f4e98]: received
+            - generic [ref=f4e99]: 10:52:20 AM
+            - generic [ref=f4e100]: Trade is now ACTIVE
+          - generic [ref=f4e102] [cursor=pointer]:
+            - generic [ref=f4e103]: on_status
+            - generic [ref=f4e104]: received
+            - generic [ref=f4e105]: 10:52:28 AM
+            - generic [ref=f4e106]: Settled — paid ₹250.00

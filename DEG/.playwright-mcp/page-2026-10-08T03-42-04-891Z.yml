@@ -1,0 +1,116 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - heading "TPDDL — Utility Dashboard" [level=1] [ref=f1e4]
+    - paragraph [ref=f1e5]: Publish a real flex need, watch GreenFlex's real proposal arrive, and decide each step yourself — accept, activate, and finally settle with the real per-meter readings.
+    - generic [ref=f1e6]: onix-bpp :8082 · webhook :4101
+    - button "Reset trades & needs" [ref=f1e8] [cursor=pointer]
+  - generic [ref=f1e9]:
+    - heading "Publish a flex need" [level=2] [ref=f1e10]
+    - generic [ref=f1e11]:
+      - generic [ref=f1e12]:
+        - generic [ref=f1e13]: Capacity requested (kW)
+        - spinbutton [ref=f1e14]: "80"
+      - generic [ref=f1e15]:
+        - generic [ref=f1e16]: Price (Rs/kWh)
+        - spinbutton [ref=f1e17]: "3.5"
+      - generic [ref=f1e18]:
+        - generic [ref=f1e19]: Shortfall penalty (Rs/kWh)
+        - spinbutton [ref=f1e20]: "1.5"
+    - button "Publish need" [ref=f1e22] [cursor=pointer]
+  - generic [ref=f1e23]:
+    - heading "Published needs" [level=2] [ref=f1e24]
+    - table [ref=f1e216]:
+      - rowgroup [ref=f1e217]:
+        - row [ref=f1e218]:
+          - columnheader "ID" [ref=f1e219]
+          - columnheader "Requested" [ref=f1e220]
+          - columnheader "Price" [ref=f1e221]
+          - columnheader "Penalty" [ref=f1e222]
+          - columnheader "Status" [ref=f1e223]
+        - row [ref=f1e224]:
+          - cell "flex-need-78def4f9" [ref=f1e225]
+          - cell "80 kW" [ref=f1e226]
+          - cell "Rs3.5" [ref=f1e227]
+          - cell "Rs1.5" [ref=f1e228]
+          - cell "SETTLED" [ref=f1e229]
+  - generic [ref=f1e27]:
+    - heading "Deals — proposals, active contracts, settlements" [level=2] [ref=f1e28]
+    - generic [ref=f1e231]:
+      - generic [ref=f1e232]:
+        - generic [ref=f1e233]: ebda2d44 — need flex-need-78def4f9 — offered 36.52 kW
+        - generic [ref=f1e234]: SETTLED
+      - generic [ref=f1e236]: "Delivered: 9.48 kW · Settlement: GreenFlex owes TPDDL Rs 3.69"
+      - generic [ref=f1e237]:
+        - generic [ref=f1e238] [cursor=pointer]: init
+        - generic [ref=f1e239] [cursor=pointer]: on_init
+        - generic [ref=f1e240] [cursor=pointer]: confirm
+        - generic [ref=f1e241] [cursor=pointer]: ocpp_setprofile
+        - generic [ref=f1e242] [cursor=pointer]: on_confirm
+        - generic [ref=f1e243] [cursor=pointer]: on_status
+      - generic [ref=f1e244]:
+        - generic [ref=f1e245]: Real OCPP 1.6 SetChargingProfile, pushed to every enrolled charger (7 of 9 accepted)
+        - table [ref=f1e246]:
+          - rowgroup [ref=f1e247]:
+            - row [ref=f1e248]:
+              - columnheader "Charger" [ref=f1e249]
+              - columnheader "Prior draw" [ref=f1e250]
+              - columnheader "Limit sent" [ref=f1e251]
+              - columnheader "Response" [ref=f1e252]
+              - columnheader "Actual draw" [ref=f1e253]
+            - row [ref=f1e254]:
+              - cell "Tata Nexon EV" [ref=f1e255]
+              - cell "1.06 kW" [ref=f1e256]
+              - cell "4.06 kW" [ref=f1e257]
+              - cell "Accepted" [ref=f1e258]
+              - cell "1.06 kW" [ref=f1e260]
+            - row [ref=f1e261]:
+              - cell "MG ZS EV" [ref=f1e262]
+              - cell "5.61 kW" [ref=f1e263]
+              - cell "4.18 kW" [ref=f1e264]
+              - cell "Accepted" [ref=f1e265]
+              - cell "4.18 kW" [ref=f1e267]
+            - row [ref=f1e268]:
+              - cell "Tata Tigor EV" [ref=f1e269]
+              - cell "7.03 kW" [ref=f1e270]
+              - cell "4.06 kW" [ref=f1e271]
+              - cell "Accepted" [ref=f1e272]
+              - cell "4.06 kW" [ref=f1e274]
+            - row [ref=f1e275]:
+              - cell "Hyundai Kona Electric" [ref=f1e276]
+              - cell "6.05 kW" [ref=f1e277]
+              - cell "4.06 kW" [ref=f1e278]
+              - cell "Accepted" [ref=f1e279]
+              - cell "4.06 kW" [ref=f1e281]
+            - row [ref=f1e282]:
+              - cell "Tata Punch EV" [ref=f1e283]
+              - cell "0.07 kW" [ref=f1e284]
+              - cell "4.06 kW" [ref=f1e285]
+              - cell "Accepted" [ref=f1e286]
+              - cell "0.07 kW" [ref=f1e288]
+            - row [ref=f1e289]:
+              - cell "Mahindra XUV400" [ref=f1e290]
+              - cell "6.83 kW" [ref=f1e291]
+              - cell "4.06 kW" [ref=f1e292]
+              - cell "Accepted" [ref=f1e293]
+              - cell "4.06 kW" [ref=f1e295]
+            - row [ref=f1e296]:
+              - cell "BYD Atto 3" [ref=f1e297]
+              - cell "6.84 kW" [ref=f1e298]
+              - cell "3.95 kW" [ref=f1e299]
+              - cell "Rejected" [ref=f1e300]
+              - cell "6.84 kW" [ref=f1e302]
+            - row [ref=f1e303]:
+              - cell "Citroen eC3" [ref=f1e304]
+              - cell "2.18 kW" [ref=f1e305]
+              - cell "1.86 kW" [ref=f1e306]
+              - cell "Accepted" [ref=f1e307]
+              - cell "1.86 kW" [ref=f1e309]
+            - row [ref=f1e310]:
+              - cell "Kia EV6" [ref=f1e311]
+              - cell "9.47 kW" [ref=f1e312]
+              - cell "6.21 kW" [ref=f1e313]
+              - cell "Rejected" [ref=f1e314]
+              - cell "9.47 kW" [ref=f1e316]
+      - generic [ref=f1e318]:
+        - generic [ref=f1e319]: The real math, spelled out
+        - text: delivered = sum of (baseline - usage) across all 9 meters = 9.48 kW eligible = min(delivered, offered) = min(9.48, 36.52) = 9.48 kW pay = eligible x 0.5h x Rs3.5/kWh = Rs16.59 shortfall = max(0, offered - delivered) = 27.04 kW penalty = shortfall x 0.5h x Rs1.5/kWh = Rs20.28 net = pay - penalty = Rs16.59 - Rs20.28 = Rs-3.69

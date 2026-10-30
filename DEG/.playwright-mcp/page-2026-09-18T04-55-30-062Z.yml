@@ -1,0 +1,931 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - heading "🔌 Buyer Platform — buyerapp.example.com" [level=1] [ref=f1e3]
+    - generic [ref=f1e4]:
+      - generic [ref=f1e5]: ● live
+      - link "🌐 Network Dashboard" [ref=f1e6] [cursor=pointer]:
+        - /url: /network.html
+      - button "Reset demo" [ref=f1e7] [cursor=pointer]
+  - main [ref=f1e8]:
+    - generic [ref=f1e9]:
+      - heading "Discover offers" [level=2] [ref=f1e10]
+      - generic [ref=f1e11]:
+        - text: Fires a real
+        - code [ref=f1e12]: discover
+        - text: against the shared discovery service. Results (if any) arrive asynchronously below.
+      - button "🔍 Refresh offers" [ref=f1e13] [cursor=pointer]
+      - generic [ref=f1e14]:
+        - generic [ref=f1e15]:
+          - generic [ref=f1e16]: Min price ₹/kWh
+          - spinbutton "any" [ref=f1e17]
+        - generic [ref=f1e18]:
+          - generic [ref=f1e19]: Max price ₹/kWh
+          - spinbutton "any" [ref=f1e20]
+        - generic [ref=f1e21]:
+          - generic [ref=f1e22]: Min qty kWh
+          - spinbutton "any" [ref=f1e23]
+        - generic [ref=f1e24]:
+          - generic [ref=f1e25]: Max qty kWh
+          - spinbutton "any" [ref=f1e26]
+        - generic [ref=f1e27]:
+          - generic [ref=f1e28]: Sort by
+          - combobox [ref=f1e29]:
+            - option "Newest first" [selected]
+            - 'option "Price: low → high"'
+            - 'option "Price: high → low"'
+            - 'option "Quantity: high → low"'
+        - generic [ref=f1e30]:
+          - checkbox "Only buyable (ours)" [ref=f1e31]
+          - text: Only buyable (ours)
+        - button "Clear filters" [ref=f1e32] [cursor=pointer]
+      - generic [ref=f1e33]:
+        - generic [ref=f1e35]:
+          - generic [ref=f1e36]:
+            - generic [ref=f1e37]: Demo Solar Offer — offer-demo-456c7958
+            - generic [ref=f1e38]: "32.7 kWh @ ₹13.4/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e39]: "commitment interval starts: 9/17/2026, 12:26:13 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e40]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e41]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e42]:
+            - button "Copy ID" [ref=f1e43] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e44]: view only
+            - button "Show raw" [ref=f1e45] [cursor=pointer]
+        - generic [ref=f1e47]:
+          - generic [ref=f1e48]:
+            - generic [ref=f1e49]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-07-21-sudheer
+            - generic [ref=f1e50]: "30.5 kWh @ ₹12.5/kWh · seller: bpp.ies.gigawatt.network · last confirmed live 9m ago"
+            - generic [ref=f1e51]: "commitment interval starts: 7/26/2026, 1:00:00 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e52]: "stated availability: 7/26/2026, 11:30:00 AM → 7/26/2026, 4:00:00 PM EXPIRED"
+            - generic [ref=f1e53]: "real routing endpoint on file: https://ies.gigawatt.network/bpp/beckn (not wired to send to)"
+          - generic [ref=f1e54]:
+            - button "Copy ID" [ref=f1e55] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e56]: view only
+            - button "Show raw" [ref=f1e57] [cursor=pointer]
+        - generic [ref=f1e59]:
+          - generic [ref=f1e60]:
+            - generic [ref=f1e61]: Demo Solar Offer — offer-demo-e9edd8b9
+            - generic [ref=f1e62]: "25 kWh @ ₹14/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e63]: "commitment interval starts: 9/15/2026, 6:56:38 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e64]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e65]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e66]:
+            - button "Copy ID" [ref=f1e67] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e68]: view only
+            - button "Show raw" [ref=f1e69] [cursor=pointer]
+        - generic [ref=f1e71]:
+          - generic [ref=f1e72]:
+            - generic [ref=f1e73]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-sandbox
+            - generic [ref=f1e74]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e75]: "commitment interval starts: 4/26/2026, 10:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e76]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=f1e77]: "real routing endpoint on file: https://deflex-ref-bpp.beckn.io/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e78]:
+            - button "Copy ID" [ref=f1e79] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e80]: view only
+            - button "Show raw" [ref=f1e81] [cursor=pointer]
+        - generic [ref=f1e83]:
+          - generic [ref=f1e84]:
+            - generic [ref=f1e85]: Demo Solar Offer — offer-demo-bf0e9a94
+            - generic [ref=f1e86]: "25 kWh @ ₹9.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e87]: "commitment interval starts: 9/7/2026, 10:40:27 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e88]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e89]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e90]:
+            - button "Copy ID" [ref=f1e91] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e92]: view only
+            - button "Show raw" [ref=f1e93] [cursor=pointer]
+        - generic [ref=f1e95]:
+          - generic [ref=f1e96]:
+            - generic [ref=f1e97]: Demo Solar Offer — offer-demo-1869640d
+            - generic [ref=f1e98]: "20 kWh @ ₹12/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e99]: "commitment interval starts: 9/16/2026, 10:01:36 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e100]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e101]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e102]:
+            - button "Copy ID" [ref=f1e103] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e104]: view only
+            - button "Show raw" [ref=f1e105] [cursor=pointer]
+        - generic [ref=f1e107]:
+          - generic [ref=f1e108]:
+            - generic [ref=f1e109]: Demo Solar Offer — offer-demo-985946c2
+            - generic [ref=f1e110]: "30 kWh @ ₹15/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e111]: "commitment interval starts: 9/15/2026, 6:47:25 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e112]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e113]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e114]:
+            - button "Copy ID" [ref=f1e115] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e116]: view only
+            - button "Show raw" [ref=f1e117] [cursor=pointer]
+        - generic [ref=f1e119]:
+          - generic [ref=f1e120]:
+            - generic [ref=f1e121]: Demo Solar Offer — offer-demo-06ba7765
+            - generic [ref=f1e122]: "28 kWh @ ₹8.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e123]: "commitment interval starts: 9/8/2026, 1:44:44 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e124]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e125]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e126]:
+            - button "Copy ID" [ref=f1e127] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e128]: view only
+            - button "Show raw" [ref=f1e129] [cursor=pointer]
+        - generic [ref=f1e131]:
+          - generic [ref=f1e132]:
+            - generic [ref=f1e133]: Demo Solar Offer — offer-demo-5a55dafc
+            - generic [ref=f1e134]: "10 kWh @ ₹14/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e135]: "commitment interval starts: 9/7/2026, 2:38:38 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e136]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e137]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e138]:
+            - button "Copy ID" [ref=f1e139] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e140]: view only
+            - button "Show raw" [ref=f1e141] [cursor=pointer]
+        - generic [ref=f1e143]:
+          - generic [ref=f1e144]:
+            - generic [ref=f1e145]: Demo Solar Offer — offer-demo-ca734c1b
+            - generic [ref=f1e146]: "10 kWh @ ₹15/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e147]: "commitment interval starts: 9/16/2026, 10:18:11 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e148]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e149]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e150]:
+            - button "Copy ID" [ref=f1e151] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e152]: view only
+            - button "Show raw" [ref=f1e153] [cursor=pointer]
+        - generic [ref=f1e155]:
+          - generic [ref=f1e156]:
+            - generic [ref=f1e157]: Home rooftop PV — f3bbdc92-83c3-4806-8d61-429cd8156222
+            - generic [ref=f1e158]: "2.1 kWh @ ₹3/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e159]: "commitment interval starts: 4/28/2026, 12:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e160]: "stated availability: 4/28/2026, 12:00:00 AM → 4/28/2026, 12:00:00 AM EXPIRED"
+            - generic [ref=f1e161]: "real routing endpoint on file: http://sellerapp.example.com:9000/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e162]:
+            - button "Copy ID" [ref=f1e163] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e164]: view only
+            - button "Show raw" [ref=f1e165] [cursor=pointer]
+        - generic [ref=f1e167]:
+          - generic [ref=f1e168]:
+            - generic [ref=f1e169]: Home rooftop PV — 0a171281-5014-4eb6-bcea-9b954bc0e549
+            - generic [ref=f1e170]: "30 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e171]: "commitment interval starts: 9/16/2026, 10:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e172]: "stated availability: 9/16/2026, 10:00:00 AM → 9/16/2026, 4:00:00 PM EXPIRED"
+            - generic [ref=f1e173]: "real routing endpoint on file: http://sellerapp.example.com:9000/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e174]:
+            - button "Copy ID" [ref=f1e175] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e176]: view only
+            - button "Show raw" [ref=f1e177] [cursor=pointer]
+        - generic [ref=f1e179]:
+          - generic [ref=f1e180]:
+            - generic [ref=f1e181]: Demo Solar Offer — offer-demo-9a07256d
+            - generic [ref=f1e182]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e183]: "commitment interval starts: 9/15/2026, 6:46:50 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e184]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e185]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e186]:
+            - button "Copy ID" [ref=f1e187] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e188]: view only
+            - button "Show raw" [ref=f1e189] [cursor=pointer]
+        - generic [ref=f1e191]:
+          - generic [ref=f1e192]:
+            - generic [ref=f1e193]: Demo Solar Offer — offer-demo-0f91515d
+            - generic [ref=f1e194]: "22 kWh @ ₹11/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e195]: "commitment interval starts: 9/8/2026, 3:05:21 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e196]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e197]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e198]:
+            - button "Copy ID" [ref=f1e199] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e200]: view only
+            - button "Show raw" [ref=f1e201] [cursor=pointer]
+        - generic [ref=f1e203]:
+          - generic [ref=f1e204]:
+            - generic [ref=f1e205]: Demo Solar Offer — offer-demo-7a5feecb
+            - generic [ref=f1e206]: "15 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e207]: "commitment interval starts: 9/16/2026, 10:16:21 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e208]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e209]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e210]:
+            - button "Copy ID" [ref=f1e211] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e212]: view only
+            - button "Show raw" [ref=f1e213] [cursor=pointer]
+        - generic [ref=f1e215]:
+          - generic [ref=f1e216]:
+            - generic [ref=f1e217]: Demo Solar Offer — offer-demo-d82ccc1f
+            - generic [ref=f1e218]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e219]: "commitment interval starts: 9/7/2026, 10:37:01 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e220]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e221]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e222]:
+            - button "Copy ID" [ref=f1e223] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e224]: view only
+            - button "Show raw" [ref=f1e225] [cursor=pointer]
+        - generic [ref=f1e227]:
+          - generic [ref=f1e228]:
+            - generic [ref=f1e229]: Demo Solar Offer — offer-demo-5a9e250b
+            - generic [ref=f1e230]: "12 kWh @ ₹13/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e231]: "commitment interval starts: 9/8/2026, 1:56:19 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e232]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e233]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e234]:
+            - button "Copy ID" [ref=f1e235] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e236]: view only
+            - button "Show raw" [ref=f1e237] [cursor=pointer]
+        - generic [ref=f1e239]:
+          - generic [ref=f1e240]:
+            - generic [ref=f1e241]: Demo Solar Offer — offer-demo-f11ceb28
+            - generic [ref=f1e242]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e243]: "commitment interval starts: 9/8/2026, 2:16:08 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e244]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e245]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e246]:
+            - button "Copy ID" [ref=f1e247] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e248]: view only
+            - button "Show raw" [ref=f1e249] [cursor=pointer]
+        - generic [ref=f1e251]:
+          - generic [ref=f1e252]:
+            - generic [ref=f1e253]: Demo Solar Offer — offer-demo-7c854532
+            - generic [ref=f1e254]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e255]: "commitment interval starts: 9/8/2026, 2:22:58 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e256]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e257]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e258]:
+            - button "Copy ID" [ref=f1e259] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e260]: view only
+            - button "Show raw" [ref=f1e261] [cursor=pointer]
+        - generic [ref=f1e263]:
+          - generic [ref=f1e264]:
+            - generic [ref=f1e265]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-49
+            - generic [ref=f1e266]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e267]: "commitment interval starts: 4/26/2026, 10:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e268]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=f1e269]: "real routing endpoint on file: http://sellerapp.example.com:9000/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e270]:
+            - button "Copy ID" [ref=f1e271] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e272]: view only
+            - button "Show raw" [ref=f1e273] [cursor=pointer]
+        - generic [ref=f1e275]:
+          - generic [ref=f1e276]:
+            - generic [ref=f1e277]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-002-test17jul
+            - generic [ref=f1e278]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e279]: "commitment interval starts: 4/26/2026, 10:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e280]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=f1e281]: "real routing endpoint on file: http://sellerapp.example.com:9000/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e282]:
+            - button "Copy ID" [ref=f1e283] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e284]: view only
+            - button "Show raw" [ref=f1e285] [cursor=pointer]
+        - generic [ref=f1e287]:
+          - generic [ref=f1e288]:
+            - generic [ref=f1e289]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001ameet
+            - generic [ref=f1e290]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e291]: "commitment interval starts: 4/26/2026, 10:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e292]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=f1e293]: "real routing endpoint on file: http://sellerapp.example.com:9000/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e294]:
+            - button "Copy ID" [ref=f1e295] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e296]: view only
+            - button "Show raw" [ref=f1e297] [cursor=pointer]
+        - generic [ref=f1e299]:
+          - generic [ref=f1e300]:
+            - generic [ref=f1e301]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-test17jul
+            - generic [ref=f1e302]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e303]: "commitment interval starts: 4/26/2026, 10:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e304]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=f1e305]: "real routing endpoint on file: http://sellerapp.example.com:9000/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e306]:
+            - button "Copy ID" [ref=f1e307] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e308]: view only
+            - button "Show raw" [ref=f1e309] [cursor=pointer]
+        - generic [ref=f1e311]:
+          - generic [ref=f1e312]:
+            - generic [ref=f1e313]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-ameet-3sept
+            - generic [ref=f1e314]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e315]: "commitment interval starts: 4/26/2026, 10:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e316]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=f1e317]: "real routing endpoint on file: http://sellerapp.example.com:9000/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e318]:
+            - button "Copy ID" [ref=f1e319] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e320]: view only
+            - button "Show raw" [ref=f1e321] [cursor=pointer]
+        - generic [ref=f1e323]:
+          - generic [ref=f1e324]:
+            - generic [ref=f1e325]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001-22jul-ameet
+            - generic [ref=f1e326]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e327]: "commitment interval starts: 4/26/2026, 10:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e328]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=f1e329]: "real routing endpoint on file: http://sellerapp.example.com:9000/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e330]:
+            - button "Copy ID" [ref=f1e331] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e332]: view only
+            - button "Show raw" [ref=f1e333] [cursor=pointer]
+        - generic [ref=f1e335]:
+          - generic [ref=f1e336]:
+            - generic [ref=f1e337]: Morning Solar - 2 hourly slots from 10:00 IST — offer-p2p-001
+            - generic [ref=f1e338]: "30.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e339]: "commitment interval starts: 4/26/2026, 10:00:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e340]: "stated availability: 4/25/2026, 11:30:00 AM → 4/26/2026, 6:00:00 AM EXPIRED"
+            - generic [ref=f1e341]: "real routing endpoint on file: http://sellerapp.example.com:9000/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e342]:
+            - button "Copy ID" [ref=f1e343] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e344]: view only
+            - button "Show raw" [ref=f1e345] [cursor=pointer]
+        - generic [ref=f1e347]:
+          - generic [ref=f1e348]:
+            - generic [ref=f1e349]: Demo Solar Offer — offer-demo-97c01092
+            - generic [ref=f1e350]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e351]: "commitment interval starts: 9/8/2026, 1:48:59 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e352]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e353]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e354]:
+            - button "Copy ID" [ref=f1e355] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e356]: view only
+            - button "Show raw" [ref=f1e357] [cursor=pointer]
+        - generic [ref=f1e359]:
+          - generic [ref=f1e360]:
+            - generic [ref=f1e361]: Demo Solar Offer — offer-demo-61b0de70
+            - generic [ref=f1e362]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e363]: "commitment interval starts: 9/7/2026, 2:39:58 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e364]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e365]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e366]:
+            - button "Copy ID" [ref=f1e367] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e368]: view only
+            - button "Show raw" [ref=f1e369] [cursor=pointer]
+        - generic [ref=f1e371]:
+          - generic [ref=f1e372]:
+            - generic [ref=f1e373]: Demo Solar Offer — offer-demo-193be0ef
+            - generic [ref=f1e374]: "8 kWh @ ₹20/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e375]: "commitment interval starts: 9/15/2026, 6:56:20 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e376]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e377]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e378]:
+            - button "Copy ID" [ref=f1e379] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e380]: view only
+            - button "Show raw" [ref=f1e381] [cursor=pointer]
+        - generic [ref=f1e383]:
+          - generic [ref=f1e384]:
+            - generic [ref=f1e385]: Demo Solar Offer — offer-demo-a944ec04
+            - generic [ref=f1e386]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e387]: "commitment interval starts: 9/7/2026, 10:37:02 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e388]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e389]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e390]:
+            - button "Copy ID" [ref=f1e391] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e392]: view only
+            - button "Show raw" [ref=f1e393] [cursor=pointer]
+        - generic [ref=f1e395]:
+          - generic [ref=f1e396]:
+            - generic [ref=f1e397]: Demo Solar Offer — offer-demo-a27b528c
+            - generic [ref=f1e398]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e399]: "commitment interval starts: 9/8/2026, 1:57:53 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e400]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e401]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e402]:
+            - button "Copy ID" [ref=f1e403] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e404]: view only
+            - button "Show raw" [ref=f1e405] [cursor=pointer]
+        - generic [ref=f1e407]:
+          - generic [ref=f1e408]:
+            - generic [ref=f1e409]: Demo Solar Offer — offer-demo-c9d69113
+            - generic [ref=f1e410]: "20 kWh @ ₹12.6/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e411]: "commitment interval starts: 9/8/2026, 2:31:36 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e412]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e413]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e414]:
+            - button "Copy ID" [ref=f1e415] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e416]: view only
+            - button "Show raw" [ref=f1e417] [cursor=pointer]
+        - generic [ref=f1e419]:
+          - generic [ref=f1e420]:
+            - generic [ref=f1e421]: Demo Solar Offer — offer-demo-58e454ee
+            - generic [ref=f1e422]: "30 kWh @ ₹10.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e423]: "commitment interval starts: 9/8/2026, 12:42:15 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e424]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e425]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e426]:
+            - button "Copy ID" [ref=f1e427] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e428]: view only
+            - button "Show raw" [ref=f1e429] [cursor=pointer]
+        - generic [ref=f1e431]:
+          - generic [ref=f1e432]:
+            - generic [ref=f1e433]: Demo Solar Offer — offer-demo-24058079
+            - generic [ref=f1e434]: "10 kWh @ ₹11/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e435]: "commitment interval starts: 9/8/2026, 11:16:48 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e436]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e437]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e438]:
+            - button "Copy ID" [ref=f1e439] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e440]: view only
+            - button "Show raw" [ref=f1e441] [cursor=pointer]
+        - generic [ref=f1e443]:
+          - generic [ref=f1e444]:
+            - generic [ref=f1e445]: Demo Solar Offer — offer-demo-63dbfbd4
+            - generic [ref=f1e446]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e447]: "commitment interval starts: 9/15/2026, 6:58:21 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e448]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e449]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e450]:
+            - button "Copy ID" [ref=f1e451] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e452]: view only
+            - button "Show raw" [ref=f1e453] [cursor=pointer]
+        - generic [ref=f1e455]:
+          - generic [ref=f1e456]:
+            - generic [ref=f1e457]: Demo Solar Offer — offer-demo-ab9a618b
+            - generic [ref=f1e458]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e459]: "commitment interval starts: 9/8/2026, 2:03:10 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e460]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e461]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e462]:
+            - button "Copy ID" [ref=f1e463] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e464]: view only
+            - button "Show raw" [ref=f1e465] [cursor=pointer]
+        - generic [ref=f1e467]:
+          - generic [ref=f1e468]:
+            - generic [ref=f1e469]: Demo Solar Offer — offer-demo-656ac890
+            - generic [ref=f1e470]: "17 kWh @ ₹14/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e471]: "commitment interval starts: 9/8/2026, 2:23:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e472]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e473]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e474]:
+            - button "Copy ID" [ref=f1e475] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e476]: view only
+            - button "Show raw" [ref=f1e477] [cursor=pointer]
+        - generic [ref=f1e479]:
+          - generic [ref=f1e480]:
+            - generic [ref=f1e481]: Demo Solar Offer — offer-demo-b06a8ad6
+            - generic [ref=f1e482]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e483]: "commitment interval starts: 9/7/2026, 10:37:02 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e484]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e485]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e486]:
+            - button "Copy ID" [ref=f1e487] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e488]: view only
+            - button "Show raw" [ref=f1e489] [cursor=pointer]
+        - generic [ref=f1e491]:
+          - generic [ref=f1e492]:
+            - generic [ref=f1e493]: Demo Solar Offer — offer-demo-69846363
+            - generic [ref=f1e494]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e495]: "commitment interval starts: 9/7/2026, 10:37:02 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e496]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e497]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e498]:
+            - button "Copy ID" [ref=f1e499] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e500]: view only
+            - button "Show raw" [ref=f1e501] [cursor=pointer]
+        - generic [ref=f1e503]:
+          - generic [ref=f1e504]:
+            - generic [ref=f1e505]: Demo Solar Offer — offer-demo-a74211ba
+            - generic [ref=f1e506]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e507]: "commitment interval starts: 9/16/2026, 10:15:35 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e508]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e509]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e510]:
+            - button "Copy ID" [ref=f1e511] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e512]: view only
+            - button "Show raw" [ref=f1e513] [cursor=pointer]
+        - generic [ref=f1e515]:
+          - generic [ref=f1e516]:
+            - generic [ref=f1e517]: Demo Solar Offer — offer-demo-9117b58f
+            - generic [ref=f1e518]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e519]: "commitment interval starts: 9/7/2026, 2:33:35 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e520]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e521]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e522]:
+            - button "Copy ID" [ref=f1e523] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e524]: view only
+            - button "Show raw" [ref=f1e525] [cursor=pointer]
+        - generic [ref=f1e527]:
+          - generic [ref=f1e528]:
+            - generic [ref=f1e529]: Demo Solar Offer — offer-demo-3a5c4aae
+            - generic [ref=f1e530]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e531]: "commitment interval starts: 9/15/2026, 10:35:38 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e532]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e533]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e534]:
+            - button "Copy ID" [ref=f1e535] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e536]: view only
+            - button "Show raw" [ref=f1e537] [cursor=pointer]
+        - generic [ref=f1e539]:
+          - generic [ref=f1e540]:
+            - generic [ref=f1e541]: Demo Solar Offer — offer-demo-c741adc8
+            - generic [ref=f1e542]: "25 kWh @ ₹9/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e543]: "commitment interval starts: 9/8/2026, 12:44:13 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e544]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e545]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e546]:
+            - button "Copy ID" [ref=f1e547] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e548]: view only
+            - button "Show raw" [ref=f1e549] [cursor=pointer]
+        - generic [ref=f1e551]:
+          - generic [ref=f1e552]:
+            - generic [ref=f1e553]: Demo Solar Offer — offer-demo-f148d532
+            - generic [ref=f1e554]: "20 kWh @ ₹12.1/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e555]: "commitment interval starts: 9/7/2026, 10:53:14 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e556]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e557]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e558]:
+            - button "Copy ID" [ref=f1e559] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e560]: view only
+            - button "Show raw" [ref=f1e561] [cursor=pointer]
+        - generic [ref=f1e563]:
+          - generic [ref=f1e564]:
+            - generic [ref=f1e565]: Demo Solar Offer — offer-demo-d4ccb1f6
+            - generic [ref=f1e566]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e567]: "commitment interval starts: 9/8/2026, 2:29:29 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e568]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e569]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e570]:
+            - button "Copy ID" [ref=f1e571] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e572]: view only
+            - button "Show raw" [ref=f1e573] [cursor=pointer]
+        - generic [ref=f1e575]:
+          - generic [ref=f1e576]:
+            - generic [ref=f1e577]: Demo Solar Offer — offer-demo-8a5b1aa1
+            - generic [ref=f1e578]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e579]: "commitment interval starts: 9/8/2026, 1:31:03 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e580]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e581]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e582]:
+            - button "Copy ID" [ref=f1e583] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e584]: view only
+            - button "Show raw" [ref=f1e585] [cursor=pointer]
+        - generic [ref=f1e587]:
+          - generic [ref=f1e588]:
+            - generic [ref=f1e589]: Demo Solar Offer — offer-demo-5e59b6ac
+            - generic [ref=f1e590]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e591]: "commitment interval starts: 9/8/2026, 11:23:06 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e592]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e593]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e594]:
+            - button "Copy ID" [ref=f1e595] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e596]: view only
+            - button "Show raw" [ref=f1e597] [cursor=pointer]
+        - generic [ref=f1e599]:
+          - generic [ref=f1e600]:
+            - generic [ref=f1e601]: Demo Solar Offer — offer-demo-97d3302b
+            - generic [ref=f1e602]: "18 kWh @ ₹11.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e603]: "commitment interval starts: 9/17/2026, 12:26:44 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e604]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e605]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e606]:
+            - button "Copy ID" [ref=f1e607] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e608]: view only
+            - button "Show raw" [ref=f1e609] [cursor=pointer]
+        - generic [ref=f1e611]:
+          - generic [ref=f1e612]:
+            - generic [ref=f1e613]: Demo Solar Offer — offer-demo-1af71f4a
+            - generic [ref=f1e614]: "60 kWh @ ₹12.1/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e615]: "commitment interval starts: 9/7/2026, 10:56:20 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e616]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e617]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e618]:
+            - button "Copy ID" [ref=f1e619] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e620]: view only
+            - button "Show raw" [ref=f1e621] [cursor=pointer]
+        - generic [ref=f1e623]:
+          - generic [ref=f1e624]:
+            - generic [ref=f1e625]: Demo Solar Offer — offer-demo-b57e771b
+            - generic [ref=f1e626]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e627]: "commitment interval starts: 9/8/2026, 11:02:53 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e628]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e629]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e630]:
+            - button "Copy ID" [ref=f1e631] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e632]: view only
+            - button "Show raw" [ref=f1e633] [cursor=pointer]
+        - generic [ref=f1e635]:
+          - generic [ref=f1e636]:
+            - generic [ref=f1e637]: Demo Solar Offer — offer-demo-3a9cd1d7
+            - generic [ref=f1e638]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e639]: "commitment interval starts: 9/8/2026, 2:31:08 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e640]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e641]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e642]:
+            - button "Copy ID" [ref=f1e643] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e644]: view only
+            - button "Show raw" [ref=f1e645] [cursor=pointer]
+        - generic [ref=f1e647]:
+          - generic [ref=f1e648]:
+            - generic [ref=f1e649]: Demo Solar Offer — offer-demo-b560efb5
+            - generic [ref=f1e650]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e651]: "commitment interval starts: 9/16/2026, 10:17:45 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e652]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e653]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e654]:
+            - button "Copy ID" [ref=f1e655] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e656]: view only
+            - button "Show raw" [ref=f1e657] [cursor=pointer]
+        - generic [ref=f1e659]:
+          - generic [ref=f1e660]:
+            - generic [ref=f1e661]: Demo Solar Offer — offer-demo-5cb252ad
+            - generic [ref=f1e662]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e663]: "commitment interval starts: 9/8/2026, 2:14:55 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e664]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e665]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e666]:
+            - button "Copy ID" [ref=f1e667] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e668]: view only
+            - button "Show raw" [ref=f1e669] [cursor=pointer]
+        - generic [ref=f1e671]:
+          - generic [ref=f1e672]:
+            - generic [ref=f1e673]: Demo Solar Offer — offer-demo-89bdea01
+            - generic [ref=f1e674]: "18 kWh @ ₹13/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e675]: "commitment interval starts: 9/7/2026, 3:02:32 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e676]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e677]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e678]:
+            - button "Copy ID" [ref=f1e679] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e680]: view only
+            - button "Show raw" [ref=f1e681] [cursor=pointer]
+        - generic [ref=f1e683]:
+          - generic [ref=f1e684]:
+            - generic [ref=f1e685]: Demo Solar Offer — offer-demo-cda102e1
+            - generic [ref=f1e686]: "22 kWh @ ₹11.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e687]: "commitment interval starts: 9/7/2026, 3:07:00 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e688]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e689]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e690]:
+            - button "Copy ID" [ref=f1e691] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e692]: view only
+            - button "Show raw" [ref=f1e693] [cursor=pointer]
+        - generic [ref=f1e695]:
+          - generic [ref=f1e696]:
+            - generic [ref=f1e697]: Demo Solar Offer — offer-demo-14b6a3b8
+            - generic [ref=f1e698]: "15 kWh @ ₹19/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e699]: "commitment interval starts: 9/15/2026, 5:28:57 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e700]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e701]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e702]:
+            - button "Copy ID" [ref=f1e703] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e704]: view only
+            - button "Show raw" [ref=f1e705] [cursor=pointer]
+        - generic [ref=f1e707]:
+          - generic [ref=f1e708]:
+            - generic [ref=f1e709]: Demo Solar Offer — offer-demo-c578527b
+            - generic [ref=f1e710]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e711]: "commitment interval starts: 9/8/2026, 2:18:17 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e712]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e713]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e714]:
+            - button "Copy ID" [ref=f1e715] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e716]: view only
+            - button "Show raw" [ref=f1e717] [cursor=pointer]
+        - generic [ref=f1e719]:
+          - generic [ref=f1e720]:
+            - generic [ref=f1e721]: Demo Solar Offer — offer-demo-3e2227b2
+            - generic [ref=f1e722]: "25 kWh @ ₹9.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e723]: "commitment interval starts: 9/7/2026, 10:40:27 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e724]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e725]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e726]:
+            - button "Copy ID" [ref=f1e727] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e728]: view only
+            - button "Show raw" [ref=f1e729] [cursor=pointer]
+        - generic [ref=f1e731]:
+          - generic [ref=f1e732]:
+            - generic [ref=f1e733]: Demo Solar Offer — offer-demo-6eab9445
+            - generic [ref=f1e734]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e735]: "commitment interval starts: 9/8/2026, 2:15:10 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e736]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e737]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e738]:
+            - button "Copy ID" [ref=f1e739] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e740]: view only
+            - button "Show raw" [ref=f1e741] [cursor=pointer]
+        - generic [ref=f1e743]:
+          - generic [ref=f1e744]:
+            - generic [ref=f1e745]: Demo Solar Offer — offer-demo-dc18ef06
+            - generic [ref=f1e746]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e747]: "commitment interval starts: 9/7/2026, 10:51:39 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e748]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e749]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e750]:
+            - button "Copy ID" [ref=f1e751] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e752]: view only
+            - button "Show raw" [ref=f1e753] [cursor=pointer]
+        - generic [ref=f1e755]:
+          - generic [ref=f1e756]:
+            - generic [ref=f1e757]: Demo Solar Offer — offer-demo-b1bc5539
+            - generic [ref=f1e758]: "20 kWh @ ₹12.1/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e759]: "commitment interval starts: 9/7/2026, 10:53:55 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e760]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e761]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e762]:
+            - button "Copy ID" [ref=f1e763] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e764]: view only
+            - button "Show raw" [ref=f1e765] [cursor=pointer]
+        - generic [ref=f1e767]:
+          - generic [ref=f1e768]:
+            - generic [ref=f1e769]: Demo Solar Offer — offer-demo-d66fd0c9
+            - generic [ref=f1e770]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e771]: "commitment interval starts: 9/8/2026, 2:03:49 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e772]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e773]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e774]:
+            - button "Copy ID" [ref=f1e775] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e776]: view only
+            - button "Show raw" [ref=f1e777] [cursor=pointer]
+        - generic [ref=f1e779]:
+          - generic [ref=f1e780]:
+            - generic [ref=f1e781]: Demo Solar Offer — offer-demo-f2a05b1f
+            - generic [ref=f1e782]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e783]: "commitment interval starts: 9/7/2026, 11:14:45 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e784]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e785]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e786]:
+            - button "Copy ID" [ref=f1e787] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e788]: view only
+            - button "Show raw" [ref=f1e789] [cursor=pointer]
+        - generic [ref=f1e791]:
+          - generic [ref=f1e792]:
+            - generic [ref=f1e793]: Demo Solar Offer — offer-demo-27f60453
+            - generic [ref=f1e794]: "60 kWh @ ₹12.1/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e795]: "commitment interval starts: 9/7/2026, 10:55:46 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e796]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e797]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e798]:
+            - button "Copy ID" [ref=f1e799] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e800]: view only
+            - button "Show raw" [ref=f1e801] [cursor=pointer]
+        - generic [ref=f1e803]:
+          - generic [ref=f1e804]:
+            - generic [ref=f1e805]: Demo Solar Offer — offer-demo-211dd9ce ours, live now
+            - generic [ref=f1e806]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e807]: "published: 9/17/2026, 1:51:06 PM"
+            - generic [ref=f1e808]: "stated availability: not present in this offer's own data"
+          - generic [ref=f1e809]:
+            - button "Copy ID" [ref=f1e810] [cursor=pointer]
+            - button "Buy at ask" [ref=f1e811] [cursor=pointer]
+            - button "Place a bid" [ref=f1e812] [cursor=pointer]
+            - button "Show raw" [ref=f1e813] [cursor=pointer]
+        - generic [ref=f1e815]:
+          - generic [ref=f1e816]:
+            - generic [ref=f1e817]: Demo Solar Offer — offer-demo-b89b76f3
+            - generic [ref=f1e818]: "25 kWh @ ₹9.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e819]: "commitment interval starts: 9/7/2026, 10:40:25 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e820]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e821]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e822]:
+            - button "Copy ID" [ref=f1e823] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e824]: view only
+            - button "Show raw" [ref=f1e825] [cursor=pointer]
+        - generic [ref=f1e827]:
+          - generic [ref=f1e828]:
+            - generic [ref=f1e829]: Demo Solar Offer — offer-demo-df80b517
+            - generic [ref=f1e830]: "82 kWh @ ₹19/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e831]: "commitment interval starts: 9/15/2026, 5:17:12 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e832]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e833]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e834]:
+            - button "Copy ID" [ref=f1e835] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e836]: view only
+            - button "Show raw" [ref=f1e837] [cursor=pointer]
+        - generic [ref=f1e839]:
+          - generic [ref=f1e840]:
+            - generic [ref=f1e841]: Demo Solar Offer — offer-demo-a24cc2fe
+            - generic [ref=f1e842]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e843]: "commitment interval starts: 9/16/2026, 10:21:25 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e844]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e845]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e846]:
+            - button "Copy ID" [ref=f1e847] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e848]: view only
+            - button "Show raw" [ref=f1e849] [cursor=pointer]
+        - generic [ref=f1e851]:
+          - generic [ref=f1e852]:
+            - generic [ref=f1e853]: Demo Solar Offer — offer-demo-a31e5330
+            - generic [ref=f1e854]: "16 kWh @ ₹10/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e855]: "commitment interval starts: 9/7/2026, 10:37:03 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e856]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e857]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e858]:
+            - button "Copy ID" [ref=f1e859] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e860]: view only
+            - button "Show raw" [ref=f1e861] [cursor=pointer]
+        - generic [ref=f1e863]:
+          - generic [ref=f1e864]:
+            - generic [ref=f1e865]: Demo Solar Offer — offer-demo-333bba0b
+            - generic [ref=f1e866]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e867]: "commitment interval starts: 9/8/2026, 2:26:39 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e868]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e869]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e870]:
+            - button "Copy ID" [ref=f1e871] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e872]: view only
+            - button "Show raw" [ref=f1e873] [cursor=pointer]
+        - generic [ref=f1e875]:
+          - generic [ref=f1e876]:
+            - generic [ref=f1e877]: Demo Solar Offer — offer-demo-d40f7142
+            - generic [ref=f1e878]: "38.1 kWh @ ₹19/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e879]: "commitment interval starts: 9/15/2026, 5:10:54 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e880]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e881]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e882]:
+            - button "Copy ID" [ref=f1e883] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e884]: view only
+            - button "Show raw" [ref=f1e885] [cursor=pointer]
+        - generic [ref=f1e887]:
+          - generic [ref=f1e888]:
+            - generic [ref=f1e889]: Demo Solar Offer — offer-demo-c4fc6ecf
+            - generic [ref=f1e890]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e891]: "commitment interval starts: 9/16/2026, 10:16:44 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e892]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e893]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e894]:
+            - button "Copy ID" [ref=f1e895] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e896]: view only
+            - button "Show raw" [ref=f1e897] [cursor=pointer]
+        - generic [ref=f1e899]:
+          - generic [ref=f1e900]:
+            - generic [ref=f1e901]: Demo Solar Offer — offer-demo-396ae161
+            - generic [ref=f1e902]: "22 kWh @ ₹11/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e903]: "commitment interval starts: 9/8/2026, 1:42:44 AM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e904]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e905]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e906]:
+            - button "Copy ID" [ref=f1e907] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e908]: view only
+            - button "Show raw" [ref=f1e909] [cursor=pointer]
+        - generic [ref=f1e911]:
+          - generic [ref=f1e912]:
+            - generic [ref=f1e913]: Demo Solar Offer — offer-demo-5587f59f
+            - generic [ref=f1e914]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e915]: "commitment interval starts: 9/7/2026, 10:52:16 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e916]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e917]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e918]:
+            - button "Copy ID" [ref=f1e919] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e920]: view only
+            - button "Show raw" [ref=f1e921] [cursor=pointer]
+        - generic [ref=f1e923]:
+          - generic [ref=f1e924]:
+            - generic [ref=f1e925]: Demo Solar Offer — offer-demo-d2fab41b
+            - generic [ref=f1e926]: "20 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e927]: "commitment interval starts: 9/8/2026, 2:13:34 PM (this publisher's own use of this field is unconfirmed — may not be their true publish moment)"
+            - generic [ref=f1e928]: "stated availability: not present in this offer's own data"
+            - generic [ref=f1e929]: "real routing endpoint on file: http://sellerapp.example.com/bpp/receiver (not wired to send to)"
+          - generic [ref=f1e930]:
+            - button "Copy ID" [ref=f1e931] [cursor=pointer]
+            - generic "This app only ever routes a real init to our own Seller Platform, on purpose" [ref=f1e932]: view only
+            - button "Show raw" [ref=f1e933] [cursor=pointer]
+        - generic [ref=f1e935]:
+          - generic [ref=f1e936]:
+            - generic [ref=f1e937]: Demo Solar Offer — offer-demo-af26d3d7 ours, live now
+            - generic [ref=f1e938]: "21.5 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e939]: "published: 9/17/2026, 2:11:03 PM"
+            - generic [ref=f1e940]: "stated availability: not present in this offer's own data"
+          - generic [ref=f1e941]:
+            - button "Copy ID" [ref=f1e942] [cursor=pointer]
+            - button "Buy at ask" [ref=f1e943] [cursor=pointer]
+            - button "Place a bid" [ref=f1e944] [cursor=pointer]
+            - button "Show raw" [ref=f1e945] [cursor=pointer]
+        - generic [ref=f1e947]:
+          - generic [ref=f1e948]:
+            - generic [ref=f1e949]: Demo Solar Offer — offer-demo-8503e2b3 ours, live now
+            - generic [ref=f1e950]: "200 kWh @ ₹12.5/kWh · seller: sellerapp.example.com · last confirmed live 9m ago"
+            - generic [ref=f1e951]: "published: 9/18/2026, 10:13:42 AM"
+            - generic [ref=f1e952]: "stated availability: not present in this offer's own data"
+          - generic [ref=f1e953]:
+            - button "Copy ID" [ref=f1e954] [cursor=pointer]
+            - button "Buy at ask" [ref=f1e955] [cursor=pointer]
+            - button "Place a bid" [ref=f1e956] [cursor=pointer]
+            - button "Show raw" [ref=f1e957] [cursor=pointer]
+    - generic [ref=f1e958]:
+      - heading "Buy directly / place a bid" [level=2] [ref=f1e959]
+      - generic [ref=f1e960]:
+        - text: Paste an Offer ID here — copy it from a card above with the
+        - strong [ref=f1e961]: Copy ID
+        - text: button, or from the "My published offers" list on the
+        - strong [ref=f1e962]: Seller Platform
+        - text: page (it looks like
+        - code [ref=f1e963]: offer-demo-xxxxxxxx
+        - text: "). The price field is a real negotiating bid: leave it at the seller's ask to buy outright, or lower it to test a real counter-offer — the seller can accept, counter back, or decline."
+      - generic [ref=f1e964]:
+        - generic [ref=f1e965]:
+          - generic [ref=f1e966]: Offer ID
+          - textbox "offer-demo-xxxxxxxx" [ref=f1e967]
+        - generic [ref=f1e968]:
+          - generic [ref=f1e969]: Quantity (kWh)
+          - spinbutton "—" [disabled] [ref=f1e970]
+        - generic [ref=f1e971]:
+          - generic [ref=f1e972]: Your bid (₹/kWh)
+          - spinbutton "—" [disabled] [ref=f1e973]
+        - generic [ref=f1e974]:
+          - generic [ref=f1e975]: Trade as
+          - combobox [ref=f1e976]:
+            - option "Allowed discom" [selected]
+            - option "Blocked discom (watch it get rejected)"
+        - button "Send bid" [disabled] [ref=f1e977] [cursor=pointer]
+    - generic [ref=f1e979]:
+      - heading "My trades" [level=2] [ref=f1e980]
+      - generic [ref=f1e981]:
+        - generic [ref=f1e983]:
+          - generic [ref=f1e984]:
+            - generic [ref=f1e985]: We bid ₹12/kWh for 20 kWh (seller's ask was ₹12.5/kWh) — offer-demo-af26d3d7
+            - generic [ref=f1e986]: as TEST_DISCOM_BUYER · paid ₹210.00
+          - generic [ref=f1e987]:
+            - generic [ref=f1e988]: Settled
+            - button "Show trace" [ref=f1e989] [cursor=pointer]
+        - generic [ref=f1e991]:
+          - generic [ref=f1e992]:
+            - generic [ref=f1e993]: We bid ₹10/kWh for 10 kWh (seller's ask was ₹12.5/kWh) — offer-demo-211dd9ce
+            - generic [ref=f1e994]: as TEST_DISCOM_BUYER · paid ₹104.00
+          - generic [ref=f1e995]:
+            - generic [ref=f1e996]: Settled
+            - button "Show trace" [ref=f1e997] [cursor=pointer]

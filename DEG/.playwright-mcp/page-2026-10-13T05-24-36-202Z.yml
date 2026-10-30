@@ -1,0 +1,36 @@
+- generic [active] [ref=f8e1]:
+  - banner [ref=f8e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f8e3]
+    - generic [ref=f8e4]:
+      - generic [ref=f8e5]:
+        - generic [ref=f8e6]: ₹0.00
+        - generic [ref=f8e7]: Earnings (settled)
+      - generic "The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover" [ref=f8e8]: "🌐 Network Dashboard: see Buyer Platform's /network.html"
+      - button "Reset demo" [ref=f8e9] [cursor=pointer]
+  - main [ref=f8e10]:
+    - generic [ref=f8e11]:
+      - heading "Publish a new offer ● live" [level=2] [ref=f8e12]:
+        - text: Publish a new offer
+        - generic [ref=f8e13]: ● live
+      - generic [ref=f8e14]:
+        - generic [ref=f8e15]:
+          - generic [ref=f8e16]: Quantity (kWh)
+          - spinbutton [ref=f8e17]: "20"
+        - generic [ref=f8e18]:
+          - generic [ref=f8e19]: Price (₹/kWh)
+          - spinbutton [ref=f8e20]: "12.5"
+        - button "Publish offer" [ref=f8e21] [cursor=pointer]
+    - generic [ref=f8e22]:
+      - heading "My published offers" [level=2] [ref=f8e23]
+      - generic [ref=f8e24]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=f8e26]:
+        - generic [ref=f8e27]:
+          - generic [ref=f8e28]: offer-demo-996d6de8
+          - generic [ref=f8e29]: 30 / 30 kWh remaining @ ₹12.5/kWh
+        - button "Copy ID" [ref=f8e30] [cursor=pointer]
+    - generic [ref=f8e31]:
+      - heading "Incoming requests" [level=2] [ref=f8e32]
+      - generic [ref=f8e33]: No incoming requests yet.
+    - generic [ref=f8e35]:
+      - heading "Active & settled trades" [level=2] [ref=f8e36]
+      - generic [ref=f8e37]: No trades yet.

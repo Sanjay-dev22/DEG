@@ -1,0 +1,43 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f3e3]
+    - generic [ref=f3e4]:
+      - generic [ref=f3e5]:
+        - generic [ref=f3e6]: ₹215.00
+        - generic [ref=f3e7]: Earnings (settled)
+      - generic "The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover" [ref=f3e8]: "🌐 Network Dashboard: see Buyer Platform's /network.html"
+      - button "Reset demo" [ref=f3e9] [cursor=pointer]
+  - main [ref=f3e10]:
+    - generic [ref=f3e11]:
+      - heading "Publish a new offer ● live" [level=2] [ref=f3e12]:
+        - text: Publish a new offer
+        - generic [ref=f3e13]: ● live
+      - generic [ref=f3e14]:
+        - generic [ref=f3e15]:
+          - generic [ref=f3e16]: Quantity (kWh)
+          - spinbutton [ref=f3e17]: "20"
+        - generic [ref=f3e18]:
+          - generic [ref=f3e19]: Price (₹/kWh)
+          - spinbutton [ref=f3e20]: "12.5"
+        - button "Publish offer" [ref=f3e21] [cursor=pointer]
+    - generic [ref=f3e22]:
+      - heading "My published offers" [level=2] [ref=f3e23]
+      - generic [ref=f3e24]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=f3e72]:
+        - generic [ref=f3e73]:
+          - generic [ref=f3e74]: offer-demo-eb4316d2
+          - generic [ref=f3e75]: 0 / 30 kWh remaining @ ₹12.5/kWh Sold out
+        - button "Copy ID" [ref=f3e76] [cursor=pointer]
+    - generic [ref=f3e31]:
+      - heading "Incoming requests" [level=2] [ref=f3e32]
+      - generic [ref=f3e33]: No incoming requests yet.
+    - generic [ref=f3e49]:
+      - heading "Active & settled trades" [level=2] [ref=f3e50]
+      - generic [ref=f3e78]:
+        - generic [ref=f3e79]:
+          - generic [ref=f3e80]: 30 kWh @ ₹12.5/kWh — delivered 20 kWh
+          - generic [ref=f3e81]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER · settled ₹215.00"
+        - generic [ref=f3e82]:
+          - generic [ref=f3e83]: Settled
+          - button "Show trace" [ref=f3e84] [cursor=pointer]
+  - generic: Settled ₹215.00 (delivered 20 kWh)

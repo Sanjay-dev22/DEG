@@ -1,0 +1,420 @@
+[  587422ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  587423ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  587442ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  589265ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  592432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  592432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  592432ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  593634ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  597421ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  597422ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  597426ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  597999ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  602372ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  602449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  602449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  602448ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  606734ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  607436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  607436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  607435ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  611104ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  612439ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  612440ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  612441ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  615489ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  617448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  617448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  617447ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  619868ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  622422ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  622422ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  622422ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  624260ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  627440ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  627440ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  627455ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  628655ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  632435ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  632435ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  632437ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  633059ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  637433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  637433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  637432ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  637511ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  642155ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  642450ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  642450ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  642451ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  647002ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  647437ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  647437ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  647437ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  652302ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  652443ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  652443ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  652443ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  657414ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  657414ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  657415ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  658281ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  662451ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  662452ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  662452ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  666206ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  667441ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  667442ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  667442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  672416ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  672417ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  672416ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  674333ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  677437ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  677437ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  677437ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  681170ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  682436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  682436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  682436ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  687438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  687438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  687438ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  688716ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  692449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  692450ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  692449ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  694803ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  697448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  697448ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  697448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  700809ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  702427ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  702428ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  702428ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  707436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  707436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  707436ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  708309ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  712452ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  712452ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  712452ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  716996ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  717433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  717433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  717433ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  722452ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  722452ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  722452ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  726250ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  727432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  727432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  727431ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  732437ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  732438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  732437ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  734756ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  737449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  737449ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  737449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  742332ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  742426ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  742426ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  742443ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  747422ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  747422ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  747453ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  757419ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  757419ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  757435ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  759115ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  762448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  762449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  762448ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  764114ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  767442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  767442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  767442ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  769249ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  772442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  772442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  772444ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  775859ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  777424ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  777424ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  777424ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  780941ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  782451ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  782452ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  782451ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  786450ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  787445ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  787446ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  787445ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  792425ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  792425ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  792424ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  795480ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  797431ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  797432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  797431ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  801886ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  802433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  802433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  802432ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  807434ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  807434ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  807434ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  808150ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  812436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  812435ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  812437ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  816083ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  817448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  817449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  817449ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  822448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  822449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  822448ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  825191ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  827432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  827432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  827434ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  829584ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  832447ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  832447ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  832449ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  833988ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  837430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  837430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  837430ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  838390ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  842432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  842433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  842432ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  842790ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  847199ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  847448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  847448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  847448ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  851634ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  852442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  852442ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  852442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  856091ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  857415ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  857415ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  857430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  860505ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  862414ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  862414ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  862430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  865089ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  867428ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  867428ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  867441ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  869668ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  872440ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  872440ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  872455ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  874263ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  877455ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  877455ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  877455ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  879211ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  882436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  882436ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  882451ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  884130ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  887442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  887442ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  887442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  889498ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  892420ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  892420ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  892424ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  896189ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  897451ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  897451ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  897451ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  902420ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  902420ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  902420ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  903027ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  907432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  907432ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  907432ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  909823ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  912448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  912448ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  912449ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  917430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  917430ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  917445ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  917461ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  922435ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  922435ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  922436ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  925762ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  927438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  927439ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  927439ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  931966ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  932433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  932433ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  932434ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  937437ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  937438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  937440ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  938471ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  942441ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  942441ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  942442ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  945313ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  947435ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  947435ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  947435ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  949666ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  952442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  952442ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  952442ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  954019ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  957436ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  957437ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  957440ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  958385ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  962419ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  962419ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  962419ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  962745ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  967118ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  967444ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  967444ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  967444ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  971492ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  972431ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  972431ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  972431ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  975857ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  977431ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  977431ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  977438ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  980243ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  982427ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  982427ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  982427ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  984631ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  987418ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  987418ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  987433ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  988999ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  992430ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  992431ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  992431ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  993418ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[  997439ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[  997439ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[  997439ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[  997908ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[ 1002423ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[ 1002424ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[ 1002423ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[ 1002438ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[ 1007004ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[ 1007456ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[ 1007456ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[ 1007456ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[ 1012078ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271
+[ 1012438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[ 1012439ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[ 1012439ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[ 1017444ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/offers:0
+[ 1017444ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/api/trades:0
+[ 1017447ms] TypeError: Failed to fetch
+    at refreshAll (http://localhost:4001/:128:5)
+[ 1018912ms] [ERROR] WebSocket connection to 'ws://localhost:4001/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4001/:271

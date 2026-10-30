@@ -1,0 +1,71 @@
+- generic [ref=f7e1]:
+  - banner [ref=f7e2]:
+    - heading "🔌 Buyer Platform — buyerapp.example.com" [level=1] [ref=f7e3]
+    - generic [ref=f7e4]:
+      - generic [ref=f7e5]: ● live
+      - link "🌐 Network Dashboard" [ref=f7e6] [cursor=pointer]:
+        - /url: /network.html
+      - button "Reset demo" [ref=f7e7] [cursor=pointer]
+  - main [ref=f7e8]:
+    - generic [ref=f7e9]:
+      - heading "Discover offers" [level=2] [ref=f7e10]
+      - generic [ref=f7e11]:
+        - text: Fires a real
+        - code [ref=f7e12]: discover
+        - text: against the shared discovery service. Results (if any) arrive asynchronously below.
+      - button "🔍 Refresh offers" [ref=f7e13] [cursor=pointer]
+      - generic [ref=f7e14]:
+        - generic [ref=f7e15]:
+          - generic [ref=f7e16]: Min price ₹/kWh
+          - spinbutton "any" [ref=f7e17]
+        - generic [ref=f7e18]:
+          - generic [ref=f7e19]: Max price ₹/kWh
+          - spinbutton "any" [ref=f7e20]
+        - generic [ref=f7e21]:
+          - generic [ref=f7e22]: Min qty kWh
+          - spinbutton "any" [ref=f7e23]
+        - generic [ref=f7e24]:
+          - generic [ref=f7e25]: Max qty kWh
+          - spinbutton "any" [ref=f7e26]
+        - generic [ref=f7e27]:
+          - generic [ref=f7e28]: Sort by
+          - combobox [ref=f7e29]:
+            - option "Newest first" [selected]
+            - 'option "Price: low → high"'
+            - 'option "Price: high → low"'
+            - 'option "Quantity: high → low"'
+        - generic [ref=f7e30]:
+          - checkbox "Only buyable (ours)" [ref=f7e31]
+          - text: Only buyable (ours)
+        - button "Clear filters" [ref=f7e32] [cursor=pointer]
+      - generic [ref=f7e33]: No offers discovered yet.
+    - generic [ref=f7e35]:
+      - heading "Buy directly / place a bid" [level=2] [ref=f7e36]
+      - generic [ref=f7e37]:
+        - text: Paste an Offer ID here — copy it from a card above with the
+        - strong [ref=f7e38]: Copy ID
+        - text: button, or from the "My published offers" list on the
+        - strong [ref=f7e39]: Seller Platform
+        - text: page (it looks like
+        - code [ref=f7e40]: offer-demo-xxxxxxxx
+        - text: "). The price field is a real negotiating bid: leave it at the seller's ask to buy outright, or lower it to test a real counter-offer — the seller can accept, counter back, or decline."
+      - generic [ref=f7e41]:
+        - generic [ref=f7e42]:
+          - generic [ref=f7e43]: Offer ID
+          - textbox "offer-demo-xxxxxxxx" [ref=f7e44]: offer-demo-996d6de8
+        - generic [ref=f7e45]:
+          - generic [ref=f7e46]: Quantity (kWh)
+          - spinbutton "—" [ref=f7e47]: "30"
+        - generic [ref=f7e48]:
+          - generic [ref=f7e49]: Your bid (₹/kWh)
+          - spinbutton "—" [ref=f7e50]: "12.5"
+        - generic [ref=f7e51]:
+          - generic [ref=f7e52]: Trade as
+          - combobox [ref=f7e53]:
+            - option "Allowed discom" [selected]
+            - option "Blocked discom (watch it get rejected)"
+        - button "Send bid" [active] [ref=f7e54] [cursor=pointer]
+        - generic [ref=f7e55]: ✓ Real offer from sellerapp.example.com — asking ₹12.5/kWh, 30 kWh available. Edit the bid price to negotiate.
+    - generic [ref=f7e56]:
+      - heading "My trades" [level=2] [ref=f7e57]
+      - generic [ref=f7e58]: No trades yet.

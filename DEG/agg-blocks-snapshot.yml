@@ -1,0 +1,124 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - heading "Aggregator Platform — pools small sellers into one block" [level=1] [ref=f5e3]
+    - generic [ref=f5e4]: ● live
+  - main [ref=f5e5]:
+    - generic [ref=f5e6]:
+      - generic [ref=f5e7]: "Your role: the aggregator — a middleman between many small sellers and one bulk buyer."
+      - generic [ref=f5e8]: "Your job: discover small sellers' offers, pool several into one bigger block, publish that block (from then on it behaves exactly like a normal seller offer to the rest of the network), and once it's bought and settled, split the real proceeds back to the small sellers you pooled."
+      - generic [ref=f5e9]: "Who talks to whom: small sellers only ever interact with seller-app's own dashboard (they publish once, then wait — they never see you or the bulk buyer directly). The bulk buyer only ever interacts with buyer-app's dashboard, discovering and buying your published block like any other offer — they never see the individual pooled sellers."
+      - generic [ref=f5e10]: You are the only one who sees both sides and does the pooling/splitting math.
+    - generic [ref=f5e11]:
+      - heading "1 · Discover real offers to pool" [level=2] [ref=f5e12]
+      - paragraph [ref=f5e13]: Asks buyer-app to run a real discover, then lists what it actually found on the shared network. Not a simulation.
+      - button "Discover offers" [ref=f5e14] [cursor=pointer]
+      - generic [ref=f5e15]:
+        - generic [ref=f5e16]:
+          - generic [ref=f5e17]:
+            - generic [ref=f5e18]: Demo Solar Offer
+            - generic [ref=f5e19]: offer-demo-fd8e4157 · sellerapp.example.com · ₹12/kWh · 10 kWh available
+          - button "Pool this offer" [ref=f5e20] [cursor=pointer]
+        - generic [ref=f5e21]:
+          - generic [ref=f5e22]:
+            - generic [ref=f5e23]: Demo Solar Offer
+            - generic [ref=f5e24]: offer-demo-5f1ac016 · sellerapp.example.com · ₹11.5/kWh · 6 kWh available
+          - button "Pool this offer" [ref=f5e25] [cursor=pointer]
+        - generic [ref=f5e26]:
+          - generic [ref=f5e27]:
+            - generic [ref=f5e28]: Demo Solar Offer
+            - generic [ref=f5e29]: offer-demo-4fe09c65 · sellerapp.example.com · ₹13/kWh · 8 kWh available
+          - button "Pool this offer" [ref=f5e30] [cursor=pointer]
+    - generic [ref=f5e31]:
+      - heading "2 · Bulk-buyer requirements (from Grid/DISCOM)" [level=2] [ref=f5e32]
+      - paragraph [ref=f5e33]: "Demand-first matching: a requirement is posted by the Grid/DISCOM dashboard (quantity + a price ceiling). \"Recommend\" runs a cheapest-first match against currently discovered offers — it never proposes anything above the ceiling, and clearly flags a shortfall instead of hiding one."
+      - generic [ref=f5e287]:
+        - generic [ref=f5e288]:
+          - generic [ref=f5e289]: req-3dde62a9
+          - generic [ref=f5e290]: 20 kWh requested · ceiling ₹13/kWh
+        - generic [ref=f5e291]: PUBLISHED
+    - generic [ref=f5e42]:
+      - heading "3 · Current pool (not yet published)" [level=2] [ref=f5e43]
+      - generic [ref=f5e44]:
+        - generic [ref=f5e45]:
+          - generic [ref=f5e46]: "0"
+          - generic [ref=f5e47]: kWh pooled
+        - generic [ref=f5e48]:
+          - generic [ref=f5e49]: ₹0
+          - generic [ref=f5e50]: blended price/kWh
+        - generic [ref=f5e51]:
+          - generic [ref=f5e52]: "0"
+          - generic [ref=f5e53]: sellers pooled
+      - generic [ref=f5e54]: No sellers pooled yet — pool at least 2 above before publishing.
+      - generic [ref=f5e56]:
+        - generic [ref=f5e57]:
+          - generic [ref=f5e58]: Aggregator margin (₹/kWh)
+          - spinbutton [ref=f5e59]: "0.30"
+        - button "Publish pooled block" [disabled] [ref=f5e60]
+    - generic [ref=f5e61]:
+      - heading "4 · Published blocks, delivery & disaggregation" [level=2] [ref=f5e62]
+      - paragraph [ref=f5e63]: Once the bulk buyer (buyer-app) buys it, this block's lifecycle (accept, confirm, delivery, settlement) is this app's own — not seller-app's, and the small pooled sellers are never involved again. Report delivery here once the trade is Active; the real settlement amount then appears, split back to each pooled seller at THEIR OWN original price, with the aggregator's margin shown explicitly.
+      - generic [ref=f5e293]:
+        - generic [ref=f5e294]:
+          - generic [ref=f5e295]:
+            - generic [ref=f5e296]: offer-agg-ffcef872
+            - generic [ref=f5e297]: 20 kWh @ ₹12.35/kWh · 3 sellers pooled · margin ₹0.3/kWh
+          - generic [ref=f5e298]: Settled
+        - generic [ref=f5e299]: Delivered 18.5 of 20 kWh requested — 1.5 kWh shortfall · settlement price ₹12.35/kWh · click a seller row for the full calculation
+        - table [ref=f5e300]:
+          - rowgroup [ref=f5e301]:
+            - row [ref=f5e302]:
+              - columnheader "Seller" [ref=f5e303]
+              - columnheader "Own price" [ref=f5e304]
+              - columnheader "Delivered share" [ref=f5e305]
+              - columnheader "Net payout" [ref=f5e306]
+              - columnheader [ref=f5e307]
+          - rowgroup [ref=f5e308]:
+            - row [ref=f5e309]:
+              - cell "sellerapp.example.com (offer-demo-5f1ac016)" [ref=f5e310]
+              - cell "₹11.5/kWh" [ref=f5e311]
+              - cell "5.55 kWh" [ref=f5e312]
+              - cell "₹61.05" [ref=f5e313]
+              - cell "▸ details" [ref=f5e314]
+            - row [ref=f5e315]:
+              - cell "sellerapp.example.com (offer-demo-fd8e4157)" [ref=f5e316]
+              - cell "₹12/kWh" [ref=f5e317]
+              - cell "9.25 kWh" [ref=f5e318]
+              - cell "₹106.37" [ref=f5e319]
+              - cell "▸ details" [ref=f5e320]
+            - row [ref=f5e321]:
+              - cell "sellerapp.example.com (offer-demo-4fe09c65)" [ref=f5e322]
+              - cell "₹13/kWh" [ref=f5e323]
+              - cell "3.7 kWh" [ref=f5e324]
+              - cell "₹46.25" [ref=f5e325]
+              - cell "▸ details" [ref=f5e326]
+          - rowgroup [ref=f5e327]:
+            - row [ref=f5e328]:
+              - cell "Bulk buyer paid" [ref=f5e329]
+              - cell "₹237.73" [ref=f5e330]
+            - row [ref=f5e331]:
+              - cell "↳ energy ₹228.48 + buyer-side wheeling ₹9.25" [ref=f5e332]
+              - cell [ref=f5e333]
+            - row [ref=f5e334]:
+              - cell "Aggregator received (as the publishing seller)" [ref=f5e335]
+              - cell "₹215.48" [ref=f5e336]
+            - row [ref=f5e337]:
+              - cell "↳ energy ₹228.48 − seller-side wheeling ₹9.25 − shortfall penalty ₹3.75" [ref=f5e338]
+              - cell [ref=f5e339]
+            - row [ref=f5e340]:
+              - cell "Sum paid out to pooled sellers" [ref=f5e341]
+              - cell "₹213.67" [ref=f5e342]
+            - row [ref=f5e343]:
+              - cell "Aggregator margin (received − paid out)" [ref=f5e344]
+              - cell "₹1.81" [ref=f5e345]
+            - row [ref=f5e346]:
+              - cell "Intended margin at publish time was ₹6.00 (₹0.3/kWh × 20 kWh) — the 1.5 kWh shortfall above (and the buyer/seller wheeling asymmetry) is why the realized margin differs." [ref=f5e347]
+              - cell [ref=f5e348]
+    - generic [ref=f5e77]:
+      - heading "What this demo simplifies (on purpose)" [level=2] [ref=f5e78]
+      - list [ref=f5e79]:
+        - listitem [ref=f5e80]: Reuses sellerapp.example.com's already-registered signing identity (same keys as onix-sellerapp) for onix-aggregatorapp rather than registering a brand-new, distinct network participant — that step needs real DeDi registration + namespace-owner approval, out of scope for this demo. Routing is genuinely separate (own container, own catalog, own lifecycle); only the underlying signing identity is shared.
+        - listitem [ref=f5e81]: Incoming requirements are matched with a simple cheapest-first greedy fill up to the requested quantity (capped by the price ceiling), not a true constrained optimization.
+        - listitem [ref=f5e82]: Pools once, at publish time — no re-aggregation as individual sellers' availability changes mid-window.
+        - listitem [ref=f5e83]: Disaggregates the block's one real delivered-quantity reading proportionally across members (no per-member smart meter in this demo) — a real deployment would use each member's own real meter reading, per the 'virtual meter' reconciliation approach the real IES implementation guide describes.
+        - listitem [ref=f5e84]: Grid/DISCOM (grid-app) only posts a requirement — the real discover/buy/confirm for the resulting block is still executed by buyer-app. Giving Grid/DISCOM its own onix identity to buy directly is a clean later phase, not built here.
+  - generic: Delivery reported — settling…

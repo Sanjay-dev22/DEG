@@ -1,0 +1,128 @@
+- generic [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - generic [ref=f1e6]:
+      - generic [ref=f1e7]: GRID PULSE
+      - generic [ref=f1e8]: Beckn Protocol Inspector · P2P trade
+    - generic [ref=f1e9]:
+      - button "1Publish" [ref=f1e10] [cursor=pointer]
+      - button "2Discover" [ref=f1e11] [cursor=pointer]
+      - button "3Init" [ref=f1e12] [cursor=pointer]
+      - button "4Confirm" [active] [ref=f1e13] [cursor=pointer]
+      - button "5Settle" [ref=f1e14] [cursor=pointer]
+      - button "6Rejected" [ref=f1e15] [cursor=pointer]
+    - button "Interactive mode" [ref=f1e16] [cursor=pointer]
+    - button "Legend" [ref=f1e19] [cursor=pointer]
+  - generic [ref=f1e20]:
+    - generic [ref=f1e21]:
+      - generic [ref=f1e22]:
+        - button "+" [ref=f1e23] [cursor=pointer]
+        - button "−" [ref=f1e24] [cursor=pointer]
+        - button "⊞" [ref=f1e25] [cursor=pointer]
+      - img [ref=f1e26]:
+        - generic [ref=f1e29]: bap_side (docker network)
+        - generic [ref=f1e30]: bpp_side (docker network)
+        - generic [ref=f1e38]:
+          - generic [ref=f1e41] [cursor=pointer]
+          - generic: BAP business logic
+          - generic: BuyerApp
+          - generic: sandbox-buyerapp:3001
+        - generic [ref=f1e42]:
+          - generic [ref=f1e45] [cursor=pointer]
+          - generic: Protocol adapter
+          - generic: onix-buyerapp
+          - generic: :8081
+        - generic [ref=f1e46]:
+          - generic [ref=f1e49] [cursor=pointer]
+          - generic: Session cache
+          - generic: redis
+          - generic: :6379
+        - generic [ref=f1e50]:
+          - generic [ref=f1e53] [cursor=pointer]
+          - generic: BPP business logic
+          - generic: SellerApp
+          - generic: sandbox-sellerapp:3002
+        - generic [ref=f1e54]:
+          - generic [ref=f1e57] [cursor=pointer]
+          - generic: Protocol adapter
+          - generic: onix-sellerapp
+          - generic: :8082
+        - generic [ref=f1e58]:
+          - generic [ref=f1e61] [cursor=pointer]
+          - generic: Session cache
+          - generic: redis
+          - generic: :6379
+        - generic [ref=f1e62]:
+          - generic [ref=f1e65] [cursor=pointer]
+          - generic: The only bridge
+          - generic: beckn-router
+          - generic: Caddy · :9000
+        - generic [ref=f1e66]:
+          - generic [ref=f1e69] [cursor=pointer]
+          - generic: Network infra
+          - generic: Catalog / Discovery
+          - generic: shared endpoint
+        - generic [ref=f1e70]:
+          - generic [ref=f1e73] [cursor=pointer]
+          - generic: Seller discom ledger adapter
+          - generic: onix-ledger-
+          - generic: sellerdiscom
+          - generic: :8083
+        - generic [ref=f1e74]:
+          - generic [ref=f1e77] [cursor=pointer]
+          - generic: TPDDL ledger TSP
+          - generic: SellerDiscom
+          - generic: Ledger
+          - generic: sandbox:3003
+        - generic [ref=f1e78]:
+          - generic [ref=f1e81] [cursor=pointer]
+          - generic: Buyer discom ledger adapter
+          - generic: onix-ledger-
+          - generic: buyerdiscom
+          - generic: :8084
+        - generic [ref=f1e82]:
+          - generic [ref=f1e85] [cursor=pointer]
+          - generic: BRPL ledger TSP
+          - generic: BuyerDiscom
+          - generic: Ledger
+          - generic: sandbox:3004
+        - generic [ref=f1e86]:
+          - generic [ref=f1e89] [cursor=pointer]
+          - generic: Not used this walkthrough
+          - generic: onix-buyerdiscom
+          - generic: :8085
+        - generic [ref=f1e90]:
+          - generic [ref=f1e93] [cursor=pointer]
+          - generic: Not used this walkthrough
+          - generic: onix-sellerdiscom
+          - generic: :8086
+        - generic [ref=f1e94]:
+          - generic [ref=f1e97] [cursor=pointer]
+          - generic: Real, external, hosted
+          - generic: IES Energy Ledger
+          - generic: ies-p2p-energy-ledger.beckn.io
+    - generic [ref=f1e98]:
+      - generic [ref=f1e99]:
+        - generic [ref=f1e100]: CONFIRM → ON_CONFIRM
+        - generic [ref=f1e101]: The trade is confirmed — and the ledger cascade fires for the first time.
+      - generic [ref=f1e102]: 11 real hops in this flow. Press ▶▶ Step to walk through it yourself, or Play to run the whole demo, start to finish.
+  - generic [ref=f1e104]:
+    - button "◀" [disabled] [ref=f1e105]
+    - button "▶" [ref=f1e106] [cursor=pointer]
+    - button "▶▶" [ref=f1e107] [cursor=pointer]
+    - generic [ref=f1e108]:
+      - generic [ref=f1e109]: Speed
+      - slider [ref=f1e110] [cursor=pointer]: "1"
+      - generic [ref=f1e111]: 1×
+    - generic [ref=f1e112]:
+      - generic [ref=f1e117] [cursor=pointer]: "1"
+      - generic [ref=f1e118] [cursor=pointer]: "2"
+      - generic [ref=f1e119] [cursor=pointer]: "3"
+      - generic [ref=f1e120] [cursor=pointer]: "4"
+      - generic [ref=f1e121] [cursor=pointer]: "5"
+      - generic [ref=f1e122] [cursor=pointer]: "6"
+      - generic [ref=f1e123] [cursor=pointer]: "7"
+      - generic [ref=f1e124] [cursor=pointer]: "8"
+      - generic [ref=f1e125] [cursor=pointer]: "9"
+      - generic [ref=f1e126] [cursor=pointer]: "10"
+      - generic [ref=f1e127] [cursor=pointer]: "11"
+    - generic [ref=f1e115]: ready · 0 / 11

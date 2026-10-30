@@ -1,0 +1,85 @@
+# India-Energy-Stack Docs
+
+## Docs
+
+- [Getting Started](https://india-energy-stack.gitbook.io/docs/readme.md)
+- [Propose a Schema](https://india-energy-stack.gitbook.io/docs/propose-a-schema.md)
+- [Schemas Overview](https://india-energy-stack.gitbook.io/docs/schemas-overview/schemas-overview.md)
+- [ElectricityCredential](https://india-energy-stack.gitbook.io/docs/schemas-overview/schemas-overview/electricity-credential.md)
+- [MeterData](https://india-energy-stack.gitbook.io/docs/schemas-overview/schemas-overview/meter-data.md)
+- [MeterDataCredential](https://india-energy-stack.gitbook.io/docs/schemas-overview/schemas-overview/meter-data-credential.md)
+- [MeterDataRequest](https://india-energy-stack.gitbook.io/docs/schemas-overview/schemas-overview/meter-data-request.md)
+- [MeterDataRequestCredential](https://india-energy-stack.gitbook.io/docs/schemas-overview/schemas-overview/meter-data-request-credential.md)
+- [ArrFiling](https://india-energy-stack.gitbook.io/docs/schemas-overview/schemas-overview/arr-filing.md)
+- [OutageNotification (WIP)](https://india-energy-stack.gitbook.io/docs/schemas-overview/schemas-overview/outage-notification.md)
+- [All Schemas](https://india-energy-stack.gitbook.io/docs/schemas/schemas-ies.md)
+- [ElectricityCredential](https://india-energy-stack.gitbook.io/docs/schemas/electricitycredential.md)
+- [v1.2](https://india-energy-stack.gitbook.io/docs/schemas/electricitycredential/v1.2.md)
+- [v1.1](https://india-energy-stack.gitbook.io/docs/schemas/electricitycredential/v1.1.md)
+- [v1.0](https://india-energy-stack.gitbook.io/docs/schemas/electricitycredential/v1.0.md)
+- [MeterData](https://india-energy-stack.gitbook.io/docs/schemas/meterdata.md)
+- [v0.6](https://india-energy-stack.gitbook.io/docs/schemas/meterdata/v0.6.md)
+- [v0.5](https://india-energy-stack.gitbook.io/docs/schemas/meterdata/v0.5.md)
+- [MeterDataCredential](https://india-energy-stack.gitbook.io/docs/schemas/meterdatacredential.md)
+- [v0.6](https://india-energy-stack.gitbook.io/docs/schemas/meterdatacredential/v0.6.md)
+- [MeterDataRequest](https://india-energy-stack.gitbook.io/docs/schemas/meterdatarequest.md)
+- [v0.6](https://india-energy-stack.gitbook.io/docs/schemas/meterdatarequest/v0.6.md)
+- [v0.5](https://india-energy-stack.gitbook.io/docs/schemas/meterdatarequest/v0.5.md)
+- [MeterDataRequestCredential](https://india-energy-stack.gitbook.io/docs/schemas/meterdatarequestcredential.md)
+- [v0.1](https://india-energy-stack.gitbook.io/docs/schemas/meterdatarequestcredential/v0.1.md)
+- [ArrFiling (WIP)](https://india-energy-stack.gitbook.io/docs/schemas/arrfiling.md)
+- [v0.5](https://india-energy-stack.gitbook.io/docs/schemas/arrfiling/v0.5.md)
+- [OutageNotification (WIP)](https://india-energy-stack.gitbook.io/docs/schemas/outagenotification.md)
+- [v0.1](https://india-energy-stack.gitbook.io/docs/schemas/outagenotification/v0.1.md)
+- [External Schemas](https://india-energy-stack.gitbook.io/docs/schemas/external.md)
+- [Field reference](https://india-energy-stack.gitbook.io/docs/schemas/external/external.md)
+- [Consumer Energy Passport](https://india-energy-stack.gitbook.io/docs/use-case-overviews/consumer-energy-passport.md)
+- [Consumer Meter Digest](https://india-energy-stack.gitbook.io/docs/use-case-overviews/consumer-meter-digest.md)
+- [Smart Meter Data Exchange](https://india-energy-stack.gitbook.io/docs/use-case-overviews/smart-meter-data-exchange.md)
+- [DER Visibility](https://india-energy-stack.gitbook.io/docs/use-case-overviews/der-visibility.md)
+- [P2P Energy Transaction](https://india-energy-stack.gitbook.io/docs/use-case-overviews/p2p-energy-trading.md)
+- [Consumer Energy Passport](https://india-energy-stack.gitbook.io/docs/use-case-implementation-guides/consumer-energy-passport.md)
+- [Consumer Meter Digest](https://india-energy-stack.gitbook.io/docs/use-case-implementation-guides/consumer-meter-digest.md)
+- [Smart Meter Data Exchange](https://india-energy-stack.gitbook.io/docs/use-case-implementation-guides/smart-meter-data-exchange.md)
+- [IES Meter Data Model](https://india-energy-stack.gitbook.io/docs/use-case-implementation-guides/smart-meter-data-exchange/ies-meter-data-model.md)
+- [DER Visibility](https://india-energy-stack.gitbook.io/docs/use-case-implementation-guides/der-visibility.md)
+- [P2P Energy Transaction](https://india-energy-stack.gitbook.io/docs/use-case-implementation-guides/p2p-energy-trading.md)
+- [Overview](https://india-energy-stack.gitbook.io/docs/pathways/pathways.md)
+- [Authority / Regulator Pathway](https://india-energy-stack.gitbook.io/docs/pathways/authority.md)
+- [Utility Pathway](https://india-energy-stack.gitbook.io/docs/pathways/utility.md)
+- [Technology Service Provider Pathway](https://india-energy-stack.gitbook.io/docs/pathways/tsp.md)
+- [Researcher / Analyst Pathway](https://india-energy-stack.gitbook.io/docs/pathways/researcher.md)
+- [Secretariat Pathway](https://india-energy-stack.gitbook.io/docs/pathways/secretariat.md)
+- [About this section](https://india-energy-stack.gitbook.io/docs/draft-work-in-progress/draft.md)
+- [DISCOM Regulatory Filing (WIP)](https://india-energy-stack.gitbook.io/docs/draft-work-in-progress/discom-regulatory-filing.md)
+- [Implementation Guide (WIP)](https://india-energy-stack.gitbook.io/docs/draft-work-in-progress/discom-regulatory-filing/discom-regulatory-filing.md)
+- [Policy as Code (WIP)](https://india-energy-stack.gitbook.io/docs/draft-work-in-progress/tariff-intelligence.md)
+- [Implementation Guide (WIP)](https://india-energy-stack.gitbook.io/docs/draft-work-in-progress/tariff-intelligence/tariff-intelligence.md)
+- [Before you build](https://india-energy-stack.gitbook.io/docs/concepts/how-you-implement-ies.md)
+- [Setting up Register](https://india-energy-stack.gitbook.io/docs/concepts/setup-register.md)
+- [Register & Identifiers in depth](https://india-energy-stack.gitbook.io/docs/concepts/setup-register/register.md)
+- [Setting up Discover & Exchange](https://india-energy-stack.gitbook.io/docs/concepts/setup-exchange.md)
+- [Discover in depth](https://india-energy-stack.gitbook.io/docs/concepts/setup-exchange/discover.md)
+- [Exchange in depth](https://india-energy-stack.gitbook.io/docs/concepts/setup-exchange/exchange.md)
+- [Issuing Credentials](https://india-energy-stack.gitbook.io/docs/concepts/issue-credentials.md)
+- [Verifiable Credentials in depth](https://india-energy-stack.gitbook.io/docs/concepts/issue-credentials/energy-credentials.md)
+- [DigiLocker delivery](https://india-energy-stack.gitbook.io/docs/concepts/issue-credentials/digilocker.md)
+- [Build your Internal-facing Adapter](https://india-energy-stack.gitbook.io/docs/concepts/build-adapter.md)
+- [Security Model](https://india-energy-stack.gitbook.io/docs/concepts/security.md)
+- [Conformance Checklist](https://india-energy-stack.gitbook.io/docs/concepts/conformance.md)
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information, you can query the documentation dynamically by asking a question.
+Perform an HTTP GET request on a page URL with the `ask` query parameter:
+```
+GET https://india-energy-stack.gitbook.io/docs/readme.md?ask=<question>
+```
+The question should be specific, self-contained, and written in natural language.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

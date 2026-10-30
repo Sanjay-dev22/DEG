@@ -1,0 +1,32 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=e3]
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: ₹0.00
+        - generic [ref=e7]: Earnings (settled)
+      - generic "The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover" [ref=e8]: "🌐 Network Dashboard: see Buyer Platform's /network.html"
+      - button "Reset demo" [ref=e9] [cursor=pointer]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - heading "Publish a new offer ● live" [level=2] [ref=e12]:
+        - text: Publish a new offer
+        - generic [ref=e13]: ● live
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: Quantity (kWh)
+          - spinbutton [ref=e17]: "20"
+        - generic [ref=e18]:
+          - generic [ref=e19]: Price (₹/kWh)
+          - spinbutton [ref=e20]: "12.5"
+        - button "Publish offer" [active] [ref=e21] [cursor=pointer]
+    - generic [ref=e22]:
+      - heading "My published offers" [level=2] [ref=e23]
+      - generic [ref=e24]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=e25]: Nothing published yet.
+    - generic [ref=e27]:
+      - heading "Incoming requests" [level=2] [ref=e28]
+      - generic [ref=e29]: No incoming requests yet.
+    - generic [ref=e31]:
+      - heading "Active & settled trades" [level=2] [ref=e32]
+      - generic [ref=e33]: No trades yet.

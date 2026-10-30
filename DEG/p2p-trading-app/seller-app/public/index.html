@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Seller Platform — P2P Trading Demo</title>
+<style>
+  :root {
+    --bg: #0b0f14; --panel: #121822; --panel2: #182233; --border: #263349;
+    --text: #e8edf5; --muted: #8fa1bd; --accent: #2fe0c6; --amber: #f5b942; --red: #ff6b6b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { padding: 18px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 18px; margin: 0; letter-spacing: 0.02em; }
+  header .role { color: var(--accent); font-weight: 600; }
+  header .earnings { text-align: right; }
+  header .earnings .amt { font-size: 22px; font-weight: 700; color: var(--accent); }
+  header .earnings .lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  main { max-width: 960px; margin: 0 auto; padding: 24px; display: grid; gap: 20px; }
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
+  .panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 14px; }
+  form.publish { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; }
+  .field { display: flex; flex-direction: column; gap: 4px; }
+  .field label { font-size: 11px; color: var(--muted); }
+  .field input { background: var(--panel2); border: 1px solid var(--border); border-radius: 6px; color: var(--text); padding: 8px 10px; width: 140px; font-size: 14px; }
+  button { background: var(--accent); color: #05201c; border: none; border-radius: 6px; padding: 9px 16px; font-weight: 600; cursor: pointer; font-size: 13px; }
+  button:hover { filter: brightness(1.08); }
+  button.secondary { background: var(--panel2); color: var(--text); border: 1px solid var(--border); }
+  button.amber { background: var(--amber); color: #2a1b02; }
+  button:disabled { opacity: 0.4; cursor: default; }
+  .list { display: flex; flex-direction: column; gap: 10px; }
+  .row { background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .row .meta { display: flex; flex-direction: column; gap: 2px; }
+  .row .meta .primary { font-weight: 600; }
+  .row .meta .secondary { font-size: 12px; color: var(--muted); }
+  .badge { font-size: 11px; padding: 3px 9px; border-radius: 999px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+  .badge.pending { background: rgba(245,185,66,0.15); color: var(--amber); }
+  .badge.awaiting { background: rgba(143,161,189,0.15); color: var(--muted); }
+  .badge.active { background: rgba(47,224,198,0.15); color: var(--accent); }
+  .badge.settled { background: rgba(47,224,198,0.25); color: var(--accent); }
+  .empty { color: var(--muted); font-size: 13px; padding: 8px 0; }
+  .toast { position: fixed; bottom: 20px; right: 20px; background: var(--panel2); border: 1px solid var(--accent); color: var(--text); padding: 10px 16px; border-radius: 8px; font-size: 13px; opacity: 0; transform: translateY(8px); transition: all 0.25s; pointer-events: none; }
+  .toast.show { opacity: 1; transform: translateY(0); }
+  .conn { font-size: 11px; color: var(--muted); }
+  .conn.up::before { content: "● "; color: var(--accent); }
+  .conn.down::before { content: "● "; color: var(--red); }
+  .badge.declined { background: rgba(255,107,107,0.15); color: var(--red); }
+  .row-block { background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+  .row-block .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .decision-form { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; border-top: 1px dashed var(--border); padding-top: 10px; }
+  .decision-form input { background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text); padding: 6px 8px; width: 100px; font-size: 13px; }
+  .decision-form .lbl { font-size: 11px; color: var(--muted); }
+  button.ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); padding: 6px 10px; font-size: 12px; }
+  .timeline { display: none; flex-direction: column; gap: 6px; border-top: 1px dashed var(--border); padding-top: 10px; margin-top: 2px; }
+  .timeline.show { display: flex; }
+  .tl-hop { font-size: 12px; }
+  .tl-hop .tl-head { display: flex; gap: 8px; align-items: baseline; cursor: pointer; }
+  .tl-hop .tl-action { font-weight: 600; font-family: monospace; }
+  .tl-hop .tl-dir { font-size: 10px; padding: 1px 6px; border-radius: 999px; text-transform: uppercase; }
+  .tl-hop .tl-dir.sent { background: rgba(47,224,198,0.15); color: var(--accent); }
+  .tl-hop .tl-dir.received { background: rgba(90,169,255,0.15); color: #5aa9ff; }
+  .tl-hop .tl-dir.local { background: rgba(245,185,66,0.15); color: var(--amber); }
+  .tl-hop .tl-time { color: var(--muted); font-size: 11px; }
+  .tl-hop .tl-summary { color: var(--muted); }
+  .tl-hop pre { display: none; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 8px; margin: 6px 0 0; font-size: 11px; max-height: 240px; overflow: auto; }
+  .tl-hop pre.show { display: block; }
+  .delivery-note { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .role-banner { background: rgba(47,224,198,0.08); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; font-size: 13px; line-height: 1.6; color: var(--muted); max-width: 960px; margin: 16px auto 0; }
+  .role-banner b { color: var(--text); }
+  .role-banner-line { margin: 0 0 8px; }
+  .role-banner-line:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚡ <span class="role">Seller Platform</span> — sellerapp.example.com</h1>
+  <div style="display:flex;align-items:center;gap:16px">
+    <div class="earnings">
+      <div class="amt" id="earnings">₹0.00</div>
+      <div class="lbl">Earnings (settled)</div>
+    </div>
+    <span style="color:var(--muted);font-size:12px" title="The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover">🌐 Network Dashboard: see Buyer Platform's /network.html</span>
+    <button class="secondary" id="resetBtn" title="Wipe this platform's own offers and trades">Reset demo</button>
+  </div>
+</header>
+<div class="role-banner">
+  <div class="role-banner-line"><b>Your role:</b> an individual energy producer (prosumer).</div>
+  <div class="role-banner-line"><b>Your job:</b> publish what you have to sell — once per offer, then wait. Anyone can discover and buy it: a direct buyer, or an aggregator pooling you together with other small sellers into a bigger block. You can't tell which happened just by looking at the incoming request — both arrive here the same way.</div>
+</div>
+<main>
+  <div class="panel">
+    <h2>Publish a new offer <span class="conn down" id="conn" style="float:right">connecting…</span></h2>
+    <form class="publish" id="publishForm">
+      <div class="field"><label>Quantity (kWh)</label><input type="number" step="0.1" name="quantityKwh" value="20" required></div>
+      <div class="field"><label>Price (₹/kWh)</label><input type="number" step="0.1" name="pricePerKwh" value="12.5" required></div>
+      <button type="submit">Publish offer</button>
+    </form>
+  </div>
+
+  <div class="panel">
+    <h2>My published offers</h2>
+    <div class="hint" style="color:var(--muted);font-size:12px;margin:-6px 0 10px">Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.</div>
+    <div class="list" id="offers"><div class="empty">Nothing published yet.</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Incoming requests</h2>
+    <div class="list" id="requests"><div class="empty">No incoming requests yet.</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Active &amp; settled trades</h2>
+    <div class="list" id="trades"><div class="empty">No trades yet.</div></div>
+  </div>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+let toastTimer;
+function toast(msg) {
+  const el = $("#toast");
+  el.textContent = msg;
+  el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove("show"), 2600);
+}
+
+function badge(status) {
+  const map = { PENDING_ACCEPT: ["pending", "Awaiting your decision"], AWAITING_CONFIRM: ["awaiting", "Awaiting buyer confirm"], ACTIVE: ["active", "Active"], SETTLED: ["settled", "Settled"], DECLINED: ["declined", "Declined"] };
+  const [cls, label] = map[status] || ["awaiting", status];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+// ---------- Protocol/decision timeline — every real Beckn hop, expandable ----------
+const openTimelines = new Set();
+async function toggleTimeline(txn) {
+  if (openTimelines.has(txn)) { openTimelines.delete(txn); } else { openTimelines.add(txn); }
+  refreshAll(true);
+}
+async function renderTimelineHtml(txn) {
+  if (!openTimelines.has(txn)) return "";
+  const events = await fetch(`/api/trade/${txn}/timeline`).then((r) => r.json()).catch(() => []);
+  if (!events.length) return `<div class="timeline show"><div class="empty">No events logged yet.</div></div>`;
+  const hops = events.map((e, i) => `
+    <div class="tl-hop">
+      <div class="tl-head" onclick="this.nextElementSibling.classList.toggle('show')">
+        <span class="tl-action">${e.action}</span>
+        <span class="tl-dir ${e.direction}">${e.direction}</span>
+        <span class="tl-time">${new Date(e.at).toLocaleTimeString()}</span>
+        <span class="tl-summary">${e.summary || ""}</span>
+      </div>
+      <pre>${e.payload ? escapeHtml(JSON.stringify(e.payload, null, 2)) : "(no payload)"}</pre>
+    </div>`).join("");
+  return `<div class="timeline show">${hops}</div>`;
+}
+function escapeHtml(s) { return s.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])); }
+
+// Avoid a full DOM replace when nothing actually changed — these rows now
+// contain live-editable inputs (counter price/qty, delivered-kWh reading),
+// and a naive re-render on every 5s poll would wipe out whatever the seller
+// is mid-typing. force=true (used by toggleTimeline) always re-renders.
+let lastRequestsJson = "";
+let lastTradesJson = "";
+
+async function refreshAll(force) {
+  const [offers, trades, earnings] = await Promise.all([
+    fetch("/api/offers").then((r) => r.json()),
+    fetch("/api/trades").then((r) => r.json()),
+    fetch("/api/earnings").then((r) => r.json()),
+  ]);
+  renderOffers(offers);
+  const offersById = Object.fromEntries(offers.map((o) => [o.id, o]));
+  const requests = trades.filter((t) => t.status === "PENDING_ACCEPT");
+  const settledOrActive = trades.filter((t) => t.status !== "PENDING_ACCEPT");
+  const reqJson = JSON.stringify(requests) + JSON.stringify(offers) + [...openTimelines].join(",");
+  const tradeJson = JSON.stringify(settledOrActive) + [...openTimelines].join(",");
+  if (force || reqJson !== lastRequestsJson) { lastRequestsJson = reqJson; await renderRequests(requests, offersById); }
+  if (force || tradeJson !== lastTradesJson) { lastTradesJson = tradeJson; await renderTrades(settledOrActive); }
+  $("#earnings").textContent = "₹" + Number(earnings.total).toFixed(2);
+}
+
+function renderOffers(list) {
+  const el = $("#offers");
+  if (!list.length) { el.innerHTML = '<div class="empty">Nothing published yet.</div>'; return; }
+  el.innerHTML = list.map((o) => {
+    const remaining = o.remaining_qty ?? o.quantity_kwh;
+    const soldOut = remaining <= 0;
+    return `
+    <div class="row">
+      <div class="meta">
+        <div class="primary" style="font-family:monospace">${o.id}</div>
+        <div class="secondary">${remaining} / ${o.quantity_kwh} kWh remaining @ ₹${o.price_per_kwh}/kWh${soldOut ? ' <span class="badge declined">Sold out</span>' : ""}</div>
+      </div>
+      <button class="secondary" onclick="copyOfferId('${o.id}', this)">Copy ID</button>
+    </div>`;
+  }).join("");
+}
+
+function copyOfferId(id, btn) {
+  var done = function () { var t = btn.textContent; btn.textContent = "Copied!"; setTimeout(() => (btn.textContent = t), 1200); };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(id).then(done).catch(() => toast("Couldn't copy — select and copy manually: " + id));
+  } else {
+    toast("Copy not available in this browser — offer ID: " + id);
+  }
+}
+
+async function renderRequests(list, offersById) {
+  const el = $("#requests");
+  // Found live: the content-diff guard around this call (see refreshAll)
+  // only skips a rebuild when NOTHING in the whole `requests` list
+  // changed — if a *different* incoming bid's data changes while the
+  // operator is mid-typing a counter price/qty for *this* one, the whole
+  // list still re-renders and silently wipes what they'd typed. Snapshot
+  // and restore across the rebuild, same fix as aggregator-app's
+  // delivered-kWh input and the other bugs in this same family.
+  const pending = {};
+  document.querySelectorAll('input[id^="cp-"], input[id^="cq-"]').forEach((input) => {
+    if (input.value) pending[input.id] = input.value;
+  });
+  if (!list.length) { el.innerHTML = '<div class="empty">No incoming requests yet.</div>'; return; }
+  const blocks = await Promise.all(list.map(async (t) => {
+    const askLine = t.askingPricePerKwh != null && t.askingPricePerKwh !== t.pricePerKwh
+      ? ` <span style="color:var(--muted)">(our ask: ₹${t.askingPricePerKwh}/kWh)</span>`
+      : "";
+    const offer = offersById[t.offerId];
+    const remaining = offer ? (offer.remaining_qty ?? offer.quantity_kwh) : null;
+    const notEnough = remaining != null && t.requestedQty > remaining;
+    // Only worth mentioning once capacity has actually moved from the
+    // original published figure — otherwise it's just restating the bid.
+    const capacityLine = remaining != null && (notEnough || remaining < offer.quantity_kwh)
+      ? ` <span style="color:${notEnough ? "var(--red)" : "var(--muted)"}">(${remaining} kWh actually remains on this offer${notEnough ? " — not enough for the full bid" : ""})</span>`
+      : "";
+    const timelineHtml = await renderTimelineHtml(t.transactionId);
+    return `
+    <div class="row-block" data-txn="${t.transactionId}">
+      <div class="top">
+        <div class="meta">
+          <div class="primary">Buyer bids ₹${t.pricePerKwh}/kWh for ${t.requestedQty} kWh${askLine}</div>
+          <div class="secondary">from ${t.bapId} · discom: ${t.buyerDiscom}${capacityLine}</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          ${badge(t.status)}
+          <button class="ghost" onclick="toggleTimeline('${t.transactionId}')">${openTimelines.has(t.transactionId) ? "Hide" : "Show"} trace</button>
+        </div>
+      </div>
+      <div class="decision-form">
+        <button onclick="respond('${t.transactionId}','accept')" ${notEnough ? "disabled title=\"Not enough remaining capacity — counter with a lower quantity instead\"" : ""}>Accept bid</button>
+        <span class="lbl">or counter:</span>
+        <input type="number" step="0.1" placeholder="₹/kWh" id="cp-${t.transactionId}" value="${t.askingPricePerKwh || t.pricePerKwh}">
+        <input type="number" step="0.1" placeholder="kWh" id="cq-${t.transactionId}" value="${notEnough ? remaining : t.requestedQty}" ${remaining != null ? `max="${remaining}"` : ""}>
+        <button class="amber" onclick="counter('${t.transactionId}')">Send counter-offer</button>
+        <button class="secondary" style="background:transparent;color:var(--red);border-color:var(--red)" onclick="decline('${t.transactionId}')">Decline</button>
+      </div>
+      ${timelineHtml}
+    </div>`;
+  }));
+  el.innerHTML = blocks.join("");
+  Object.entries(pending).forEach(([id, value]) => {
+    const input = document.getElementById(id);
+    if (input) input.value = value;
+  });
+}
+
+async function renderTrades(list) {
+  const el = $("#trades");
+  // Same fix as renderRequests above: snapshot an in-progress delivered-kWh
+  // reading (and whether it was already "touched" — manually edited or
+  // previously auto-filled) before a rebuild triggered by a DIFFERENT
+  // trade's data changing, and restore both after.
+  const pendingReadings = {};
+  document.querySelectorAll('input[id^="fa-"]').forEach((input) => {
+    if (input.value) pendingReadings[input.id] = { value: input.value, touched: !!input.dataset.touched };
+  });
+  if (!list.length) { el.innerHTML = '<div class="empty">No trades yet.</div>'; return; }
+  const blocks = await Promise.all(list.map(async (t) => {
+    const counterLine = t.counterPricePerKwh
+      ? ` <span style="color:var(--muted)">(we countered ₹${t.counterPricePerKwh}/kWh for ${t.counterQty} kWh)</span>`
+      : "";
+    const declineLine = t.status === "DECLINED" && t.declineReason ? `<div class="secondary">Reason: ${t.declineReason}</div>` : "";
+    const timelineHtml = await renderTimelineHtml(t.transactionId);
+    return `
+    <div class="row-block" data-txn="${t.transactionId}">
+      <div class="top">
+        <div class="meta">
+          <div class="primary">${t.requestedQty} kWh @ ₹${t.pricePerKwh}/kWh${counterLine}${t.finalAlloc ? ` — delivered ${t.finalAlloc} kWh` : ""}</div>
+          <div class="secondary">from ${t.bapId} · discom: ${t.buyerDiscom}${t.settlementAmount ? ` · settled ₹${t.settlementAmount.toFixed(2)}` : ""}</div>
+          ${declineLine}
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          ${badge(t.status)}
+          <button class="ghost" onclick="toggleTimeline('${t.transactionId}')">${openTimelines.has(t.transactionId) ? "Hide" : "Show"} trace</button>
+        </div>
+      </div>
+      ${t.status === "ACTIVE" ? `
+      <div class="decision-form" id="deliver-form-${t.transactionId}">
+        <span class="lbl">Delivered (meter reading, kWh):</span>
+        <input type="number" step="0.1" id="fa-${t.transactionId}" value="${t.requestedQty}" oninput="this.dataset.touched='1'">
+        <button class="amber" onclick="deliver('${t.transactionId}')">Report delivery &amp; settle</button>
+        <div class="delivery-note">This is the seller's real smart-meter reading after physical delivery — real delivered energy is almost never exactly what was requested (line losses, timing drift), and settlement always pays on this figure, not the original ask. Suggested value shown is one plausible reading; edit it to whatever the (simulated) meter actually reports.</div>
+      </div>` : ""}
+      ${timelineHtml}
+    </div>`;
+  }));
+  el.innerHTML = blocks.join("");
+  Object.entries(pendingReadings).forEach(([id, { value, touched }]) => {
+    const input = document.getElementById(id);
+    if (!input) return;
+    input.value = value;
+    if (touched) input.dataset.touched = "1";
+  });
+  // Fill in a randomized-but-editable suggestion for any delivery form just
+  // rendered — skipped for anything just restored above (touched or not:
+  // a restored value is never a blank, freshly-rendered input that's
+  // actually waiting on a suggestion).
+  list.filter((t) => t.status === "ACTIVE" && !pendingReadings[`fa-${t.transactionId}`]).forEach((t) => {
+    fetch(`/api/deliver/${t.transactionId}/suggest`).then((r) => r.json()).then((s) => {
+      const input = document.getElementById(`fa-${t.transactionId}`);
+      if (input && !input.dataset.touched) input.value = s.suggestedFinalAlloc;
+    }).catch(() => {});
+  });
+}
+
+async function respond(txn, decision, extra) {
+  const res = await fetch(`/api/respond/${txn}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ decision, ...extra }) });
+  const body = await res.json();
+  if (!res.ok) { toast((decision === "decline" ? "Decline" : decision === "counter" ? "Counter-offer" : "Accept") + " failed: " + (body.error || res.status)); return; }
+  if (decision === "accept") toast("Bid accepted — on_init sent, waiting for buyer to confirm");
+  else if (decision === "counter") toast("Counter-offer sent — waiting for buyer's decision");
+  else toast("Declined — buyer notified");
+  refreshAll();
+}
+function counter(txn) {
+  const pricePerKwh = Number(document.getElementById(`cp-${txn}`).value);
+  const quantityKwh = Number(document.getElementById(`cq-${txn}`).value);
+  if (!pricePerKwh || !quantityKwh) { toast("Enter a positive counter price and quantity"); return; }
+  respond(txn, "counter", { pricePerKwh, quantityKwh });
+}
+function decline(txn) {
+  const reason = prompt("Optional reason for declining (shown to the buyer):", "") || undefined;
+  respond(txn, "decline", { reason });
+}
+
+async function deliver(txn) {
+  const finalAlloc = Number(document.getElementById(`fa-${txn}`).value);
+  if (!finalAlloc || finalAlloc <= 0) { toast("Enter a positive delivered quantity"); return; }
+  const res = await fetch(`/api/deliver/${txn}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ finalAlloc }) });
+  const body = await res.json();
+  if (!res.ok) { toast("Deliver failed: " + (body.error || res.status)); return; }
+  toast(`Settled ₹${body.trade.settlementAmount.toFixed(2)} (delivered ${body.trade.finalAlloc} kWh)`);
+}
+
+$("#publishForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const body = { quantityKwh: Number(fd.get("quantityKwh")), pricePerKwh: Number(fd.get("pricePerKwh")) };
+  const res = await fetch("/api/publish", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  const result = await res.json();
+  if (!res.ok) { toast("Publish failed: " + (result.error || res.status)); return; }
+  toast(`Published ${body.quantityKwh} kWh @ ₹${body.pricePerKwh}/kWh`);
+});
+
+$("#resetBtn").addEventListener("click", async () => {
+  if (!confirm("Wipe every offer and trade on this Seller Platform? This can't be undone. (The Buyer Platform's own data is separate — reset it there too if you want a fully clean pair.)")) return;
+  const res = await fetch("/api/reset", { method: "POST" });
+  const body = await res.json();
+  if (!res.ok) { toast("Reset failed: " + (body.error || res.status)); return; }
+  toast("Seller Platform reset — starting fresh");
+  refreshAll();
+});
+
+function connectWs() {
+  // Match the page's own protocol: a page loaded over https:// (e.g.
+  // through a tunnel) will never let an insecure ws:// connection open —
+  // the browser blocks it silently as mixed content. wss:// on https,
+  // ws:// on plain http; either way this always matches how the page
+  // itself was loaded.
+  const wsProtocol = location.protocol === "https:" ? "wss:" : "ws:";
+  const ws = new WebSocket(`${wsProtocol}//${location.host}/ws`);
+  ws.onopen = () => { $("#conn").textContent = "live"; $("#conn").className = "conn up"; };
+  ws.onclose = () => { $("#conn").textContent = "disconnected"; $("#conn").className = "conn down"; setTimeout(connectWs, 2000); };
+  ws.onmessage = (ev) => {
+    const { type, data } = JSON.parse(ev.data);
+    if (type === "incoming_request") toast(`New request: ${data.requestedQty} kWh from ${data.bapId}`);
+    if (type === "accepted") toast("Accepted — on_init sent");
+    if (type === "countered") toast("Counter-offer sent — waiting for buyer");
+    if (type === "declined") toast(data.declineReason ? `Declined: ${data.declineReason}` : "Buyer declined our counter-offer");
+    if (type === "active") toast("Trade confirmed — now ACTIVE");
+    if (type === "settled") toast(`Settled ₹${data.settlementAmount.toFixed(2)}`);
+    if (type === "reset") toast("Reset from elsewhere — refreshing");
+    refreshAll();
+  };
+}
+
+connectWs();
+refreshAll();
+setInterval(refreshAll, 5000);
+</script>
+</body>
+</html>

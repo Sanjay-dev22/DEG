@@ -1,0 +1,43 @@
+- generic [active] [ref=f11e1]:
+  - banner [ref=f11e2]:
+    - heading "⚡ Seller Platform — sellerapp.example.com" [level=1] [ref=f11e3]
+    - generic [ref=f11e4]:
+      - generic [ref=f11e5]:
+        - generic [ref=f11e6]: ₹215.00
+        - generic [ref=f11e7]: Earnings (settled)
+      - generic "The full cross-network view (every participant's offers + our ledger-verified trades) lives on the Buyer Platform, which is the side that runs discover" [ref=f11e8]: "🌐 Network Dashboard: see Buyer Platform's /network.html"
+      - button "Reset demo" [ref=f11e9] [cursor=pointer]
+  - main [ref=f11e10]:
+    - generic [ref=f11e11]:
+      - heading "Publish a new offer ● live" [level=2] [ref=f11e12]:
+        - text: Publish a new offer
+        - generic [ref=f11e13]: ● live
+      - generic [ref=f11e14]:
+        - generic [ref=f11e15]:
+          - generic [ref=f11e16]: Quantity (kWh)
+          - spinbutton [ref=f11e17]: "20"
+        - generic [ref=f11e18]:
+          - generic [ref=f11e19]: Price (₹/kWh)
+          - spinbutton [ref=f11e20]: "12.5"
+        - button "Publish offer" [ref=f11e21] [cursor=pointer]
+    - generic [ref=f11e22]:
+      - heading "My published offers" [level=2] [ref=f11e23]
+      - generic [ref=f11e24]: Give the buyer this exact Offer ID — that's what goes into "Buy directly" on their page.
+      - generic [ref=f11e51]:
+        - generic [ref=f11e52]:
+          - generic [ref=f11e53]: offer-demo-996d6de8
+          - generic [ref=f11e54]: 0 / 30 kWh remaining @ ₹12.5/kWh Sold out
+        - button "Copy ID" [ref=f11e55] [cursor=pointer]
+    - generic [ref=f11e31]:
+      - heading "Incoming requests" [level=2] [ref=f11e32]
+      - generic [ref=f11e33]: No incoming requests yet.
+    - generic [ref=f11e35]:
+      - heading "Active & settled trades" [level=2] [ref=f11e36]
+      - generic [ref=f11e57]:
+        - generic [ref=f11e58]:
+          - generic [ref=f11e59]: 30 kWh @ ₹12.5/kWh — delivered 20 kWh
+          - generic [ref=f11e60]: "from buyerapp.example.com · discom: TEST_DISCOM_BUYER · settled ₹215.00"
+        - generic [ref=f11e61]:
+          - generic [ref=f11e62]: Settled
+          - button "Show trace" [ref=f11e63] [cursor=pointer]
+  - generic: Settled ₹215.00 (delivered 20 kWh)
