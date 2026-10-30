@@ -1,8 +1,9 @@
 # P2P Trading Demo App
 
 Four real, independent web apps trading real solar energy over the real
-local Beckn/onix network (`p2p-trading/DEG-repo/devkits/p2p-trading-ies-wave2`,
-a sparse clone of the public `beckn/DEG` devkit), replacing the
+local Beckn/onix network (`network/devkits/p2p-trading-ies-wave2/` in this
+folder, a trimmed copy of the public `beckn/DEG` devkit plus the aggregator
+and grid adapters added here), replacing the
 `fidedocker/sandbox-2.0` fixture-replay stubs the devkit ships with:
 
 | App | Port | Role |
@@ -44,52 +45,108 @@ buyer-app, aggregator-app) — no Redis, no job queue. **Auth**: none — you
 operate every platform yourself, exactly like the underlying devkit's own
 demo does.
 
-## One-time setup
+## Quick start (fresh machine)
 
-The Beckn network itself lives in the working devkit copy at
-`p2p-trading/DEG-repo/devkits/p2p-trading-ies-wave2/` (not any read-only
-reference clone). Its config/compose/Caddy files are local-only and never
-committed (it's a sparse clone of the public upstream repo).
+Everything the demo needs is in this folder — no other devkit or clone is
+required.
+
+**Prerequisites**
+
+| Need | Notes |
+|---|---|
+| Git | to clone this repo |
+| Docker with Compose v2 | Docker Desktop (Mac/Windows) or Docker Engine (Linux). Windows: use WSL2. Needs ~2 GB free disk for images |
+| Node.js **22.13 or newer** | the apps use the built-in `node:sqlite` module; check with `node -v` |
+| Python 3 | only to serve the policy file on port 8099 |
+| Internet access | the onix adapters fetch the Beckn schema and the shared catalog/registry; no accounts or logins needed |
+| `cloudflared` (optional) | only for real **Discover offers** and for sharing dashboards, see below |
+
+**Free ports:** 4001–4004 (apps), 8081, 8082, 8083, 8084, 8085, 8086, 9000,
+18084, 18085 (onix and router), 8099 (policy file).
 
 ```bash
-cd p2p-trading/DEG-repo/devkits/p2p-trading-ies-wave2/install
-docker compose up -d
-docker compose ps   # confirm everything is Up/healthy
+git clone https://github.com/Sanjay-dev22/DEG.git
+cd DEG/p2p-trading-demo-app
+./run-demo.sh up
 ```
 
-Start the local policy file server (serves the one locally-amended demo
-policy — see `KNOWLEDGE-BASE.md` §4 for why):
+`up` pulls the images (it falls back to `mirror.gcr.io` if Docker Hub
+rate-limits anonymous pulls), starts the policy server, brings up the whole
+onix network, runs `npm install` in each app, and starts the four apps.
+The first run takes a few minutes. When it prints **ready**, open:
+
+| Dashboard | URL |
+|---|---|
+| Seller | http://localhost:4002 |
+| Buyer | http://localhost:4001 |
+| Aggregator | http://localhost:4003 |
+| Grid/DISCOM | http://localhost:4004 |
+
+Then either click through flow B below by hand, or run it in one command:
+
 ```bash
-cd p2p-trading/DEG-repo/devkits/p2p-trading-ies-wave2/policies
-python -m http.server 8099
+./run-demo.sh flow          # needs real Discover, see "Real Discover needs a public address"
+./run-demo.sh flow --seed   # bypasses Discover, works with no tunnel
 ```
 
-Install each app's dependencies once:
+Other commands: `./run-demo.sh reset` (wipe all four apps),
+`./run-demo.sh tunnel` (public dashboard URLs), `./run-demo.sh down`
+(stop everything). Logs for the host processes are in `.run/`; adapter logs
+are `docker logs onix-aggregatorapp` (and `onix-gridapp`, `onix-sellerapp`,
+`onix-buyerapp`).
+
+### Real Discover needs a public address
+
+**Discover offers** is asynchronous: the shared discovery service sends its
+reply to a public address for `onix-buyerapp`. Without one, Discover returns
+nothing. Install `cloudflared`
+(https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/)
+and start with:
+
 ```bash
-cd p2p-trading-app/seller-app     && npm install
-cd ../buyer-app                   && npm install
-cd ../aggregator-app               && npm install
-cd ../grid-app                     && npm install
+./run-demo.sh down
+./run-demo.sh up --tunnel
 ```
 
-## Running the demo
+That tunnels port 8081 and writes the address to `buyer-app/public-bap-uri.txt`
+before buyer-app starts (it is read once at startup). A laptop on a normal
+home or office network works. Locked-down networks that block outbound
+tunnels do not; use `flow --seed` there, which copies seller-app's own live
+offers into buyer-app's discovered list and says so in the offer name.
 
-Four terminals, from `p2p-trading-app/`:
+### What the setup runs
+
+For reference, `run-demo.sh up` is equivalent to:
+
 ```bash
-cd seller-app      && npm start   # http://localhost:4002
-cd buyer-app       && npm start   # http://localhost:4001
-cd aggregator-app  && npm start   # http://localhost:4003
-cd grid-app        && npm start   # http://localhost:4004
+# onix network: seller, buyer, aggregator, grid adapters + ledgers + router
+cd network/devkits/p2p-trading-ies-wave2/install && docker compose up -d
+# policy file server (the locally amended contract policy)
+cd network/specification/policies && python3 -m http.server 8099
+# each app
+cd seller-app && npm install && npm start      # likewise buyer-app, aggregator-app, grid-app
 ```
 
-If `onix-sellerapp`/`onix-buyerapp`/etc. aren't listening on the default
-ports the apps expect, set `ONIX_SELLER_URL` / `ONIX_BUYER_URL` /
-`ONIX_AGGREGATOR_URL` / `ONIX_GRID_URL` accordingly (check
-`docker-compose.yml` for the actual host ports in use).
+If an onix adapter is not on the default port, set `ONIX_SELLER_URL`,
+`ONIX_BUYER_URL`, `ONIX_AGGREGATOR_URL` or `ONIX_GRID_URL` before starting
+the matching app (defaults: 8082, 8081, 18084, 18085).
 
-Open all four dashboards — ideally side by side. Where WebSocket updates
-exist they push live in both directions; otherwise dashboards poll every
-few seconds — nothing needs a manual refresh either way.
+### Troubleshooting
+
+- **`429 Too Many Requests` pulling images:** Docker Hub's anonymous limit.
+  `run-demo.sh` retries through `mirror.gcr.io` automatically; or `docker login`.
+- **`node:sqlite` not found:** upgrade Node to 22.13 or newer.
+- **Publish fails with a policy error:** the policy server is not running.
+  `curl http://localhost:8099/p2p-trading-ies-wave2-contractpolicy-local-amended.rego`
+  should return the file; the adapters cache a fetched policy for a long time,
+  so after changing it run `docker compose restart` in the `install` folder.
+- **Port already in use:** stop whatever holds it, or `./run-demo.sh down` first.
+- **Containers cannot reach the host (Linux):** the compose file maps
+  `host.docker.internal` to the host gateway already; needs Docker 20.10+.
+- **Behind a TLS-inspecting proxy** (adapters crash with `x509: certificate
+  signed by unknown authority`): export the proxy's CA and run
+  `CA_BUNDLE=/path/to/ca.pem ./run-demo.sh up`. It mounts the file into every
+  onix container via `docker-compose.proxy-ca.yml`.
 
 ## The demo flow
 
@@ -169,6 +226,9 @@ found building it.
    `FULFILLED` once the cumulative bought quantity meets the original ask.
 
 ## Sharing dashboards externally
+
+`./run-demo.sh tunnel` does the steps below for all four dashboards.
+
 
 Each app is a plain `localhost` HTTP server — to let someone else reach
 one, tunnel it (e.g. `cloudflared tunnel --url http://localhost:4002`) and

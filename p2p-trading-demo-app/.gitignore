@@ -10,3 +10,4 @@ node_modules/
 # cloudflared, never something to commit.
 buyer-app/public-bap-uri.txt
 buyer-app/start-with-tunnel.sh
+.run/

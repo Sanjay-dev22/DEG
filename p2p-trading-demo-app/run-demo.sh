@@ -26,9 +26,9 @@ need() { command -v "$1" >/dev/null || die "missing dependency: $1"; }
 
 compose() {
   local files=(-f docker-compose.yml)
-  # Only for sandboxes whose egress proxy re-signs TLS: trust its CA inside the onix containers.
-  [[ -f "$DEVKIT/install/docker-compose.sandbox-ca.yml" && -f /root/.ccr/ca-bundle.crt ]] \
-    && files+=(-f docker-compose.sandbox-ca.yml)
+  # Behind a TLS-inspecting proxy? Set CA_BUNDLE=/path/to/ca.pem and the onix containers will trust it.
+  [[ -z "${CA_BUNDLE:-}" && -f /root/.ccr/ca-bundle.crt ]] && export CA_BUNDLE=/root/.ccr/ca-bundle.crt
+  [[ -n "${CA_BUNDLE:-}" ]] && files+=(-f docker-compose.proxy-ca.yml)
   (cd "$DEVKIT/install" && docker compose "${files[@]}" "$@")
 }
 

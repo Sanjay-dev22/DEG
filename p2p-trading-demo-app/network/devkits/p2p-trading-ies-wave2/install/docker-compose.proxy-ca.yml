@@ -1,0 +1,14 @@
+# Optional override for networks that re-sign TLS (corporate proxy, sandbox egress proxy).
+# Mounts the CA bundle named by $CA_BUNDLE into every onix adapter so Go trusts it.
+# run-demo.sh adds this file automatically when CA_BUNDLE is set.
+services:
+  onix-buyerapp: &ca
+    environment: {SSL_CERT_FILE: /ca.crt}
+    volumes: ["${CA_BUNDLE:?set CA_BUNDLE to a PEM file}:/ca.crt:ro"]
+  onix-sellerapp: *ca
+  onix-aggregatorapp: *ca
+  onix-gridapp: *ca
+  onix-ledger-sellerdiscom: *ca
+  onix-ledger-buyerdiscom: *ca
+  onix-buyerdiscom: *ca
+  onix-sellerdiscom: *ca
